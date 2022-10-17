@@ -253,32 +253,32 @@
                                             <a href="#" class="btn btn-info btn-circle">
                                                 <i class="fas fa-play-circle"></i>
                                             </a> 
-                                            <div class="text"></div>
-                                            <script type="text/javascript">                                                
-                                                const btn = document.querySelector('.btn-info');
-                                                const text = document.querySelector('.text');
-                                                const contents = '서울 주소 이사 후 변경 예정이고 날짜 지정 5월 30일로 이전 집 주소 써서 주문했는데 배송 예정일은 17일로 뜨는데 17일 전에만 주소 바꾸면 되는 건가요?'
-                                                let saveInterval;
+                                                <div class="text"></div>
+                                                <script type="text/javascript">                                                
+                                                    const btn = document.querySelector('.btn-info');
+                                                    const text = document.querySelector('.text');
+                                                    const contents = '서울 주소 이사 후 변경 예정이고 날짜 지정 5월 30일로 이전 집 주소 써서 주문했는데 배송 예정일은 17일로 뜨는데 17일 전에만 주소 바꾸면 되는 건가요?'
+                                                    let saveInterval;
 
-                                                btn.addEventListener('click', () => {
-                                                  let index = 0; // contents의 초기 인덱스
-                                                  text.innerHTML = ''; // typingSpan 비우기
-                                                  clearInterval(saveInterval); // 기존 interval 종료
+                                                    btn.addEventListener('click', () => {
+                                                      let index = 0; // contents의 초기 인덱스
+                                                      text.innerHTML = ''; // typingSpan 비우기
+                                                      clearInterval(saveInterval); // 기존 interval 종료
 
-                                                  saveInterval = setInterval(() => {
-                                                    if(index >= contents.length - 1) { // index가 범위에 도달될 경우 interval 종료
-                                                      clearInterval(saveInterval);
-                                                    }
+                                                      saveInterval = setInterval(() => {
+                                                        if(index >= contents.length - 1) { // index가 범위에 도달될 경우 interval 종료
+                                                          clearInterval(saveInterval);
+                                                        }
 
-                                                    if(contents[index] === '\n') { // 개행문자 일 경우 <br /> 삽입
-                                                      text.innerHTML += '<br />';
-                                                      index++;
-                                                    } else {
-                                                      text.innerHTML += contents[index++]; // contents문자들을 순서대로 넣기
-                                                    }
-                                                  }, 50) // 0.05초마다 글자 입력
-                                                })
-                                            </script>
+                                                        if(contents[index] === '\n') { // 개행문자 일 경우 <br /> 삽입
+                                                          text.innerHTML += '<br />';
+                                                          index++;
+                                                        } else {
+                                                          text.innerHTML += contents[index++]; // contents문자들을 순서대로 넣기
+                                                        }
+                                                      }, 50) // 0.05초마다 글자 입력
+                                                    })
+                                                </script>
                                         </div>
                                     </div>
                                 </div>
