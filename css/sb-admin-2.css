@@ -11266,21 +11266,7 @@ form.user .btn-user {
   animation: noise-anim-2 3s infinite linear alternate-reverse;
 }
 
-footer.sticky-footer {
-  padding: 2rem 0;
-  flex-shrink: 0;
-}
-
-footer.sticky-footer .copyright {
-  line-height: 1;
-  font-size: 0.8rem;
-}
-
-body.sidebar-toggled footer.sticky-footer {
-  width: 100%;
-}
-
-p.typing-txt{
+.typing-txt{
   position:relative;
   font-size: 0.8rem
   width: 70px;
@@ -11288,7 +11274,7 @@ p.typing-txt{
   overflow: hidden;
   animation: typingAni 0.2s steps(5, end) 1;
 } 
-p.typing-txt::after{
+.typing-txt::after{
   position: absolute; 
   display: block;
   content: ""; 
@@ -11308,3 +11294,18 @@ p.typing-txt::after{
   50%{opacity:1;}
   100%{opacity:0;}
 }
+
+footer.sticky-footer {
+  padding: 2rem 0;
+  flex-shrink: 0;
+}
+
+footer.sticky-footer .copyright {
+  line-height: 1;
+  font-size: 0.8rem;
+}
+
+body.sidebar-toggled footer.sticky-footer {
+  width: 100%;
+}
+
