@@ -52,5 +52,44 @@
     }, 1000, 'easeInOutExpo');
     e.preventDefault();
   });
+  
+  $('#typewriteText')
+      .on('typewriteStarted', function() {
+          console.log('typewrite has started');
+      })
+      .on('typewriteComplete', function() {
+          console.log('typewrite has complete');
+      })
+      .on('typewriteTyped', function(event, data) {
+          console.log('typewrite has typed', data);
+      })
+      .on('typewriteRemoved', function(event, data) {
+          console.log('typewrite has removed', data);
+      })
+      .on('typewriteNewLine', function() {
+          console.log('typewrite has added a new line');
+      })
+      .on('typewriteSelected', function(event, data) {
+          console.log('typewrite has selected text', data);
+      })
+      .on('typewriteDelayEnded', function() {
+          console.log('typewrite delay has ended');
+      })
+      .typewrite({
+          actions: [
+              {type: 'Hello. '},
+              {type: '<br>'},
+              {type: 'Weclome '},
+              {delay: 1500},
+              {remove: {num: 1, type: 'stepped'}},
+              {select: {from: 11, to: 16}},
+              {delay: 2000},
+              {remove: {num: 5, type: 'whole'}},
+              {delay: 300},
+              {type: 'lcome to typewrite. '},
+              {type: '<br>'},
+              {type: 'It\'s just so easy to setup and use.'}
+          ]
+      });
 
 })(jQuery); // End of use strict
