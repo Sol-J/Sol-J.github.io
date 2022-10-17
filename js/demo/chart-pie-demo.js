@@ -31,4 +31,5 @@ var myPieChart = new Chart(ctx, {
     cutoutPercentage: 50,
     legend: {position:'bottom', padding:5, labels: {pointStyle:'circle', usePointStyle:true}},
   },
+  title: "Weigths"
 });
