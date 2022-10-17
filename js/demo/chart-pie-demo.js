@@ -34,3 +34,7 @@ var myPieChart = new Chart(ctx, {
     cutoutPercentage: 80,
   },
 });
+var donutOptions = {
+  cutoutPercentage: 30, //도넛두께 : 값이 클수록 얇아짐
+  legend: {position:'bottom', padding:5, labels: {pointStyle:'circle', usePointStyle:true}}
+};
