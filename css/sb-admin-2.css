@@ -11288,7 +11288,7 @@ typing-txt::before {
   color: black;
   overflow: hidden;
   border-right: 1px solid black;
-  animation: typing 5s steps(31);
+  animation: typing 5s step-end;
 }
 
 @keyframes typing{
