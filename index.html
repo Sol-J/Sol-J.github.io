@@ -291,6 +291,7 @@
                     <!-- Content Row -->
                     <div id="001">
                         <div id="timer"></div>
+                        <div class="loader"></div>
                     </div>
                     
                     <div id="002" style="display:none;">
@@ -442,6 +443,7 @@
                                 --maxtime;
                             } else{
                                 document.getElementById("001").style.display="none";
+                                document.getElementByClass("loader").style.display="none";
                                 document.getElementById("002").style.display="block";
                                 clearInterval(timer);
                             }
