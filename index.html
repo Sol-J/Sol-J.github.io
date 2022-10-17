@@ -438,10 +438,6 @@
                         var maxtime = 5; // 초단위
                         function CountDown() {
                             if (maxtime >= 0) {
-                                minutes = Math.floor(maxtime / 60);
-                                seconds = Math.floor(maxtime % 60);
-                                msg = "" + minutes + "분 " + seconds + "초";
-                                document.all["timer"].innerHTML = msg;
 
                                 --maxtime;
                             } else{
