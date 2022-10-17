@@ -407,12 +407,13 @@
                                                 <a class="dropdown-item" href="#">5 (Completely Confident)</a>
                                             </div>
                                         </div>
+                                        <script>
                                         let links = document.querySelectorAll('.dropdown-item')
                                         links.forEach(element => element.addEventListener("click", function () {
                                             let text = element.innerText
                                             document.getElementById('dropdownMenuButton').innerText = text
                                         }))
-
+                                        </script>
                                     </div>
                                 </div>
                             </div>
