@@ -18,8 +18,8 @@ var myPieChart = new Chart(ctx, {
   },
   options: {
     title: {
-      display: true,
-      text: 'Weights'},
+      display: false,
+      text: 'word weights'},
     
     maintainAspectRatio: false,
     tooltips: {
