@@ -7,7 +7,7 @@ var ctx = document.getElementById("myPieChart");
 var myPieChart = new Chart(ctx, {
   type: 'doughnut',
   data: {
-    labels: ["주소", "서울", "집", "이사"],
+    labels: ["주소 0.49", "서울 0.18", "집 0.09", "이사 0.02"],
     datasets: [{
       data: [60, 22, 11, 7],
       backgroundColor: ['#F8CF69', '#FADB91', '#FBE4AC', '#FDF3DB'],
