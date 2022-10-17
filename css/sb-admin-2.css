@@ -11279,3 +11279,32 @@ footer.sticky-footer .copyright {
 body.sidebar-toggled footer.sticky-footer {
   width: 100%;
 }
+
+p.typing-txt{
+  position:relative;
+  font-size: 15px;
+  width: 70px;
+  height: 15px; 
+  overflow: hidden;
+  animation: typingAni 3s steps(5, end) 1;
+} 
+p.typing-txt::after{
+  position: absolute; 
+  display: block;
+  content: ""; 
+  width: 20px; 
+  height: 15px;
+  top: 0;
+  right: 0; 
+  border-right: 1px solid #000;
+  animation: cursor 0.5s step-end infinite;
+}
+@keyframes typingAni {
+  0%{width:0%}
+  100%{width: 70px};
+}
+@keyframes cursor{
+  0%{opacity:0;}
+  50%{opacity:1;}
+  100%{opacity:0;}
+}
