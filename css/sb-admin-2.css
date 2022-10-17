@@ -11282,11 +11282,11 @@ body.sidebar-toggled footer.sticky-footer {
 
 p.typing-txt{
   position:relative;
-  font-size: .7rem
+  font-size: 0.8rem
   width: 70px;
   height: 15px; 
   overflow: hidden;
-  animation: typingAni 3s steps(5, end) 1;
+  animation: typingAni 0.2s steps(5, end) 1;
 } 
 p.typing-txt::after{
   position: absolute; 
