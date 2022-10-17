@@ -17,6 +17,10 @@ var myPieChart = new Chart(ctx, {
     }],
   },
   options: {
+    title: {
+      display: true,
+      text: 'Weights'},
+    
     maintainAspectRatio: false,
     tooltips: {
       backgroundColor: "rgb(255,255,255)",
