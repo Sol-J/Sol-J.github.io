@@ -393,7 +393,7 @@
                                         <div class="font-weight-bold text-primary text-uppercase mb-1"></div>                                              
                                         <div class="font-weight-bold text-primary text-uppercase mb-1">Decision Confidence</div>
                                         <div class="dropdown mb-4">
-                                            <button onclick="dp_menu()" class="btn btn-primary dropdown-toggle" type="button"
+                                            <button class="btn btn-primary dropdown-toggle" type="button"
                                                 id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
                                                 aria-expanded="false">
                                                 Ratings
@@ -407,18 +407,12 @@
                                                 <a class="dropdown-item" href="#">5 (Completely Confident)</a>
                                             </div>
                                         </div>
-                                            <script>
-                                                function dp_menu(){
-                                                    let click = document.getElementById("dropdown-item");
-                                                    if(click.style.display === "none"){
-                                                        click.style.display = "block";
+                                        let links = document.querySelectorAll('.dropdown-item')
+                                        links.forEach(element => element.addEventListener("click", function () {
+                                            let text = element.innerText
+                                            document.getElementById('dropdownMenuButton').innerText = text
+                                        }))
 
-                                                    }else{
-                                                        click.style.display = "none";
-
-                                                    }
-                                                }
-                                            </script>
                                     </div>
                                 </div>
                             </div>
