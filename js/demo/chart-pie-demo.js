@@ -28,7 +28,7 @@ var myPieChart = new Chart(ctx, {
       displayColors: false,
       caretPadding: 10,
     },
-    cutoutPercentage: 80,
+    cutoutPercentage: 50,
     legend: {position:'bottom', padding:5, labels: {pointStyle:'circle', usePointStyle:true}},
   },
 });
