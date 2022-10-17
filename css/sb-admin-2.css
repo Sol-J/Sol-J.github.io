@@ -9692,21 +9692,17 @@ a.text-dark:hover, a.text-dark:focus {
   color: inherit !important;
 }
 
-p.typing-txt{
-  display: none;
+.text {
+  display: table-cell;
+  vertical-align: middle;
+  border-right: 0.05em solid black;
+  animation: cursor 0.5s ease infinite;
 }
 
-.typing {  
-/*position: absolute;*/ 
-  display: inline-block; 
-  animation-name: cursor; 
-  animation-duration: 0.3s; 
-  animation-iteration-count: infinite; 
- } 
- @keyframes cursor{ 
-  0%{border-right: 1px solid #fff} 
-  50%{border-right: 1px solid #000} 
-  100%{border-right: 1px solid #fff} 
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
 }
 
 .visible {
