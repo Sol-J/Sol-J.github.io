@@ -27,10 +27,10 @@ var myPieChart = new Chart(ctx, {
       bodyFontColor: "#858796",
       borderColor: '#dddfeb',
       borderWidth: 1,
-      xPadding: 15,
-      yPadding: 15,
+      xPadding: 10,
+      yPadding: 10,
       displayColors: false,
-      caretPadding: 10,
+      caretPadding: 7,
     },
     cutoutPercentage: 80,
 
