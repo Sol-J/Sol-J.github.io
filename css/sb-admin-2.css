@@ -10875,13 +10875,13 @@ a:focus {
 }
 
 .bg-login-image {
-  background: url("../img/main.jpeg");
+  background: url("./img/main.jpeg");
   background-position: center;
   background-size: cover;
 }
 
 .bg-login {
-  background: url("../img/main.jpeg");
+  background: url("https://raw.githubusercontent.com/Sol-J/Sol-J.github.io/master/img/main.jpeg");
   background-position: center;
   background-size: cover;
 }
