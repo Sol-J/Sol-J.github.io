@@ -19,6 +19,7 @@ var myPieChart = new Chart(ctx, {
   options: {
     legend: {
       position: 'right',
+      align: 'middle'
     },
     
     maintainAspectRatio: false,
