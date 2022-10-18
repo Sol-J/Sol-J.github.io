@@ -33,6 +33,10 @@ var myPieChart = new Chart(ctx, {
       caretPadding: 7,
     },
     cutoutPercentage: 80,
+    
+    legend: {
+      positions: 'right',
+    },
 
   },
 });
