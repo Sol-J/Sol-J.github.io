@@ -10875,13 +10875,13 @@ a:focus {
 }
 
 .bg-login-image {
-  background: url("images/main.jpeg");
+  background: url("/img/main.jpeg");
   background-position: center;
   background-size: cover;
 }
 
 .bg-login {
-  background: url("img/main.jpeg");
+  background: url("/img/main.jpeg");
   background-position: center;
   background-size: cover;
 }
