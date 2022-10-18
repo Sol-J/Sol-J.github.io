@@ -384,58 +384,56 @@
                         timer = setInterval("CountDown()", 1000);
                     </script> 
                                 
-                            <!-- Intent -->
-                            <div class="col-xl-12 col-md-12 mb-4">
-                                <div class="card border-left-primary shadow h-100 py-2">
-                                    <div class="card-body">
-                                        <div class="row no-gutters align-items-center">
-                                            <div class="col mr-auto">
-                                                <div class="font-weight-bold text-primary text-uppercase mb-1">
-                                                    Decision</div>
-                                            </div>
-                                        </div>
-                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"></div>
-                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"></div>
-                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"></div>
-                                        <label><input TYPE='radio' name='group1' value='date' />&nbsp;&nbsp;배송 날짜&nbsp;&nbsp;&nbsp;</label>
-                                        <label><input TYPE='radio' name='group1' value='method' />&nbsp;&nbsp;배송 방법&nbsp;&nbsp;&nbsp;</label>
-                                        <label><input TYPE='radio' name='group1' value='price' />&nbsp;&nbsp;배송 비용&nbsp;&nbsp;&nbsp;</label>
-                                        <label><input TYPE='radio' name='group1' value='error' />&nbsp;&nbsp;배송 오류&nbsp;&nbsp;&nbsp;</label>
-                                        <label><input TYPE='radio' name='group1' value='verify' />&nbsp;&nbsp;배송 확인&nbsp;&nbsp;&nbsp;</label>
-                                        <label><input TYPE='radio' name='group1' value='address' />&nbsp;&nbsp;배송 지역&nbsp;&nbsp;&nbsp;</label>
-                                        <label><input TYPE='radio' name='group1' value='company' />&nbsp;&nbsp;배송 택배사&nbsp;&nbsp;&nbsp;</label>
-                                      
-                                        <div class="font-weight-bold text-primary text-uppercase mb-1"></div>                                              
-                                        <div class="font-weight-bold text-primary text-uppercase mb-1">Decision Confidence</div>
-                                        <div class="dropdown mb-4">
-                                            <button class="btn btn-primary dropdown-toggle" type="button"
-                                                id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                                                aria-expanded="false">
-                                                Ratings
-                                            </button>
-                                            <div class="dropdown-menu animated--fade-in"
-                                                aria-labelledby="dropdownMenuButton">
-                                                <a class="dropdown-item" href="#">1 (Not Confident at all)</a>
-                                                <a class="dropdown-item" href="#">2 (Slightly Confident)</a>
-                                                <a class="dropdown-item" href="#">3 (Somewhat Confident)</a>
-                                                <a class="dropdown-item" href="#">4 (Fairly Confident)</a>
-                                                <a class="dropdown-item" href="#">5 (Completely Confident)</a>
-                                            </div>
-                                        </div>
-                                        <script>
-                                        let links = document.querySelectorAll('.dropdown-item')
-                                        links.forEach(element => element.addEventListener("click", function () {
-                                            let text = element.innerText
-                                            document.getElementById('dropdownMenuButton').innerText = text
-                                        }))
-                                        </script>
+                    <!-- Intent -->
+                    <div class="col-xl-12 col-md-12 mb-4">
+                        <div class="card border-left-primary shadow h-100 py-2">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-auto">
+                                        <div class="font-weight-bold text-primary text-uppercase mb-1">
+                                            Decision</div>
                                     </div>
                                 </div>
-                            </div>
+                                <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"></div>
+                                <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"></div>
+                                <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"></div>
+                                <label><input TYPE='radio' name='group1' value='date' />&nbsp;&nbsp;배송 날짜&nbsp;&nbsp;&nbsp;</label>
+                                <label><input TYPE='radio' name='group1' value='method' />&nbsp;&nbsp;배송 방법&nbsp;&nbsp;&nbsp;</label>
+                                <label><input TYPE='radio' name='group1' value='price' />&nbsp;&nbsp;배송 비용&nbsp;&nbsp;&nbsp;</label>
+                                <label><input TYPE='radio' name='group1' value='error' />&nbsp;&nbsp;배송 오류&nbsp;&nbsp;&nbsp;</label>
+                                <label><input TYPE='radio' name='group1' value='verify' />&nbsp;&nbsp;배송 확인&nbsp;&nbsp;&nbsp;</label>
+                                <label><input TYPE='radio' name='group1' value='address' />&nbsp;&nbsp;배송 지역&nbsp;&nbsp;&nbsp;</label>
+                                <label><input TYPE='radio' name='group1' value='company' />&nbsp;&nbsp;배송 택배사&nbsp;&nbsp;&nbsp;</label>
 
-                        </div>                        
-                    </div>                    
-                </div>
+                                <div class="font-weight-bold text-primary text-uppercase mb-1"></div>                                              
+                                <div class="font-weight-bold text-primary text-uppercase mb-1">Decision Confidence</div>
+                                <div class="dropdown mb-4">
+                                    <button class="btn btn-primary dropdown-toggle" type="button"
+                                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+                                        Ratings
+                                    </button>
+                                    <div class="dropdown-menu animated--fade-in"
+                                        aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">1 (Not Confident at all)</a>
+                                        <a class="dropdown-item" href="#">2 (Slightly Confident)</a>
+                                        <a class="dropdown-item" href="#">3 (Somewhat Confident)</a>
+                                        <a class="dropdown-item" href="#">4 (Fairly Confident)</a>
+                                        <a class="dropdown-item" href="#">5 (Completely Confident)</a>
+                                    </div>
+                                </div>
+                                <script>
+                                let links = document.querySelectorAll('.dropdown-item')
+                                links.forEach(element => element.addEventListener("click", function () {
+                                    let text = element.innerText
+                                    document.getElementById('dropdownMenuButton').innerText = text
+                                }))
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+
+
                 <!-- /.container-fluid -->
 
             </div>
