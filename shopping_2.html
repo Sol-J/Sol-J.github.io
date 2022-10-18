@@ -266,17 +266,17 @@
                         const btn = document.querySelector(.btn-primary');
                         var maxtime = 5; // 초단위
                         function CountDown() {
-                            btn.addEventListener('click', ()) => {
-                                if (maxtime >= 0) {
+                            if (maxtime >= 0) {
 
-                                    --maxtime;
-                                } else{
-                                    document.getElementById("001").style.display="none";
-                                    document.getElementById("002").style.display="block";
-                                    clearInterval(timer);
-                                }
-                        }}
-                        timer = setInterval("CountDown()", 1000);
+                                --maxtime;
+                            } else{
+                                document.getElementById("001").style.display="none";
+                                document.getElementById("002").style.display="block";
+                                clearInterval(timer);
+                            }
+                        }
+                        btn.addEventListener('click', ()) => {
+                            timer = setInterval("CountDown()", 1000);}
                     </script>  
 
                     <!-- Content Row -->
