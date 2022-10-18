@@ -262,20 +262,20 @@
                             </div>
                         </div>   
                         
-                        <script type="text/javascript"> 
-                            var maxtime = 5; // 초단위
-                            function CountDown() {
-                                if (maxtime >= 0) {
+                    <script type="text/javascript"> 
+                        var maxtime = 5; // 초단위
+                        function CountDown() {
+                            if (maxtime >= 0) {
 
-                                    --maxtime;
-                                } else{
-                                    document.getElementById("001").style.display="none";
-                                    document.getElementById("002").style.display="block";
-                                    clearInterval(timer);
-                                }
+                                --maxtime;
+                            } else{
+                                document.getElementById("001").style.display="none";
+                                document.getElementById("002").style.display="block";
+                                clearInterval(timer);
                             }
-                            timer = setInterval("CountDown()", 1000);
-                        </script>  
+                        }
+                        timer = setInterval("CountDown()", 1000);
+                    </script>  
 
                     <!-- Content Row -->
 
