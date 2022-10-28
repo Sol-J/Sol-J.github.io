@@ -70,6 +70,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                         isChecked = !isChecked; // Flips the state to the opposite of what it was. Used above too.
                                         });
                                         </script>
+                                        <script>
+                                        const input = document.querySelector('input');
+                                        let isChecked = JSON.parse(input.getAttribute('aria-checked')); // Converts initial value to Boolean
+                                        input.addEventListener('click', function () {
+                                        this.setAttribute('aria-checked', !isChecked); // "this" being the clicked element and since we're changing its attribute
+                                        isChecked = !isChecked; // Flips the state to the opposite of what it was. Used above too.
+                                        });
+                                        </script>
                                         <input type="submit" value="Submit">
                                         
                                     </form>
