@@ -66,7 +66,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                         <label for="gender">Gender : </label>
                                         <input type="radio" name="gender" id='entry.23509137' data-value="Male" aria-checked="false"/>Male
                                         <input type="radio" name="gender" id='entry.23509137' data-value="Female" aria-checked="false"/>Female<br /><br />
+                                        <script>
+                                        const div = document.querySelector('input')
+                                        div.addEventListener('click',function(){
+                                        switch(div.getAttribute('aria-checked')){
+                                        case 'true': 
+                                        div.setAttribute('aria-checked','false')
+                                        break;
+                                        case 'false':
+                                        div.setAttribute('aria-checked','true')
+                                        break;
+                                        }
+                                        })
+                                        </script>
                                         <input type="submit" value="Submit">
+                                        
                                     </form>
 
                                     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
