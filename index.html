@@ -61,18 +61,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                     <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSfd4PRr-x8rgB7xfxfkQwM12qz8Jy8kuOrjWCXCFCA_-NRBow/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
                                         <label for="gender">Gender : </label>
                                         <input type="radio" name="gender" id='entry.23509137' data-value="Male" aria-checked="false"/>Male
-                                        <script>
-                                        const input = document.querySelector('input');
-                                        let isChecked = JSON.parse(div.getAttribute('aria-checked')); // Converts initial value to Boolean
-                                        input.addEventListener('click', function () {
-                                        this.setAttribute('aria-checked', !isChecked); // "this" being the clicked element and since we're changing its attribute
-                                        isChecked = !isChecked; // Flips the state to the opposite of what it was. Used above too.
-                                        });
-                                        </script>
                                         <input type="radio" name="gender" id='entry.23509137' data-value="Female" aria-checked="false"/>Female<br /><br />
                                         <script>
                                         const input = document.querySelector('input');
-                                        let isChecked = JSON.parse(div.getAttribute('aria-checked')); // Converts initial value to Boolean
+                                        let isChecked = JSON.parse(input.getAttribute('aria-checked')); // Converts initial value to Boolean
                                         input.addEventListener('click', function () {
                                         this.setAttribute('aria-checked', !isChecked); // "this" being the clicked element and since we're changing its attribute
                                         isChecked = !isChecked; // Flips the state to the opposite of what it was. Used above too.
