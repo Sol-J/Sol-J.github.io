@@ -68,29 +68,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                         <input type="radio" name="entry.23509137" id='entry.23509137' value="address"/>&nbsp;&nbsp;배송 날짜&nbsp;&nbsp;
                                         <input type="radio" name="entry.23509137" id='entry.23509137' value="company"/>&nbsp;&nbsp;배송 방법&nbsp;&nbsp;<br />
                                         
-                                        <div class="dropdown mb-4">
-                                            <button class="btn btn-primary dropdown-toggle" type="button"
-                                                id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                                                aria-expanded="false">
-                                                Ratings
-                                            </button>
-                                            <div class="dropdown-menu animated--fade-in"
-                                                aria-labelledby="dropdownMenuButton">
-                                                <a class="dropdown-item" href="#" name="entry.1805302009" id="entry.1805302009" value="level1">1 (Not Confident at all)</a>
-                                                <a class="dropdown-item" href="#" name="entry.1805302009" id="entry.1805302009" value="level2">2 (Slightly Confident)</a>
-                                                <a class="dropdown-item" href="#" name="entry.1805302009" id="entry.1805302009" value="level3">3 (Somewhat Confident)</a>
-                                                <a class="dropdown-item" href="#" name="entry.1805302009" id="entry.1805302009" value="level4">4 (Fairly Confident)</a>
-                                                <a class="dropdown-item" href="#" name="entry.1805302009" id="entry.1805302009" value="level5">5 (Completely Confident)</a>
-                                            </div>
-                                        </div>
-                                        <script>
-                                        let links = document.querySelectorAll('.dropdown-item')
-                                        links.forEach(element => element.addEventListener("click", function () {
-                                            let text = element.innerText
-                                            document.getElementById('dropdownMenuButton').innerText = text
-                                        }))
-                                        </script>
-                                        
+                                        <select name="confidence">
+                                            <option name="entry.1805302009" id="entry.1805302009" value="level1">1 (Not Confident at all)
+                                            <option name="entry.1805302009" id="entry.1805302009" value="level2">2 (Not Confident at all)
+                                            <option name="entry.1805302009" id="entry.1805302009" value="level3">3 (Not Confident at all)
+                                            <option name="entry.1805302009" id="entry.1805302009" value="level4">4 (Not Confident at all)
+                                            <option name="entry.1805302009" id="entry.1805302009" value="level5">5 (Not Confident at all)
+                                        </select> 
+
                                         <input type="submit" value="Submit">
                                     </form>
 
