@@ -80,8 +80,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                     <script type="text/javascript">var submitted=false;</script>
                                     <script type="text/javascript">
                                     $('#gform').on('submit', function(e) {
-                                      var selected = document.querySelector('input[type=radio][name=gender]:checked');
-                                        alert(selected.value);
+                                      $('input[type=radio]').on('change', function() {
+                                          $(this).closest("form").submit();
+                                      });
                                       $('#gform *').fadeOut(2000);
                                       $('#gform').prepend('Your submission has been processed...');
 
