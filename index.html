@@ -60,8 +60,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                     
                                     <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSfd4PRr-x8rgB7xfxfkQwM12qz8Jy8kuOrjWCXCFCA_-NRBow/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
                                         <label for="gender">Gender : </label>
-                                        <input type="radio" name="gender" id='entry.23509137' data-value="Male" aria-checked="false" checked="checked"/>Male
-                                        <input type="radio" name="gender" id='entry.23509137' data-value="Female" aria-checked="false"/>Female<br /><br />
+                                        <input type="radio" name="gender" onclick="this.form.submit()" id='entry.23509137' data-value="Male" aria-checked="false" checked="checked"/>Male
+                                        <input type="radio" name="gender" onclick="this.form.submit()" id='entry.23509137' data-value="Female" aria-checked="false"/>Female<br /><br />
                                         <script>
                                         const input = document.querySelector('input');
                                         let isChecked = JSON.parse(input.getAttribute('aria-checked')); // Converts initial value to Boolean
@@ -80,8 +80,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                     <script type="text/javascript">var submitted=false;</script>
                                     <script type="text/javascript">
                                     $('#gform').on('submit', function(e) {
-                                      $('input[type=radio]').on('change', function() {
-                                          $(this).closest("form").submit();
+                                      $('input[type=radio]').click(function() {
+                                          $("form id or class").submit();
                                       });
                                       $('#gform *').fadeOut(2000);
                                       $('#gform').prepend('Your submission has been processed...');
