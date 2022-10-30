@@ -274,9 +274,10 @@
                             } else{
                                 document.getElementById("001").style.display="none";
                                 document.getElementById("002").style.display="block";
-                                clearInterval(setInterval("CountDown()", 1000));
+                                clearInterval(timer);
                             }
                         }
+                        const timer = setInterval("CountDown()", 1000);
                         // btn.forEach(button => button.addEventListener('click', CountDown));
                         
                     </script>  
