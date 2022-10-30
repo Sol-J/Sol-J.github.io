@@ -294,10 +294,8 @@
                         </div>
                     </div>
                         
-                    <!-- Content Row -->
+                    <!-- Utterance 1 -->
                     <div class="row">
-                        
-                        <!-- Utterance -->
                         <div class="col-xl-12 col-md-12 mb-4">
                             <div class="card border-left-primary shadow h-100 py-2">
                                 <div class="card-body">
@@ -353,7 +351,7 @@
                     </div>
                    
 
-                    <!-- Content Row -->
+                    <!-- Response -->
                     <div class="row">
                         <div id="002" class="col-xl-12 col-md-12 mb-4" style="display:none;">
 
@@ -441,7 +439,69 @@
                         
                     </script>  
 
-                   
+                    <!-- Utterance 2 -->
+                    <a class="btn btn-primary btn-icon-split" onclick="onDisplay();">
+                        <span class="text-xs">&nbsp;&nbsp;&nbsp;다음 문제&nbsp;&nbsp;&nbsp;</span>
+                    </a>
+                    <div class="row" id="noneDiv" style="display: none;">
+                        <div class="col-xl-12 col-md-12 mb-4">
+                            <div class="card border-left-primary shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-auto">
+                                            <div class="font-weight-bold text-primary text-uppercase mb-1">
+                                                Customer Utterance</div>
+
+                                        
+                                            <a class="btn btn-primary btn-icon-split" onclick="start(); play();" id="btn1">
+                                                <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;Click the button to listen&nbsp;&nbsp;&nbsp;</span>
+                                            </a> 
+                                            <audio id="audio" src="audio/sample.wav"></audio>
+                                            <script>
+                                                function play(){
+                                                var audio = document.getElementById("audio");
+                                                audio.play();
+                                                }
+                                            </script>
+                                            
+                                            <div class="text"><br></div>
+                                            <script type="text/javascript">    
+                                                const btn = document.getElementById('btn1');
+                                                // const btn = document.querySelector('.btn-primary');
+                                                const text = document.querySelector('.text');
+                                                const contents = '\n 서울 주소 이사 후 변경 예정이고 날짜 지정 5월 30일로 이전 집 주소 써서 주문했는데 배송 예정일은 17일로 뜨는데 17일 전에만 주소 바꾸면 되는 건가요?'
+                                                let saveInterval;
+
+                                                btn.addEventListener('click', () => {
+                                                  let index = 0; // contents의 초기 인덱스
+                                                  text.innerHTML = ''; // typingSpan 비우기
+                                                  clearInterval(saveInterval); // 기존 interval 종료
+
+                                                  saveInterval = setInterval(() => {
+                                                    if(index >= contents.length - 1) { // index가 범위에 도달될 경우 interval 종료
+                                                      clearInterval(saveInterval);
+                                                    }
+
+                                                    if(contents[index] === '\n') { // 개행문자 일 경우 <br /> 삽입
+                                                      text.innerHTML += '<br />';
+                                                      index++;
+                                                    } else {
+                                                      text.innerHTML += contents[index++]; // contents문자들을 순서대로 넣기
+                                                    }
+                                                  }, 50) // 0.05초마다 글자 입력
+                                                })
+                                            </script>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+                        function onDisplay() {
+                            $('#noneDiv').show();
+                        }
+                    </script>
 
                 <!-- /.container-fluid -->
 
