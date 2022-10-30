@@ -269,13 +269,15 @@
                         var countdownId = 0;
                         
                         function start() {
-                            countdownId = setInterval("CountDown()", 1000);
+                            countdownId = setInterval("countdown()", 1000);
                         }
-                        function CountDown() {
+                        
+                        function countdown() {
                             if (maxtime > 0) {
 
                                 maxtime = maxtime - 1;
-                            } else{
+                            } 
+                            else {
                                 document.getElementById("001").style.display="none";
                                 document.getElementById("002").style.display="block";
                                 clearInterval(countdownId);
