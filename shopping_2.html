@@ -202,10 +202,17 @@
                                                 Customer Utterance</div>
 
                                         
-                                            <a href="#" class="btn btn-primary btn-icon-split" onclick="start()" id="btn1">
+                                            <a href="#" class="btn btn-primary btn-icon-split" onclick="start(); play();" id="btn1">
                                                 <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;Click the button to listen&nbsp;&nbsp;&nbsp;</span>
                                             </a> 
-                                        
+                                            <audio id="audio" src="audio/sample.wav"></audio>
+                                            <script>
+                                                function play(){
+                                                var audio = document.getElementById("audio");
+                                                audio.play();
+                                                }
+                                            </script>
+                                            
                                             <div class="text"><br></div>
                                             <script type="text/javascript">    
                                                 const btn = document.getElementById('btn1');
