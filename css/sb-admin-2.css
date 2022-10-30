@@ -295,7 +295,7 @@ input[type="checkbox"] {
   padding: 0;
 }
 
-input[type=submit]{
+input[type="submit"]{
                  width: 15px;
                  position: absolute;
                  right: 20px;
