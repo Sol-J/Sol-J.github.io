@@ -296,10 +296,10 @@
                                             <a class="btn btn-primary btn-icon-split" onclick="start(); play();" id="btn1">
                                                 <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;Click the button to listen&nbsp;&nbsp;&nbsp;</span>
                                             </a> 
-                                            <audio id="audio" src="audio/sample.wav"></audio>
+                                            <audio id="audio1" src="audio/sample.wav"></audio>
                                             <script>
                                                 function play(){
-                                                var audio = document.getElementById("audio");
+                                                var audio = document.getElementById("audio1");
                                                 audio.play();
                                                 }
                                             </script>
@@ -447,18 +447,18 @@
                                                 Customer Utterance</div>
 
                                         
-                                            <a class="btn btn-primary btn-icon-split" onclick="start(); play();" id="btn2">
+                                            <a id="btn2" class="btn btn-primary btn-icon-split" onclick="start(); play();">
                                                 <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;Click the button to listen&nbsp;&nbsp;&nbsp;</span>
                                             </a> 
-                                            <audio id="audio" src="audio/sample.wav"></audio>
+                                            <audio id="audio2" src="audio/sample.wav"></audio>
                                             <script>
                                                 function play(){
-                                                var audio = document.getElementById("audio");
+                                                var audio = document.getElementById("audio2");
                                                 audio.play();
                                                 }
                                             </script>
                                             
-                                            <div class="text" id="text2"><br></div>
+                                            <div id="text2" class="text"><br></div>
                                             <script type="text/javascript">    
                                                 const btn = document.getElementById("btn2");
                                                 const text = document.getElementById("text2");
@@ -498,7 +498,7 @@
 
                     <!-- Response 2-->
                     <div class="row">
-                        <div id="002" class="col-xl-12 col-md-12 mb-4" style="display:none;">
+                        <div id="005" class="col-xl-12 col-md-12 mb-4" style="display:none;">
 
                             <!-- XAI (1) -->
                             <div class="card border-left-primary shadow h-100 py-2">
@@ -514,7 +514,7 @@
                         </div>
 
                         <!-- Intent -->
-                        <div id="003" class="col-xl-12 col-md-12 mb-4" style="display:none;">
+                        <div id="006" class="col-xl-12 col-md-12 mb-4" style="display:none;">
                             <div class="card border-left-primary shadow h-100 py-2">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
@@ -563,7 +563,7 @@
                         </div>
                     </div>
                     
-                    <a id="004" class="btn btn-primary btn-icon-split" onclick="onDisplay();" style="display:none;">
+                    <a id="007" class="btn btn-primary btn-icon-split" onclick="onDisplay();" style="display:none;">
                         <span class="text-lg">&nbsp;&nbsp;&nbsp;다음 문제&nbsp;&nbsp;&nbsp;</span>
                     </a>
                     
@@ -581,9 +581,9 @@
                                 document.getElementById("cdDiv").innerHTML = maxtime;
                             } 
                             else {
-                                document.getElementById("002").style.display="block";
-                                document.getElementById("003").style.display="block";
-                                document.getElementById("004").style.display="block";
+                                document.getElementById("005").style.display="block";
+                                document.getElementById("006").style.display="block";
+                                document.getElementById("007").style.display="block";
                                 clearInterval(countdownId);
                             }
                         }
