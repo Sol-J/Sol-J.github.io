@@ -280,18 +280,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-12 col-md-12 mb-4">
-                            <div class="card bg-primary text-white shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-auto">
-                                            <div class="font-weight-bold text-uppercase mb-1">
-                                                ● 1번 문항 </div>
-                                        </div>
-                                    </div>                                 
-                                </div>
-                            </div>
-                        </div>
                     </div>
                         
                     <!-- Utterance 1 -->
@@ -417,6 +405,11 @@
                             </div>
                         </div>
                     </div>
+                    
+                    <a id="004" class="btn btn-primary btn-icon-split" onclick="onDisplay();">
+                        <span class="text-lg">&nbsp;&nbsp;&nbsp;다음 문제&nbsp;&nbsp;&nbsp;</span>
+                    </a>
+                    
                     <script type="text/javascript"> 
                         var maxtime = 5; // 초단위
                         var countdownId = 0;
@@ -433,6 +426,7 @@
                             else {
                                 document.getElementById("002").style.display="block";
                                 document.getElementById("003").style.display="block";
+                                document.getElementById("004").style.display="block";
                                 clearInterval(countdownId);
                             }
                         }
@@ -440,9 +434,9 @@
                     </script>  
 
                     <!-- Utterance 2 -->
-                    <a class="btn btn-primary btn-icon-split" onclick="onDisplay();">
-                        <span class="text-xs">&nbsp;&nbsp;&nbsp;다음 문제&nbsp;&nbsp;&nbsp;</span>
-                    </a>
+
+                    
+                    <br>
                     <div class="row" id="noneDiv" style="display: none;">
                         <div class="col-xl-12 col-md-12 mb-4">
                             <div class="card border-left-primary shadow h-100 py-2">
@@ -453,7 +447,7 @@
                                                 Customer Utterance</div>
 
                                         
-                                            <a class="btn btn-primary btn-icon-split" onclick="start(); play();" id="btn1">
+                                            <a class="btn btn-primary btn-icon-split" onclick="start(); play();" id="btn2">
                                                 <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;Click the button to listen&nbsp;&nbsp;&nbsp;</span>
                                             </a> 
                                             <audio id="audio" src="audio/sample.wav"></audio>
@@ -466,7 +460,7 @@
                                             
                                             <div class="text"><br></div>
                                             <script type="text/javascript">    
-                                                const btn = document.getElementById('btn1');
+                                                const btn = document.getElementById('btn2');
                                                 // const btn = document.querySelector('.btn-primary');
                                                 const text = document.querySelector('.text');
                                                 const contents = '\n 서울 주소 이사 후 변경 예정이고 날짜 지정 5월 30일로 이전 집 주소 써서 주문했는데 배송 예정일은 17일로 뜨는데 17일 전에만 주소 바꾸면 되는 건가요?'
