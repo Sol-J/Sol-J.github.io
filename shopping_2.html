@@ -265,9 +265,6 @@
                     <script type="text/javascript"> 
                                 
                         const btn = document.querySelector('.btn-primary');
-                        btn.addEventListener('click', () => {
-                        CountDown();
-                        }
                         
                         var maxtime = 5; // 초단위
                         function CountDown() {
@@ -277,11 +274,10 @@
                             } else{
                                 document.getElementById("001").style.display="none";
                                 document.getElementById("002").style.display="block";
-                                clearInterval(timer);
+                                clearInterval(setInterval("CountDown()", 1000));
                             }
                         }
                         // btn.forEach(button => button.addEventListener('click', CountDown));
-                        timer = setInterval("CountDown()", 1000);
                         
                     </script>  
 
