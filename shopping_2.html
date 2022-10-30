@@ -263,27 +263,6 @@
                             </div>
                         </div>   
                     </div>
-                    <script type="text/javascript"> 
-                        var maxtime = 5; // 초단위
-                        var countdownId = 0;
-                        
-                        function start() {
-                            countdownId = setInterval("countdown()", 1000);
-                        }
-                        
-                        function countdown() {
-                            if(maxtime > 0) {
-                                maxtime = maxtime - 1;
-                                document.getElementById("cdDiv").innerHTML = maxtime;
-                            } 
-                            else {
-                                document.getElementById("001").style.display="none";
-                                document.getElementById("002").style.display="block";
-                                clearInterval(countdownId);
-                            }
-                        }
-                        
-                    </script>  
 
                     <!-- Content Row -->
 
@@ -349,6 +328,27 @@
                             </div>
                         </div>
                     </div>
+                    <script type="text/javascript"> 
+                        var maxtime = 5; // 초단위
+                        var countdownId = 0;
+                        
+                        function start() {
+                            countdownId = setInterval("countdown()", 1000);
+                        }
+                        
+                        function countdown() {
+                            if(maxtime > 0) {
+                                maxtime = maxtime - 1;
+                                document.getElementById("cdDiv").innerHTML = maxtime;
+                            } 
+                            else {
+                                document.getElementById("001").style.display="none";
+                                document.getElementById("002").style.display="block";
+                                clearInterval(countdownId);
+                            }
+                        }
+                        
+                    </script>  
 
                    
 
