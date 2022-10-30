@@ -203,7 +203,7 @@
 
                                         
                                             <a href="#" class="btn btn-primary btn-icon-split" id="btn1">
-                                                <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;Click the button to listen&nbsp;&nbsp;&nbsp;</span>
+                                                <span class="text-xs" id="btn11">&nbsp;▶︎&nbsp;&nbsp;Click the button to listen&nbsp;&nbsp;&nbsp;</span>
                                             </a> 
                                         
                                             <div class="text"><br></div>
@@ -274,8 +274,8 @@
                         
                         function countdown() {
                             if (maxtime > 0) {
-
                                 maxtime = maxtime - 1;
+                                document.getElementById("btn11".innerHTML = maxtime;
                             } 
                             else {
                                 document.getElementById("001").style.display="none";
