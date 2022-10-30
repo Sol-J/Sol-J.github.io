@@ -209,8 +209,24 @@
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-auto">
-                                            <div class="font-weight-bold text-primary text-uppercase mb-1">
-                                                기초 정보 수집</div>
+                                            <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSfd4PRr-x8rgB7xfxfkQwM12qz8Jy8kuOrjWCXCFCA_-NRBow/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+                                                <label for="gender">귀하의 성별은 무엇입니까?</label><br>
+                                                <input type="radio" name="entry.23509137" id='entry.23509137' value="man"/>&nbsp;&nbsp;남성&nbsp;&nbsp;
+                                                <input type="radio" name="entry.23509137" id='entry.23509137' value="woman"/>&nbsp;&nbsp;여성&nbsp;&nbsp;<br />
+                                                <input type="submit" value="Submit">
+                                            </form>
+
+                                            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+
+                                            <script src="assets/js/jquery.min.js"></script>
+                                            <script type="text/javascript">var submitted=false;</script>
+                                            <script type="text/javascript">
+                                            $('#gform').on('submit', function(e) {
+                                              $('#gform *').fadeOut(2000);
+                                              $('#gform').prepend('Your submission has been processed...');
+
+                                              });
+                                            </script>  
                                         </div>
                                     </div>                                 
                                 </div>
