@@ -263,7 +263,11 @@
                         </div>   
                     </div>
                     <script type="text/javascript"> 
+                                
                         const btn = document.querySelector('.btn-primary');
+                        btn.onclick = function (event) {
+                            CountDown();
+                        };
                         
                         var maxtime = 5; // 초단위
                         function CountDown() {
@@ -276,7 +280,7 @@
                                 clearInterval(timer);
                             }
                         }
-                        btn.forEach(button => button.addEventListener('click', CountDown));
+                        // btn.forEach(button => button.addEventListener('click', CountDown));
                         timer = setInterval("CountDown()", 1000);
                               
                     </script>  
