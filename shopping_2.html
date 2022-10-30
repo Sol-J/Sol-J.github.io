@@ -202,7 +202,7 @@
                                                 Customer Utterance</div>
 
                                         
-                                            <a href="#" class="btn btn-primary btn-icon-split">
+                                            <a href="#" class="btn btn-primary btn-icon-split" id="btn1">
                                                 <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;Click the button to listen&nbsp;&nbsp;&nbsp;</span>
                                             </a> 
                                         
@@ -276,7 +276,7 @@
                             }
                         }
                         
-                        const btn = document.querySelector('.btn-primary');
+                        const btn = document.getElementById("btn1");
                        
                         timer = setInterval("CountDown()", 1000);
                         // btn.forEach(button => button.addEventListener('click', CountDown));
