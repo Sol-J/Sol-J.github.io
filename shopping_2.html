@@ -339,7 +339,7 @@
                     </div>
                    
 
-                    <!-- Response -->
+                    <!-- Response 1-->
                     <div class="row">
                         <div id="002" class="col-xl-12 col-md-12 mb-4" style="display:none;">
 
@@ -496,6 +496,100 @@
                         }
                     </script>
 
+                    <!-- Response 2-->
+                    <div class="row">
+                        <div id="002" class="col-xl-12 col-md-12 mb-4" style="display:none;">
+
+                            <!-- XAI (1) -->
+                            <div class="card border-left-primary shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-auto">
+                                            <div class="font-weight-bold text-primary text-uppercase mb-1">
+                                                AI의 예측 결과 : 배송 지역</div>
+                                        </div>
+                                    </div>                                 
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Intent -->
+                        <div id="003" class="col-xl-12 col-md-12 mb-4" style="display:none;">
+                            <div class="card border-left-primary shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-auto">
+                                            <div class="font-weight-bold text-primary text-uppercase mb-1">
+                                                Decision</div>
+                                        </div>
+                                    </div>
+                                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"></div>
+                                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"></div>
+                                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"></div>
+                                    <label><input TYPE='radio' name='group1' value='date' />&nbsp;&nbsp;배송 날짜&nbsp;&nbsp;&nbsp;</label>
+                                    <label><input TYPE='radio' name='group1' value='method' />&nbsp;&nbsp;배송 방법&nbsp;&nbsp;&nbsp;</label>
+                                    <label><input TYPE='radio' name='group1' value='price' />&nbsp;&nbsp;배송 비용&nbsp;&nbsp;&nbsp;</label>
+                                    <label><input TYPE='radio' name='group1' value='error' />&nbsp;&nbsp;배송 오류&nbsp;&nbsp;&nbsp;</label>
+                                    <label><input TYPE='radio' name='group1' value='verify' />&nbsp;&nbsp;배송 확인&nbsp;&nbsp;&nbsp;</label>
+                                    <label><input TYPE='radio' name='group1' value='address' />&nbsp;&nbsp;배송 지역&nbsp;&nbsp;&nbsp;</label>
+                                    <label><input TYPE='radio' name='group1' value='company' />&nbsp;&nbsp;배송 택배사&nbsp;&nbsp;&nbsp;</label>
+
+                                    <div class="font-weight-bold text-primary text-uppercase mb-1"></div>                                              
+                                    <div class="font-weight-bold text-primary text-uppercase mb-1">Decision Confidence</div>
+                                    <div class="dropdown mb-4">
+                                        <button class="btn btn-primary dropdown-toggle" type="button"
+                                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            Ratings
+                                        </button>
+                                        <div class="dropdown-menu animated--fade-in"
+                                            aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item">1 (Not Confident at all)</a>
+                                            <a class="dropdown-item">2 (Slightly Confident)</a>
+                                            <a class="dropdown-item">3 (Somewhat Confident)</a>
+                                            <a class="dropdown-item">4 (Fairly Confident)</a>
+                                            <a class="dropdown-item">5 (Completely Confident)</a>
+                                        </div>
+                                    </div>
+                                    <script>
+                                    let links = document.querySelectorAll('.dropdown-item')
+                                    links.forEach(element => element.addEventListener("click", function () {
+                                        let text = element.innerText
+                                        document.getElementById('dropdownMenuButton').innerText = text
+                                    }))
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a id="004" class="btn btn-primary btn-icon-split" onclick="onDisplay();" style="display:none;">
+                        <span class="text-lg">&nbsp;&nbsp;&nbsp;다음 문제&nbsp;&nbsp;&nbsp;</span>
+                    </a>
+                    
+                    <script type="text/javascript"> 
+                        var maxtime = 5; // 초단위
+                        var countdownId = 0;
+                        
+                        function start() {
+                            countdownId = setInterval("countdown()", 1000);
+                        }
+                        
+                        function countdown() {
+                            if(maxtime > 0) {
+                                maxtime = maxtime - 1;
+                                document.getElementById("cdDiv").innerHTML = maxtime;
+                            } 
+                            else {
+                                document.getElementById("002").style.display="block";
+                                document.getElementById("003").style.display="block";
+                                document.getElementById("004").style.display="block";
+                                clearInterval(countdownId);
+                            }
+                        }
+                        
+                    </script>  
+                    
                 <!-- /.container-fluid -->
 
             </div>
