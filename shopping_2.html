@@ -281,7 +281,7 @@
 
 
                         <!-- Intent -->
-                        <div class="col-xl-12 col-md-12 mb-4">
+                        <div id="003" class="col-xl-12 col-md-12 mb-4" style="display:none;">
                             <div class="card border-left-primary shadow h-100 py-2">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
@@ -345,6 +345,7 @@
                             else {
                                 document.getElementById("001").style.display="none";
                                 document.getElementById("002").style.display="block";
+                                document.getElementById("003").style.display="block";
                                 clearInterval(countdownId);
                             }
                         }
