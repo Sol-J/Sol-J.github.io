@@ -264,23 +264,27 @@
                         </div>   
                     </div>
                     <script type="text/javascript"> 
-                        document.getElementById("btn1").addEventListener("click", timer());
+                        // document.getElementById("btn1").addEventListener("click", timer());
                         var maxtime = 5; // 초단위
+                        var countdownId = 0;
+                        function start(){
+                            countdownId = setInterval("CountDown()", 1000);
+                        }
                         function CountDown() {
                             if (maxtime >= 0) {
 
-                                --maxtime;
+                                maxtime = maxtime - 1;
                             } else{
                                 document.getElementById("001").style.display="none";
                                 document.getElementById("002").style.display="block";
-                                clearInterval();
+                                clearInterval(countdownId);
                             }
                         }
                         
                         //const btn = document.getElementById("btn1");
                        
-                        timer = setInterval("CountDown()", 1000);
-                        // btn.forEach(button => button.addEventListener('click', CountDown));
+                        //timer = setInterval("CountDown()", 1000);
+                        //btn.forEach(button => button.addEventListener('click', CountDown));
                         
                     </script>  
 
