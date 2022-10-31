@@ -294,7 +294,7 @@
 
                                         
                                             <a id="btn1" class="btn btn-primary btn-icon-split" onclick="start(); play();">
-                                                <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;Click the button to listen&nbsp;&nbsp;&nbsp;</span>
+                                                <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
                                             </a> 
                                             <audio id="audio1" src="audio/sample.wav"></audio>
                                             <script>
@@ -363,7 +363,7 @@
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-auto">
                                             <div class="font-weight-bold text-primary text-uppercase mb-1">
-                                                Decision</div>
+                                                Decision: AI의 예측 결과를 참고하여 고객의 질문 의도를 판단하고 체크해주십시오.</div>
                                         </div>
                                     </div>
                                     <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"></div>
@@ -378,7 +378,7 @@
                                     <label><input TYPE='radio' name='group1' value='company' />&nbsp;&nbsp;배송 택배사&nbsp;&nbsp;&nbsp;</label>
 
                                     <div class="font-weight-bold text-primary text-uppercase mb-1"></div>                                              
-                                    <div class="font-weight-bold text-primary text-uppercase mb-1">Decision Confidence</div>
+                                    <div class="font-weight-bold text-primary text-uppercase mb-1">Decision Confidence: 이러한 결정에 얼마나 확신을 가지는지 체크해주십시오.</div>
                                     
                                     <select name="entry.1805302009" id="entry.1805302009">
                                         <option name="entry.1805302009" id="entry.1805302009" value="select">선택
@@ -435,7 +435,7 @@
 
                                         
                                             <a id="btn2" class="btn btn-primary btn-icon-split" onclick="start2(); play2();">
-                                                <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;Click the button to listen&nbsp;&nbsp;&nbsp;</span>
+                                                <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭&nbsp;&nbsp;&nbsp;</span>
                                             </a> 
                                             <audio id="audio2" src="audio/sample2.wav"></audio>
                                             <script>
@@ -507,7 +507,7 @@
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-auto">
                                             <div class="font-weight-bold text-primary text-uppercase mb-1">
-                                                Decision</div>
+                                                Decision: AI의 예측 결과를 참고하여 고객의 질문 의도를 판단하고 체크해주십시오.</div>
                                         </div>
                                     </div>
                                     <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"></div>
@@ -522,29 +522,15 @@
                                     <label><input TYPE='radio' name='group1' value='company' />&nbsp;&nbsp;배송 택배사&nbsp;&nbsp;&nbsp;</label>
 
                                     <div class="font-weight-bold text-primary text-uppercase mb-1"></div>                                              
-                                    <div class="font-weight-bold text-primary text-uppercase mb-1">Decision Confidence</div>
-                                    <div class="dropdown mb-4">
-                                        <button class="btn btn-primary dropdown-toggle" type="button"
-                                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                                            aria-expanded="false">
-                                            Ratings
-                                        </button>
-                                        <div class="dropdown-menu animated--fade-in"
-                                            aria-labelledby="dropdownMenuButton">
-                                            <a class="dropdown-item">1 (Not Confident at all)</a>
-                                            <a class="dropdown-item">2 (Slightly Confident)</a>
-                                            <a class="dropdown-item">3 (Somewhat Confident)</a>
-                                            <a class="dropdown-item">4 (Fairly Confident)</a>
-                                            <a class="dropdown-item">5 (Completely Confident)</a>
-                                        </div>
-                                    </div>
-                                    <script>
-                                    let links = document.querySelectorAll('.dropdown-item')
-                                    links.forEach(element => element.addEventListener("click", function () {
-                                        let text = element.innerText
-                                        document.getElementById('dropdownMenuButton').innerText = text
-                                    }))
-                                    </script>
+                                    <div class="font-weight-bold text-primary text-uppercase mb-1">Decision Confidence: 이러한 결정에 얼마나 확신을 가지는지 체크해주십시오.</div>
+                                    <select name="entry.1805302009" id="entry.1805302009">
+                                        <option name="entry.1805302009" id="entry.1805302009" value="select">선택
+                                        <option name="entry.1805302009" id="entry.1805302009" value="level1">1 (전혀 확신하지 않는다)
+                                        <option name="entry.1805302009" id="entry.1805302009" value="level2">2 (매우 약하게 확신한다)
+                                        <option name="entry.1805302009" id="entry.1805302009" value="level3">3 (다소 확신한다)
+                                        <option name="entry.1805302009" id="entry.1805302009" value="level4">4 (상당히 확신한다)
+                                        <option name="entry.1805302009" id="entry.1805302009" value="level5">5 (완전히 확신한다)
+                                    </select> 
                                 </div>
                             </div>
                         </div>
