@@ -409,7 +409,6 @@
                         </a>
                     </div>
                     
-                    
                     <script type="text/javascript"> 
                         var maxtime = 5; // 초단위
                         var countdownId = 0;
@@ -421,7 +420,7 @@
                         function countdown() {
                             if(maxtime > 0) {
                                 maxtime = maxtime - 1;
-                                document.getElementById("cdDiv").innerHTML = maxtime;
+                                document.getElementById("cdDiv1").innerHTML = maxtime;
                             } 
                             else {
                                 document.getElementById("002").style.display="block";
@@ -435,8 +434,6 @@
 
                     <!-- Utterance 2 -->
 
-                    
-                    <br>
                     <div id="utterance2" class="row" style="display: none;">
                         <div class="col-xl-12 col-md-12 mb-4">
                             <div class="card border-left-primary shadow h-100 py-2">
@@ -447,12 +444,12 @@
                                                 Customer Utterance</div>
 
                                         
-                                            <a id="btn2" class="btn btn-primary btn-icon-split" onclick="start(); play();">
+                                            <a id="btn2" class="btn btn-primary btn-icon-split" onclick="start2(); play2();">
                                                 <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;Click the button to listen&nbsp;&nbsp;&nbsp;</span>
                                             </a> 
                                             <audio id="audio2" src="audio/sample.wav"></audio>
                                             <script>
-                                                function play(){
+                                                function play2(){
                                                 var audio = document.getElementById("audio2");
                                                 audio.play();
                                                 }
@@ -571,14 +568,14 @@
                         var maxtime = 5; // 초단위
                         var countdownId = 0;
                         
-                        function start() {
-                            countdownId = setInterval("countdown()", 1000);
+                        function start2() {
+                            countdownId = setInterval("countdown2()", 1000);
                         }
                         
-                        function countdown() {
+                        function countdown2() {
                             if(maxtime > 0) {
                                 maxtime = maxtime - 1;
-                                document.getElementById("cdDiv").innerHTML = maxtime;
+                                document.getElementById("cdDiv2").innerHTML = maxtime;
                             } 
                             else {
                                 document.getElementById("005").style.display="block";
