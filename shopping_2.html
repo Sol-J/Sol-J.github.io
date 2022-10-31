@@ -190,82 +190,83 @@
                     </div>
                     
                     <!-- Personal Information -->
-                    <div class="row">
-                        <div class="col-xl-12 col-md-12 mb-4">
-                            <div class="card bg-secondary text-white shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-auto">
-                                            <div class="font-weight-bold text-uppercase mb-1">
-                                                Basic Information: 본인의 신원을 확인할 수 있는 정보는 절대 기록되지 않습니다.</div>
-                                        </div>
-                                    </div>                                 
+                    <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSfd4PRr-x8rgB7xfxfkQwM12qz8Jy8kuOrjWCXCFCA_-NRBow/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+                        <div class="row">
+                            <div class="col-xl-12 col-md-12 mb-4">
+                                <div class="card bg-secondary text-white shadow h-100 py-2">
+                                    <div class="card-body">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col mr-auto">
+                                                <div class="font-weight-bold text-uppercase mb-1">
+                                                    Basic Information: 본인의 신원을 확인할 수 있는 정보는 절대 기록되지 않습니다.</div>
+                                            </div>
+                                        </div>                                 
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-12 col-md-12 mb-4">
+                                <div class="card border-left-secondary shadow h-100 py-2">
+                                    <div class="card-body">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col mr-auto">
+                                                <label class="question" for="gender">1. 귀하의 성별은 무엇입니까?</label><br>
+                                                <input type="radio" name="entry.1144908244" id='entry.1144908244' value="man"/>&nbsp;&nbsp;남성&nbsp;&nbsp;
+                                                <input type="radio" name="entry.1144908244" id='entry.1144908244' value="woman"/>&nbsp;&nbsp;여성&nbsp;&nbsp;<br><br>
+
+                                                <label class="question" for="age">2. 귀하가 속한 연령대에 체크해주세요.</label><br>
+                                                <input type="radio" name="entry.1300125475" id='entry.1300125475' value="age10"/>&nbsp;&nbsp;19세 이하&nbsp;&nbsp;
+                                                <input type="radio" name="entry.1300125475" id='entry.1300125475' value="age20"/>&nbsp;&nbsp;20 ~ 29세&nbsp;&nbsp;
+                                                <input type="radio" name="entry.1300125475" id='entry.1300125475' value="age30"/>&nbsp;&nbsp;30 ~ 39세&nbsp;&nbsp;
+                                                <input type="radio" name="entry.1300125475" id='entry.1300125475' value="age40"/>&nbsp;&nbsp;40 ~ 49세&nbsp;&nbsp;
+                                                <input type="radio" name="entry.1300125475" id='entry.1300125475' value="age50"/>&nbsp;&nbsp;50 ~ 59세&nbsp;&nbsp;
+                                                <input type="radio" name="entry.1300125475" id='entry.1300125475' value="age60"/>&nbsp;&nbsp;60세 이상&nbsp;&nbsp;<br><br>
+
+                                                <label class="question" for="career">3. 귀하가 고객 상담센터 분야에 종사한 경력이 총 얼마나 되십니까? (개월 수는 반올림)</label><br>
+                                                <input type="radio" name="entry.1820336758" id='entry.1820336758' value="career0"/>&nbsp;&nbsp;5년 이하&nbsp;&nbsp;
+                                                <input type="radio" name="entry.1820336758" id='entry.1820336758' value="career5"/>&nbsp;&nbsp;5년 이상 10년 미만&nbsp;&nbsp;
+                                                <input type="radio" name="entry.1820336758" id='entry.1820336758' value="career10"/>&nbsp;&nbsp;10년 이상 15년 미만&nbsp;&nbsp;
+                                                <input type="radio" name="entry.1820336758" id='entry.1820336758' value="career15"/>&nbsp;&nbsp;15년 이상 20년 미만&nbsp;&nbsp;
+                                                <input type="radio" name="entry.1820336758" id='entry.1820336758' value="career20"/>&nbsp;&nbsp;20년 이상&nbsp;&nbsp;<br><br>
+
+                                                <label class="question" for="sector">4. 귀하는 다음 중 어느 부문에 속하는 상담센터에서 근무한 경험이 있으십니까?</label><br>
+                                                <input type="radio" name="entry.715168362" id='entry.715168362' value="private"/>&nbsp;&nbsp;민간기업&nbsp;&nbsp;
+                                                <input type="radio" name="entry.715168362" id='entry.715168362' value="public"/>&nbsp;&nbsp;공공기관&nbsp;&nbsp;
+                                                <input type="radio" name="entry.715168362" id='entry.715168362' value="both"/>&nbsp;&nbsp;둘 다&nbsp;&nbsp;<br><br>
+
+                                                <label class="question" for="aiexp">5. 귀하는 업무 과정에서 인공지능(AI) 시스템의 도움을 받은 경험이 있으십니까?</label><br>
+                                                <input type="radio" name="entry.236012772" id='entry.236012772' value="aiyes"/>&nbsp;&nbsp;있다&nbsp;&nbsp;
+                                                <input type="radio" name="entry.236012772" id='entry.236012772' value="aino"/>&nbsp;&nbsp;없다&nbsp;&nbsp;<br><br>
+
+                                                <label class="question" for="aiknw">6. 귀하는 인공지능(AI) 시스템에 대하여 얼마나 알고 있다고 생각하십니까?</label><br>
+                                                <input type="radio" name="entry.1306850680" id='entry.1306850680' value="ai1"/>&nbsp;&nbsp;매우 잘 알고 있다&nbsp;&nbsp;
+                                                <input type="radio" name="entry.1306850680" id='entry.1306850680' value="ai2"/>&nbsp;&nbsp;알고 있는 편이다&nbsp;&nbsp;
+                                                <input type="radio" name="entry.1306850680" id='entry.1306850680' value="ai3"/>&nbsp;&nbsp;잘 모르는 편이다&nbsp;&nbsp;
+                                                <input type="radio" name="entry.1306850680" id='entry.1306850680' value="ai4"/>&nbsp;&nbsp;들어봤지만 전혀 모른다&nbsp;&nbsp;<br><br>
+
+                                                <label class="question" for="contact">7. 보상 지급을 위한 연락처를 기입해주세요. (선택 사항)</label><br>
+                                                <input type="text" name="entry.650146938" id='entry.650146938'/><br>
+                                            </div>
+                                        </div>                                 
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-12 col-md-12 mb-4">
+                                <div class="card bg-primary text-white shadow h-100 py-2">
+                                    <div class="card-body">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col mr-auto">
+                                                <div class="font-weight-bold text-uppercase mb-1">
+                                                    Experiments (총 20문항) : 약 3분 정도 소요됩니다. </div>
+                                            </div>
+                                        </div>                                 
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                    
                         
-                        <div class="col-xl-12 col-md-12 mb-4">
-                            <div class="card border-left-secondary shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-auto">
-                                            <label class="question" for="gender">1. 귀하의 성별은 무엇입니까?</label><br>
-                                            <input type="radio" name="entry.23509137" id='entry.23509137' value="man"/>&nbsp;&nbsp;남성&nbsp;&nbsp;
-                                            <input type="radio" name="entry.23509137" id='entry.23509137' value="woman"/>&nbsp;&nbsp;여성&nbsp;&nbsp;<br><br>
-
-                                            <label class="question" for="gender">2. 귀하가 속한 연령대에 체크해주세요.</label><br>
-                                            <input type="radio" name="entry.23509137" id='entry.23509137' value="man"/>&nbsp;&nbsp;19세 이하&nbsp;&nbsp;
-                                            <input type="radio" name="entry.23509137" id='entry.23509137' value="man"/>&nbsp;&nbsp;20 ~ 29세&nbsp;&nbsp;
-                                            <input type="radio" name="entry.23509137" id='entry.23509137' value="man"/>&nbsp;&nbsp;30 ~ 39세&nbsp;&nbsp;
-                                            <input type="radio" name="entry.23509137" id='entry.23509137' value="man"/>&nbsp;&nbsp;40 ~ 49세&nbsp;&nbsp;
-                                            <input type="radio" name="entry.23509137" id='entry.23509137' value="man"/>&nbsp;&nbsp;50 ~ 59세&nbsp;&nbsp;
-                                            <input type="radio" name="entry.23509137" id='entry.23509137' value="woman"/>&nbsp;&nbsp;60세 이상&nbsp;&nbsp;<br><br>
-
-                                            <label class="question" for="gender">3. 귀하가 고객 상담센터 분야에 종사한 경력이 총 얼마나 되십니까? (개월 수는 반올림)</label><br>
-                                            <input type="radio" name="entry.23509137" id='entry.23509137' value="man"/>&nbsp;&nbsp;5년 이하&nbsp;&nbsp;
-                                            <input type="radio" name="entry.23509137" id='entry.23509137' value="man"/>&nbsp;&nbsp;5년 이상 10년 미만&nbsp;&nbsp;
-                                            <input type="radio" name="entry.23509137" id='entry.23509137' value="man"/>&nbsp;&nbsp;10년 이상 15년 미만&nbsp;&nbsp;
-                                            <input type="radio" name="entry.23509137" id='entry.23509137' value="man"/>&nbsp;&nbsp;15년 이상 20년 미만&nbsp;&nbsp;
-                                            <input type="radio" name="entry.23509137" id='entry.23509137' value="man"/>&nbsp;&nbsp;20년 이상&nbsp;&nbsp;<br><br>
-
-                                            <label class="question" for="gender">4. 귀하는 다음 중 어느 부문에 속하는 상담센터에서 근무한 경험이 있으십니까?</label><br>
-                                            <input type="radio" name="entry.23509137" id='entry.23509137' value="man"/>&nbsp;&nbsp;민간기업&nbsp;&nbsp;
-                                            <input type="radio" name="entry.23509137" id='entry.23509137' value="woman"/>&nbsp;&nbsp;공공기관&nbsp;&nbsp;
-                                            <input type="radio" name="entry.23509137" id='entry.23509137' value="woman"/>&nbsp;&nbsp;둘 다&nbsp;&nbsp;<br><br>
-
-                                            <label class="question" for="gender">5. 귀하는 업무 과정에서 인공지능(AI) 시스템의 도움을 받은 경험이 있으십니까?</label><br>
-                                            <input type="radio" name="entry.23509137" id='entry.23509137' value="man"/>&nbsp;&nbsp;있다&nbsp;&nbsp;
-                                            <input type="radio" name="entry.23509137" id='entry.23509137' value="woman"/>&nbsp;&nbsp;없다&nbsp;&nbsp;<br><br>
-
-                                            <label class="question" for="gender">6. 귀하는 인공지능(AI) 시스템에 대하여 얼마나 알고 있다고 생각하십니까?</label><br>
-                                            <input type="radio" name="entry.23509137" id='entry.23509137' value="man"/>&nbsp;&nbsp;매우 잘 알고 있다&nbsp;&nbsp;
-                                            <input type="radio" name="entry.23509137" id='entry.23509137' value="man"/>&nbsp;&nbsp;알고 있는 편이다&nbsp;&nbsp;
-                                            <input type="radio" name="entry.23509137" id='entry.23509137' value="man"/>&nbsp;&nbsp;잘 모르는 편이다&nbsp;&nbsp;
-                                            <input type="radio" name="entry.23509137" id='entry.23509137' value="man"/>&nbsp;&nbsp;들어봤지만 전혀 모른다&nbsp;&nbsp;<br><br>
-
-                                            <label class="question" for="gender">7. 보상 지급을 위한 연락처를 기입해주세요. (선택 사항)</label><br>
-                                            <input type="text" name="entry.23509137" id='entry.23509137'/><br>
-                                        </div>
-                                    </div>                                 
-                                </div>
-                            </div>
-                        </div>
-                    
-                        <div class="col-xl-12 col-md-12 mb-4">
-                            <div class="card bg-primary text-white shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-auto">
-                                            <div class="font-weight-bold text-uppercase mb-1">
-                                                Experiments (총 20문항) : 약 3분 정도 소요됩니다. </div>
-                                        </div>
-                                    </div>                                 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSfd4PRr-x8rgB7xfxfkQwM12qz8Jy8kuOrjWCXCFCA_-NRBow/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">    
                         <!-- Utterance 1 -->
                         <div id="utterance1" class="row">
                             <div class="col-xl-12 col-md-12 mb-4">
