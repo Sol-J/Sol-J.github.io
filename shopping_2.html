@@ -567,23 +567,23 @@
                  
                     
                     <script type="text/javascript"> 
-                        var maxtime = 5; // 초단위
-                        var countdownId = 0;
+                        var maxtime2 = 5; // 초단위
+                        var countdownId2 = 0;
                         
                         function start2() {
-                            countdownId = setInterval("countdown2()", 1000);
+                            countdownId2 = setInterval("countdown2()", 1000);
                         }
                         
                         function countdown2() {
-                            if(maxtime > 0) {
-                                maxtime = maxtime - 1;
-                                document.getElementById("cdDiv2").innerHTML = maxtime;
+                            if(maxtime2 > 0) {
+                                maxtime2 = maxtime2 - 1;
+                                document.getElementById("cdDiv2").innerHTML = maxtime2;
                             } 
                             else {
                                 document.getElementById("005").style.display="block";
                                 document.getElementById("006").style.display="block";
                                 document.getElementById("007").style.display="block";
-                                clearInterval(countdownId);
+                                clearInterval(countdownId2);
                             }
                         }
                         
