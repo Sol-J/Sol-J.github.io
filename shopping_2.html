@@ -449,7 +449,7 @@
                                             <a id="btn2" class="btn btn-primary btn-icon-split" onclick="start2(); play2();">
                                                 <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;Click the button to listen&nbsp;&nbsp;&nbsp;</span>
                                             </a> 
-                                            <audio id="audio2" src="audio/sample.wav"></audio>
+                                            <audio id="audio2" src="audio/sample2.wav"></audio>
                                             <script>
                                                 function play2(){
                                                 var audio2 = document.getElementById("audio2");
@@ -462,16 +462,16 @@
                                                 const btn2 = document.getElementById("btn2");
                                                 const text2 = document.getElementById("text2");
                                                 const contents2 = '\n 서울 주소 이사 후 변경 예정이고 날짜 지정 5월 30일로 이전 집 주소 써서 주문했는데 배송 예정일은 17일로 뜨는데 17일 전에만 주소 바꾸면 되는 건가요?'
-                                                let saveInterval;
+                                                let saveInterval2;
 
                                                 btn2.addEventListener('click', () => {
                                                   let index = 0; // contents의 초기 인덱스
                                                   text2.innerHTML = ''; // typingSpan 비우기
-                                                  clearInterval(saveInterval); // 기존 interval 종료
+                                                  clearInterval(saveInterval2); // 기존 interval 종료
 
-                                                  saveInterval = setInterval(() => {
+                                                  saveInterval2 = setInterval(() => {
                                                     if(index >= contents.length - 1) { // index가 범위에 도달될 경우 interval 종료
-                                                      clearInterval(saveInterval);
+                                                      clearInterval(saveInterval2);
                                                     }
 
                                                     if(contents2[index] === '\n') { // 개행문자 일 경우 <br /> 삽입
