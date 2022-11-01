@@ -329,10 +329,9 @@
                         <div id="response1" class="row">
                             <div id="002" style="display: none;">
                                 <div class="row">
-                                    <!-- XAI -->
+                                    
+                                    <!-- Bar chart -->
                                     <div class="col-lg-6 mb-4" >
-
-                                        <!-- Project Card Example -->
                                         <div class="card shadow mb-4">
                                             <div class="card-header py-3">
                                                 <h6 class="m-0 font-weight-bold text-primary">Prediction Probabilities</h6>
@@ -364,32 +363,28 @@
                                                 </div>
                                             </div>
                                         </div>
+                                    </div>
 
-                                        <!-- Content Column -->
-                                        <div class="col-lg-6 mb-4">
-
-                                        <!-- Donut Chart -->
-
-                                            <div class="card shadow mb-4">
-                                                <!-- Card Header - Dropdown -->
-                                                <div class="card-header py-3">
-                                                    <h6 class="m-0 font-weight-bold text-primary">Important Words</h6>
+                                    <!-- Donut Chart -->
+                                    <div class="col-lg-6 mb-4">
+                                        <div class="card shadow mb-4">
+                                            <div class="card-header py-3">
+                                                <h6 class="m-0 font-weight-bold text-primary">Important Words</h6>
+                                            </div>
+                                            <!-- Card Body -->
+                                            <div class="card-body">
+                                                <div class="chart-pie pt-4">
+                                                    <canvas id="myPieChart"></canvas>
                                                 </div>
-                                                <!-- Card Body -->
-                                                <div class="card-body">
-                                                    <div class="chart-pie pt-4">
-                                                        <canvas id="myPieChart"></canvas>
-                                                    </div>
-                                                    <hr>
-                                                    인공지능(AI)이 <code>배송 지역</code>임을 판단하는 데 중요한 영향을 미친 단어들을 보여준다.
-                                                    <br>
-                                                    <br>
-                                                    고객의 발화 의도가 <code>배송 지역</code>일 확률 78% 중에서 <code>주소</code>는 0.49의 가장 큰 가중치 값을 가지기 때문에 판단에 가장 중요한 단어이다.
-                                                </div>
+                                                <hr>
+                                                인공지능(AI)이 <code>배송 지역</code>임을 판단하는 데 중요한 영향을 미친 단어들을 보여준다.
+                                                <br>
+                                                <br>
+                                                고객의 발화 의도가 <code>배송 지역</code>일 확률 78% 중에서 <code>주소</code>는 0.49의 가장 큰 가중치 값을 가지기 때문에 판단에 가장 중요한 단어이다.
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+
                                 <div class="row">
                                     <div class="col-xl-12 col-md-12 mb-4">
                                         <div class="card border-left-primary shadow h-100 py-2">
