@@ -22,7 +22,7 @@ var myPieChart = new Chart(ctx, {
       align: 'middle'
     },
     
-    maintainAspectRatio: true,
+    maintainAspectRatio: false,
     tooltips: {
       backgroundColor: "rgb(255,255,255)",
       bodyFontColor: "#858796",
