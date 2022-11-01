@@ -294,7 +294,7 @@
                                                     const btn = document.getElementById('btn1');
                                                     // const btn = document.querySelector('.btn-primary');
                                                     const text = document.getElementById('text1');
-                                                    const contents = '\n 서울 주소 이사 후 변경 예정이고 날짜 지정 5월 30일로 이전 집 주소 써서 주문했는데 배송 예정일은 17일로 뜨는데 17일 전에만 주소 바꾸면 되는 건가요?'
+                                                    const contents = '\n 마사지 기계 주문한게 있는데 무통장 입금을 카드로 바꾸면 안될까요?'
                                                     let saveInterval;
 
                                                     btn.addEventListener('click', () => {
@@ -334,7 +334,7 @@
                                         <div class="row no-gutters align-items-center">
                                             <div class="col mr-auto">
                                                 <div class="font-weight-bold text-primary text-uppercase mb-1">
-                                                    AI의 예측 결과 : 배송 지역</div>
+                                                    AI의 예측 결과 : 결제 변경 요청</div>
                                             </div>
                                         </div>                                 
                                     </div>
@@ -354,13 +354,11 @@
                                         <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"></div>
                                         <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"></div>
                                         <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"></div>
-                                        <input type="radio" name="entry.23509137" id='entry.23509137' value="date"/>&nbsp;&nbsp;배송 날짜&nbsp;&nbsp;
-                                        <input type="radio" name="entry.23509137" id='entry.23509137' value="method"/>&nbsp;&nbsp;배송 방법&nbsp;&nbsp;
-                                        <input type="radio" name="entry.23509137" id='entry.23509137' value="price"/>&nbsp;&nbsp;배송 비용&nbsp;&nbsp;
-                                        <input type="radio" name="entry.23509137" id='entry.23509137' value="error"/>&nbsp;&nbsp;배송 오류&nbsp;&nbsp;
-                                        <input type="radio" name="entry.23509137" id='entry.23509137' value="verify"/>&nbsp;&nbsp;배송 확인&nbsp;&nbsp;
-                                        <input type="radio" name="entry.23509137" id='entry.23509137' value="address"/>&nbsp;&nbsp;배송 주소&nbsp;&nbsp;
-                                        <input type="radio" name="entry.23509137" id='entry.23509137' value="company"/>&nbsp;&nbsp;배송 택배사&nbsp;&nbsp;
+                                        <input type="radio" name="entry.23509137" id='entry.23509137' value="price"/>&nbsp;&nbsp;결제 금액 문의&nbsp;&nbsp;
+                                        <input type="radio" name="entry.23509137" id='entry.23509137' value="method"/>&nbsp;&nbsp;결제 방법 선택&nbsp;&nbsp;
+                                        <input type="radio" name="entry.23509137" id='entry.23509137' value="change"/>&nbsp;&nbsp;결제 변경 요청&nbsp;&nbsp;
+                                        <input type="radio" name="entry.23509137" id='entry.23509137' value="discount"/>&nbsp;&nbsp;할인카드 문의&nbsp;&nbsp;
+                                        <input type="radio" name="entry.23509137" id='entry.23509137' value="installment"/>&nbsp;&nbsp;할부 문의&nbsp;&nbsp;
 
                                         <div class="font-weight-bold text-primary text-uppercase mb-1"></div>                                              
                                         <div class="font-weight-bold text-primary text-uppercase mb-1">Decision Confidence (이러한 결정에 얼마나 확신을 가지는지 체크해주십시오.)</div>
@@ -439,7 +437,7 @@
                                                 <script type="text/javascript">    
                                                     const btn2 = document.getElementById("btn2");
                                                     const text2 = document.getElementById("text2");
-                                                    const contents2 = '\n 서울 주소 이사 후 변경 예정이고 날짜 지정 5월 30일로 이전 집 주소 써서 주문했는데 배송 예정일은 17일로 뜨는데 17일 전에만 주소 바꾸면 되는 건가요?'
+                                                    const contents2 = '\n 그럼 저도 국민 카드로 결제하면 저 금액으로 살 수 있는거죠?'
                                                     let saveInterval2;
 
                                                     btn2.addEventListener('click', () => {
@@ -448,7 +446,7 @@
                                                       clearInterval(saveInterval2); // 기존 interval 종료
 
                                                       saveInterval2 = setInterval(() => {
-                                                        if(index >= contents.length - 1) { // index가 범위에 도달될 경우 interval 종료
+                                                        if(index >= contents2.length - 1) { // index가 범위에 도달될 경우 interval 종료
                                                           clearInterval(saveInterval2);
                                                         }
 
@@ -456,7 +454,7 @@
                                                           text2.innerHTML += '<br />';
                                                           index++;
                                                         } else {
-                                                          text2.innerHTML += contents[index++]; // contents문자들을 순서대로 넣기
+                                                          text2.innerHTML += contents2[index++]; // contents문자들을 순서대로 넣기
                                                         }
                                                       }, 50) // 0.05초마다 글자 입력
                                                     })
@@ -478,7 +476,7 @@
                                         <div class="row no-gutters align-items-center">
                                             <div class="col mr-auto">
                                                 <div class="font-weight-bold text-primary text-uppercase mb-1">
-                                                    AI의 예측 결과 : 배송 지역</div>
+                                                    AI의 예측 결과 : 할인카드 문의</div>
                                             </div>
                                         </div>                                 
                                     </div>
@@ -499,13 +497,11 @@
                                         <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"></div>
                                         <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"></div>
 
-                                        <input type="radio" name="entry.358459591" id='entry.358459591' value="date"/>&nbsp;&nbsp;배송 날짜&nbsp;&nbsp;
-                                        <input type="radio" name="entry.358459591" id='entry.358459591' value="method"/>&nbsp;&nbsp;배송 방법&nbsp;&nbsp;
-                                        <input type="radio" name="entry.358459591" id='entry.358459591' value="price"/>&nbsp;&nbsp;배송 비용&nbsp;&nbsp;
-                                        <input type="radio" name="entry.358459591" id='entry.358459591' value="error"/>&nbsp;&nbsp;배송 오류&nbsp;&nbsp;
-                                        <input type="radio" name="entry.358459591" id='entry.358459591' value="verify"/>&nbsp;&nbsp;배송 확인&nbsp;&nbsp;
-                                        <input type="radio" name="entry.358459591" id='entry.358459591' value="address"/>&nbsp;&nbsp;배송 주소&nbsp;&nbsp;
-                                        <input type="radio" name="entry.358459591" id='entry.358459591' value="company"/>&nbsp;&nbsp;배송 택배사&nbsp;&nbsp;
+                                        <input type="radio" name="entry.358459591" id='entry.358459591' value="price"/>&nbsp;&nbsp;결제 금액 문의&nbsp;&nbsp;
+                                        <input type="radio" name="entry.358459591" id='entry.358459591' value="method"/>&nbsp;&nbsp;결제 방법 선택&nbsp;&nbsp;
+                                        <input type="radio" name="entry.358459591" id='entry.358459591' value="change"/>&nbsp;&nbsp;결제 변경 요청&nbsp;&nbsp;
+                                        <input type="radio" name="entry.358459591" id='entry.358459591' value="discount"/>&nbsp;&nbsp;할인카드 문의&nbsp;&nbsp;
+                                        <input type="radio" name="entry.358459591" id='entry.358459591' value="installment"/>&nbsp;&nbsp;할부 문의&nbsp;&nbsp;
 
                                         <div class="font-weight-bold text-primary text-uppercase mb-1"></div>                                              
                                         <div class="font-weight-bold text-primary text-uppercase mb-1">Decision Confidence (이러한 결정에 얼마나 확신을 가지는지 체크해주십시오.)</div>
@@ -557,9 +553,150 @@
                             }
                         </script>
                         
+                        <!-- Utterance 3 -->
+
+                        <div id="utterance3" class="row" style="display: none;">
+                            <div class="col-xl-12 col-md-12 mb-4">
+                                <div class="card border-left-primary shadow h-100 py-2">
+                                    <div class="card-body">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col mr-auto">
+                                                <div class="font-weight-bold text-primary text-uppercase mb-1">
+                                                    Customer Utterance</div>
+
+
+                                                <a id="btn3" class="btn btn-primary btn-icon-split" onclick="start3(); play3();">
+                                                    <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
+                                                </a> 
+                                                <audio id="audio3" src="audio/sample3.wav"></audio>
+                                                <script>
+                                                    function play3(){
+                                                    var audio3 = document.getElementById("audio3");
+                                                    audio3.play();
+                                                    }
+                                                </script>
+
+                                                <div id="text3" class="text"><br></div>
+                                                <script type="text/javascript">    
+                                                    const btn3 = document.getElementById("btn3");
+                                                    const text3 = document.getElementById("text3");
+                                                    const contents3 = '\n 저기 있잖아요. 자동 주문 그걸로 한게 칠만 구천 원이라고요?'
+                                                    let saveInterval3;
+
+                                                    btn2.addEventListener('click', () => {
+                                                      let index = 0; // contents의 초기 인덱스
+                                                      text3.innerHTML = ''; // typingSpan 비우기
+                                                      clearInterval(saveInterval3); // 기존 interval 종료
+
+                                                      saveInterval3 = setInterval(() => {
+                                                        if(index >= contents3.length - 1) { // index가 범위에 도달될 경우 interval 종료
+                                                          clearInterval(saveInterval3);
+                                                        }
+
+                                                        if(contents3[index] === '\n') { // 개행문자 일 경우 <br /> 삽입
+                                                          text3.innerHTML += '<br />';
+                                                          index++;
+                                                        } else {
+                                                          text3.innerHTML += contents3[index++]; // contents문자들을 순서대로 넣기
+                                                        }
+                                                      }, 50) // 0.05초마다 글자 입력
+                                                    })
+                                                </script>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Response 2-->
+                        <div id="response3" class="row">
+                            <div id="008" class="col-xl-12 col-md-12 mb-4" style="display:none;">
+
+                                <!-- XAI (1) -->
+                                <div class="card border-left-primary shadow h-100 py-2">
+                                    <div class="card-body">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col mr-auto">
+                                                <div class="font-weight-bold text-primary text-uppercase mb-1">
+                                                    AI의 예측 결과 : 결제 금액 </div>
+                                            </div>
+                                        </div>                                 
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Intent -->
+                            <div id="009" class="col-xl-12 col-md-12 mb-4" style="display:none;">
+                                <div class="card border-left-primary shadow h-100 py-2">
+                                    <div class="card-body">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col mr-auto">
+                                                <div class="font-weight-bold text-primary text-uppercase mb-1">
+                                                    Decision (AI의 예측 결과를 참고하여 고객의 질문 의도를 판단하고 체크해주십시오.)</div>
+                                            </div>
+                                        </div>
+                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"></div>
+                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"></div>
+                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"></div>
+
+                                        <input type="radio" name="entry.849881986" id='entry.849881986' value="price"/>&nbsp;&nbsp;결제 금액 문의&nbsp;&nbsp;
+                                        <input type="radio" name="entry.849881986" id='entry.849881986' value="method"/>&nbsp;&nbsp;결제 방법 선택&nbsp;&nbsp;
+                                        <input type="radio" name="entry.849881986" id='entry.849881986' value="change"/>&nbsp;&nbsp;결제 변경 요청&nbsp;&nbsp;
+                                        <input type="radio" name="entry.849881986" id='entry.849881986' value="discount"/>&nbsp;&nbsp;할인카드 문의&nbsp;&nbsp;
+                                        <input type="radio" name="entry.849881986" id='entry.849881986' value="installment"/>&nbsp;&nbsp;할부 문의&nbsp;&nbsp;
+
+                                        <div class="font-weight-bold text-primary text-uppercase mb-1"></div>                                              
+                                        <div class="font-weight-bold text-primary text-uppercase mb-1">Decision Confidence (이러한 결정에 얼마나 확신을 가지는지 체크해주십시오.)</div>
+                                        <select name="entry.2119968420" id="entry.2119968420">
+                                            <option name="entry.2119968420" id="entry.2119968420" value="select">선택
+                                            <option name="entry.2119968420" id="entry.2119968420" value="level1">1 (전혀 확신하지 않는다)
+                                            <option name="entry.2119968420" id="entry.2119968420" value="level2">2 (매우 약하게 확신한다)
+                                            <option name="entry.2119968420" id="entry.2119968420" value="level3">3 (다소 확신한다)
+                                            <option name="entry.2119968420" id="entry.2119968420" value="level4">4 (상당히 확신한다)
+                                            <option name="entry.2119968420" id="entry.2119968420" value="level5">5 (완전히 확신한다)
+                                        </select> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12 col-md-12 mb-4">
+                                <a id="010" class="btn btn-primary btn-icon-split" onclick="onDisplay4();" style="display: none;">
+                                    <span class="text-lg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;다음 문제&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                </a>
+                            </div>
+                            
+                        </div>
+
+
+                        <script type="text/javascript"> 
+                            var maxtime3 = 5; // 초단위
+                            var countdownId3 = 0;
+
+                            function start3() {
+                                countdownId3 = setInterval("countdown3()", 1000);
+                            }
+
+                            function countdown3() {
+                                if(maxtime3 > 0) {
+                                    maxtime3 = maxtime3 - 1;
+                                    document.getElementById("cdDiv3").innerHTML = maxtime3;
+                                } 
+                                else {
+                                    document.getElementById("008").style.display="block";
+                                    document.getElementById("009").style.display="block";
+                                    document.getElementById("010").style.display="block";
+                                    clearInterval(countdownId3);
+                                }
+                            }
+
+                        </script>  
+                        <script type="text/javascript">
+                            function onDisplay4() {
+                                $('#utterance4').show();
+                            }
+                        </script>
                         
-                        
-                        
+                        <!-- Done -->
                         <input type="submit" value="Submit">
                     </form>
 
