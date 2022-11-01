@@ -1410,6 +1410,1031 @@
                                 $('#utterance9').show();
                             }
                         </script>
+
+                        
+
+
+                        <!-- Utterance 9 -->
+
+                        <div id="utterance9" class="row" style="display: none;">
+                            <div class="col-xl-12 col-md-12 mb-4">
+                                <div class="card border-left-primary shadow h-100 py-2">
+                                    <div class="card-body">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col mr-auto">
+                                                <div class="font-weight-bold text-primary text-uppercase mb-1">
+                                                    Customer Utterance</div>
+
+
+                                                <a id="btn9" class="btn btn-primary btn-icon-split" onclick="start9(); play9();">
+                                                    <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
+                                                </a> 
+                                                <audio id="audio9" src="audio/sample9.wav"></audio>
+                                                <script>
+                                                    function play9(){
+                                                    var audio9 = document.getElementById("audio9");
+                                                    audio9.play();
+                                                    }
+                                                </script>
+
+                                                <div id="text9" class="text"><br></div>
+                                                <script type="text/javascript">    
+                                                    const btn9 = document.getElementById("btn9");
+                                                    const text9 = document.getElementById("text9");
+                                                    const contents9 = '\n 아 거기 지금 내가 전화 왜 했냐면요. 다른 집으로 보낼려 그랬더니 김치가 비싸다고 안 받겠다고 해서 배송 아직 출고가 안 됐으면 취소를 좀 할까싶어서요. '
+                                                    let saveInterval9;
+
+                                                    btn9.addEventListener('click', () => {
+                                                      let index = 0; // contents의 초기 인덱스
+                                                      text9.innerHTML = ''; // typingSpan 비우기
+                                                      clearInterval(saveInterval9); // 기존 interval 종료
+
+                                                      saveInterval9 = setInterval(() => {
+                                                        if(index >= contents9.length - 1) { // index가 범위에 도달될 경우 interval 종료
+                                                          clearInterval(saveInterval9);
+                                                        }
+
+                                                        if(contents9[index] === '\n') { // 개행문자 일 경우 <br /> 삽입
+                                                          text9.innerHTML += '<br />';
+                                                          index++;
+                                                        } else {
+                                                          text9.innerHTML += contents9[index++]; // contents문자들을 순서대로 넣기
+                                                        }
+                                                      }, 50) // 0.05초마다 글자 입력
+                                                    })
+                                                </script>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Response 9-->
+                        <div id="response9" class="row">
+                            <div id="026" class="col-xl-12 col-md-12 mb-4" style="display:none;">
+
+                                <!-- XAI (1) -->
+                                <div class="card border-left-primary shadow h-100 py-2">
+                                    <div class="card-body">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col mr-auto">
+                                                <div class="font-weight-bold text-primary text-uppercase mb-1">
+                                                    AI의 예측 결과 : 주문 취소 요청</div>
+                                            </div>
+                                        </div>                                 
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Intent -->
+                            <div id="027" class="col-xl-12 col-md-12 mb-4" style="display:none;">
+                                <div class="card border-left-primary shadow h-100 py-2">
+                                    <div class="card-body">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col mr-auto">
+                                                <div class="font-weight-bold text-primary text-uppercase mb-1">
+                                                    Decision (AI의 예측 결과를 참고하여 고객의 질문 의도를 판단하고 체크해주십시오.)</div>
+                                            </div>
+                                        </div>
+                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"></div>
+                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"></div>
+                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"></div>
+
+                                        <input type="radio" name="entry.833962011" id='entry.833962011' value="order"/>&nbsp;&nbsp;주문 요청&nbsp;&nbsp;
+                                        <input type="radio" name="entry.833962011" id='entry.833962011' value="list"/>&nbsp;&nbsp;주문 내역 확인&nbsp;&nbsp;
+                                        <input type="radio" name="entry.833962011" id='entry.833962011' value="cancel"/>&nbsp;&nbsp;주문 취소 요청&nbsp;&nbsp;
+                                        <input type="radio" name="entry.833962011" id='entry.833962011' value="confirm"/>&nbsp;&nbsp;주문 상품 확인&nbsp;&nbsp;
+                                        <input type="radio" name="entry.833962011" id='entry.833962011' value="orderchange"/>&nbsp;&nbsp;주문 변경 요청&nbsp;&nbsp;
+
+                                        <div class="font-weight-bold text-primary text-uppercase mb-1"></div>                                              
+                                        <div class="font-weight-bold text-primary text-uppercase mb-1">Decision Confidence (이러한 결정에 얼마나 확신을 가지는지 체크해주십시오.)</div>
+                                        <select name="entry.1430638904" id="entry.1430638904">
+                                            <option name="entry.1430638904" id="entry.1430638904" value="select">선택
+                                            <option name="entry.1430638904" id="entry.1430638904" value="level1">1 (전혀 확신하지 않는다)
+                                            <option name="entry.1430638904" id="entry.1430638904" value="level2">2 (매우 약하게 확신한다)
+                                            <option name="entry.1430638904" id="entry.1430638904" value="level3">3 (다소 확신한다)
+                                            <option name="entry.1430638904" id="entry.1430638904" value="level4">4 (상당히 확신한다)
+                                            <option name="entry.1430638904" id="entry.1430638904" value="level5">5 (완전히 확신한다)
+                                        </select> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12 col-md-12 mb-4">
+                                <a id="028" class="btn btn-primary btn-icon-split" onclick="onDisplay10();" style="display: none;">
+                                    <span class="text-lg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;다음 문제&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                </a>
+                            </div>
+                            
+                        </div>
+
+
+                        <script type="text/javascript"> 
+                            var maxtime9 = 5; // 초단위
+                            var countdownId9 = 0;
+
+                            function start9() {
+                                countdownId9 = setInterval("countdown9()", 1000);
+                            }
+
+                            function countdown9() {
+                                if(maxtime9 > 0) {
+                                    maxtime9 = maxtime9 - 1;
+                                    document.getElementById("cdDiv9").innerHTML = maxtime9;
+                                } 
+                                else {
+                                    document.getElementById("026").style.display="block";
+                                    document.getElementById("027").style.display="block";
+                                    document.getElementById("028").style.display="block";
+                                    clearInterval(countdownId9);
+                                }
+                            }
+
+                        </script>  
+                        <script type="text/javascript">
+                            function onDisplay10() {
+                                $('#utterance10').show();
+                            }
+                        </script>
+
+
+
+
+                        <!-- Utterance 10 -->
+
+                        <div id="utterance10" class="row" style="display: none;">
+                            <div class="col-xl-12 col-md-12 mb-4">
+                                <div class="card border-left-primary shadow h-100 py-2">
+                                    <div class="card-body">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col mr-auto">
+                                                <div class="font-weight-bold text-primary text-uppercase mb-1">
+                                                    Customer Utterance</div>
+
+
+                                                <a id="btn10" class="btn btn-primary btn-icon-split" onclick="start10(); play10();">
+                                                    <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
+                                                </a> 
+                                                <audio id="audio10" src="audio/sample10.wav"></audio>
+                                                <script>
+                                                    function play10(){
+                                                    var audio10 = document.getElementById("audio10");
+                                                    audio10.play();
+                                                    }
+                                                </script>
+
+                                                <div id="text10" class="text"><br></div>
+                                                <script type="text/javascript">    
+                                                    const btn10 = document.getElementById("btn10");
+                                                    const text10 = document.getElementById("text10");
+                                                    const contents10 = '\n 오전에 남성용 여성용 패딩 한 세트씩 주문했는데 핸드폰 문자에는 여성용 한 세트 칠만 팔천원이라고 와서 확인하려고요.'
+                                                    let saveInterval10;
+
+                                                    btn10.addEventListener('click', () => {
+                                                      let index = 0; // contents의 초기 인덱스
+                                                      text10.innerHTML = ''; // typingSpan 비우기
+                                                      clearInterval(saveInterval10); // 기존 interval 종료
+
+                                                      saveInterval10 = setInterval(() => {
+                                                        if(index >= contents10.length - 1) { // index가 범위에 도달될 경우 interval 종료
+                                                          clearInterval(saveInterval10);
+                                                        }
+
+                                                        if(contents10[index] === '\n') { // 개행문자 일 경우 <br /> 삽입
+                                                          text10.innerHTML += '<br />';
+                                                          index++;
+                                                        } else {
+                                                          text10.innerHTML += contents10[index++]; // contents문자들을 순서대로 넣기
+                                                        }
+                                                      }, 50) // 0.05초마다 글자 입력
+                                                    })
+                                                </script>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Response 10-->
+                        <div id="response10" class="row">
+                            <div id="029" class="col-xl-12 col-md-12 mb-4" style="display:none;">
+
+                                <!-- XAI (1) -->
+                                <div class="card border-left-primary shadow h-100 py-2">
+                                    <div class="card-body">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col mr-auto">
+                                                <div class="font-weight-bold text-primary text-uppercase mb-1">
+                                                    AI의 예측 결과 : 주문 상품 확인</div>
+                                            </div>
+                                        </div>                                 
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Intent -->
+                            <div id="030" class="col-xl-12 col-md-12 mb-4" style="display:none;">
+                                <div class="card border-left-primary shadow h-100 py-2">
+                                    <div class="card-body">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col mr-auto">
+                                                <div class="font-weight-bold text-primary text-uppercase mb-1">
+                                                    Decision (AI의 예측 결과를 참고하여 고객의 질문 의도를 판단하고 체크해주십시오.)</div>
+                                            </div>
+                                        </div>
+                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"></div>
+                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"></div>
+                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"></div>
+
+                                        <input type="radio" name="entry.1151071073" id='entry.1151071073' value="order"/>&nbsp;&nbsp;주문 요청&nbsp;&nbsp;
+                                        <input type="radio" name="entry.1151071073" id='entry.1151071073' value="list"/>&nbsp;&nbsp;주문 내역 확인&nbsp;&nbsp;
+                                        <input type="radio" name="entry.1151071073" id='entry.1151071073' value="cancel"/>&nbsp;&nbsp;주문 취소 요청&nbsp;&nbsp;
+                                        <input type="radio" name="entry.1151071073" id='entry.1151071073' value="confirm"/>&nbsp;&nbsp;주문 상품 확인&nbsp;&nbsp;
+                                        <input type="radio" name="entry.1151071073" id='entry.1151071073' value="orderchange"/>&nbsp;&nbsp;주문 변경 요청&nbsp;&nbsp;
+
+                                        <div class="font-weight-bold text-primary text-uppercase mb-1"></div>                                              
+                                        <div class="font-weight-bold text-primary text-uppercase mb-1">Decision Confidence (이러한 결정에 얼마나 확신을 가지는지 체크해주십시오.)</div>
+                                        <select name="entry.58559033" id="entry.58559033">
+                                            <option name="entry.58559033" id="entry.58559033" value="select">선택
+                                            <option name="entry.58559033" id="entry.58559033" value="level1">1 (전혀 확신하지 않는다)
+                                            <option name="entry.58559033" id="entry.58559033" value="level2">2 (매우 약하게 확신한다)
+                                            <option name="entry.58559033" id="entry.58559033" value="level3">3 (다소 확신한다)
+                                            <option name="entry.58559033" id="entry.58559033" value="level4">4 (상당히 확신한다)
+                                            <option name="entry.58559033" id="entry.58559033" value="level5">5 (완전히 확신한다)
+                                        </select> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12 col-md-12 mb-4">
+                                <a id="031" class="btn btn-primary btn-icon-split" onclick="onDisplay11();" style="display: none;">
+                                    <span class="text-lg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;다음 문제&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                </a>
+                            </div>
+                            
+                        </div>
+
+
+                        <script type="text/javascript"> 
+                            var maxtime10 = 5; // 초단위
+                            var countdownId10 = 0;
+
+                            function start10() {
+                                countdownId10 = setInterval("countdown10()", 1000);
+                            }
+
+                            function countdown10() {
+                                if(maxtime10 > 0) {
+                                    maxtime10 = maxtime10 - 1;
+                                    document.getElementById("cdDiv10").innerHTML = maxtime10;
+                                } 
+                                else {
+                                    document.getElementById("029").style.display="block";
+                                    document.getElementById("030").style.display="block";
+                                    document.getElementById("031").style.display="block";
+                                    clearInterval(countdownId10);
+                                }
+                            }
+
+                        </script>  
+                        <script type="text/javascript">
+                            function onDisplay11() {
+                                $('#utterance11').show();
+                            }
+                        </script>
+
+
+
+
+                        <!-- Utterance 11 -->
+
+                        <div id="utterance11" class="row" style="display: none;">
+                            <div class="col-xl-12 col-md-12 mb-4">
+                                <div class="card border-left-primary shadow h-100 py-2">
+                                    <div class="card-body">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col mr-auto">
+                                                <div class="font-weight-bold text-primary text-uppercase mb-1">
+                                                    Customer Utterance</div>
+
+
+                                                <a id="btn11" class="btn btn-primary btn-icon-split" onclick="start11(); play11();">
+                                                    <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
+                                                </a> 
+                                                <audio id="audio11" src="audio/sample11.wav"></audio>
+                                                <script>
+                                                    function play11(){
+                                                    var audio11 = document.getElementById("audio11");
+                                                    audio11.play();
+                                                    }
+                                                </script>
+
+                                                <div id="text11" class="text"><br></div>
+                                                <script type="text/javascript">    
+                                                    const btn11 = document.getElementById("btn11");
+                                                    const text11 = document.getElementById("text11");
+                                                    const contents11 = '\n 아, 그러면 주문 안 할게요. 그 옆에 또 생신 선물 용돈 상품 있던데 그걸로 주문 할게요.'
+                                                    let saveInterval11;
+
+                                                    btn11.addEventListener('click', () => {
+                                                      let index = 0; // contents의 초기 인덱스
+                                                      text11.innerHTML = ''; // typingSpan 비우기
+                                                      clearInterval(saveInterval11); // 기존 interval 종료
+
+                                                      saveInterval11 = setInterval(() => {
+                                                        if(index >= contents11.length - 1) { // index가 범위에 도달될 경우 interval 종료
+                                                          clearInterval(saveInterval11);
+                                                        }
+
+                                                        if(contents11[index] === '\n') { // 개행문자 일 경우 <br /> 삽입
+                                                          text11.innerHTML += '<br />';
+                                                          index++;
+                                                        } else {
+                                                          text11.innerHTML += contents11[index++]; // contents문자들을 순서대로 넣기
+                                                        }
+                                                      }, 50) // 0.05초마다 글자 입력
+                                                    })
+                                                </script>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Response 11-->
+                        <div id="response11" class="row">
+                            <div id="032" class="col-xl-12 col-md-12 mb-4" style="display:none;">
+
+                                <!-- XAI (1) -->
+                                <div class="card border-left-primary shadow h-100 py-2">
+                                    <div class="card-body">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col mr-auto">
+                                                <div class="font-weight-bold text-primary text-uppercase mb-1">
+                                                    AI의 예측 결과 : 주문 요청</div>
+                                            </div>
+                                        </div>                                 
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Intent -->
+                            <div id="033" class="col-xl-12 col-md-12 mb-4" style="display:none;">
+                                <div class="card border-left-primary shadow h-100 py-2">
+                                    <div class="card-body">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col mr-auto">
+                                                <div class="font-weight-bold text-primary text-uppercase mb-1">
+                                                    Decision (AI의 예측 결과를 참고하여 고객의 질문 의도를 판단하고 체크해주십시오.)</div>
+                                            </div>
+                                        </div>
+                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"></div>
+                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"></div>
+                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"></div>
+
+                                        <input type="radio" name="entry.1794710616" id='entry.1794710616' value="order"/>&nbsp;&nbsp;주문 요청&nbsp;&nbsp;
+                                        <input type="radio" name="entry.1794710616" id='entry.1794710616' value="list"/>&nbsp;&nbsp;주문 내역 확인&nbsp;&nbsp;
+                                        <input type="radio" name="entry.1794710616" id='entry.1794710616' value="cancel"/>&nbsp;&nbsp;주문 취소 요청&nbsp;&nbsp;
+                                        <input type="radio" name="entry.1794710616" id='entry.1794710616' value="confirm"/>&nbsp;&nbsp;주문 상품 확인&nbsp;&nbsp;
+                                        <input type="radio" name="entry.1794710616" id='entry.1794710616' value="orderchange"/>&nbsp;&nbsp;주문 변경 요청&nbsp;&nbsp;
+
+                                        <div class="font-weight-bold text-primary text-uppercase mb-1"></div>                                              
+                                        <div class="font-weight-bold text-primary text-uppercase mb-1">Decision Confidence (이러한 결정에 얼마나 확신을 가지는지 체크해주십시오.)</div>
+                                        <select name="entry.477712715" id="entry.477712715">
+                                            <option name="entry.477712715" id="entry.477712715" value="select">선택
+                                            <option name="entry.477712715" id="entry.477712715" value="level1">1 (전혀 확신하지 않는다)
+                                            <option name="entry.477712715" id="entry.477712715" value="level2">2 (매우 약하게 확신한다)
+                                            <option name="entry.477712715" id="entry.477712715" value="level3">3 (다소 확신한다)
+                                            <option name="entry.477712715" id="entry.477712715" value="level4">4 (상당히 확신한다)
+                                            <option name="entry.477712715" id="entry.477712715" value="level5">5 (완전히 확신한다)
+                                        </select> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12 col-md-12 mb-4">
+                                <a id="034" class="btn btn-primary btn-icon-split" onclick="onDisplay12();" style="display: none;">
+                                    <span class="text-lg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;다음 문제&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                </a>
+                            </div>
+                            
+                        </div>
+
+
+                        <script type="text/javascript"> 
+                            var maxtime11 = 5; // 초단위
+                            var countdownId11 = 0;
+
+                            function start11() {
+                                countdownId11 = setInterval("countdown11()", 1000);
+                            }
+
+                            function countdown11() {
+                                if(maxtime11 > 0) {
+                                    maxtime11 = maxtime11 - 1;
+                                    document.getElementById("cdDiv11").innerHTML = maxtime11;
+                                } 
+                                else {
+                                    document.getElementById("032").style.display="block";
+                                    document.getElementById("033").style.display="block";
+                                    document.getElementById("034").style.display="block";
+                                    clearInterval(countdownId11);
+                                }
+                            }
+
+                        </script>  
+                        <script type="text/javascript">
+                            function onDisplay12() {
+                                $('#utterance12').show();
+                            }
+                        </script>
+
+
+
+
+                        <!-- Utterance 12 -->
+
+                        <div id="utterance12" class="row" style="display: none;">
+                            <div class="col-xl-12 col-md-12 mb-4">
+                                <div class="card border-left-primary shadow h-100 py-2">
+                                    <div class="card-body">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col mr-auto">
+                                                <div class="font-weight-bold text-primary text-uppercase mb-1">
+                                                    Customer Utterance</div>
+
+
+                                                <a id="btn12" class="btn btn-primary btn-icon-split" onclick="start12(); play12();">
+                                                    <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
+                                                </a> 
+                                                <audio id="audio12" src="audio/sample12.wav"></audio>
+                                                <script>
+                                                    function play12(){
+                                                    var audio12 = document.getElementById("audio12");
+                                                    audio12.play();
+                                                    }
+                                                </script>
+
+                                                <div id="text12" class="text"><br></div>
+                                                <script type="text/javascript">    
+                                                    const btn12 = document.getElementById("btn12");
+                                                    const text12 = document.getElementById("text12");
+                                                    const contents12 = '\n 제가 거기 ㅇㅇ쇼핑에 등록이 안 돼서 그러는데요. 물건 살려 하는데 등록이 안 돼가지고요. '
+                                                    let saveInterval12;
+
+                                                    btn12.addEventListener('click', () => {
+                                                      let index = 0; // contents의 초기 인덱스
+                                                      text12.innerHTML = ''; // typingSpan 비우기
+                                                      clearInterval(saveInterval12); // 기존 interval 종료
+
+                                                      saveInterval12 = setInterval(() => {
+                                                        if(index >= contents12.length - 1) { // index가 범위에 도달될 경우 interval 종료
+                                                          clearInterval(saveInterval12);
+                                                        }
+
+                                                        if(contents12[index] === '\n') { // 개행문자 일 경우 <br /> 삽입
+                                                          text12.innerHTML += '<br />';
+                                                          index++;
+                                                        } else {
+                                                          text12.innerHTML += contents12[index++]; // contents문자들을 순서대로 넣기
+                                                        }
+                                                      }, 50) // 0.05초마다 글자 입력
+                                                    })
+                                                </script>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Response 12-->
+                        <div id="response12" class="row">
+                            <div id="035" class="col-xl-12 col-md-12 mb-4" style="display:none;">
+
+                                <!-- XAI (1) -->
+                                <div class="card border-left-primary shadow h-100 py-2">
+                                    <div class="card-body">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col mr-auto">
+                                                <div class="font-weight-bold text-primary text-uppercase mb-1">
+                                                    AI의 예측 결과 : 주문 상품 확인</div>
+                                            </div>
+                                        </div>                                 
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Intent -->
+                            <div id="036" class="col-xl-12 col-md-12 mb-4" style="display:none;">
+                                <div class="card border-left-primary shadow h-100 py-2">
+                                    <div class="card-body">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col mr-auto">
+                                                <div class="font-weight-bold text-primary text-uppercase mb-1">
+                                                    Decision (AI의 예측 결과를 참고하여 고객의 질문 의도를 판단하고 체크해주십시오.)</div>
+                                            </div>
+                                        </div>
+                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"></div>
+                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"></div>
+                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"></div>
+
+                                        <input type="radio" name="entry.1043548436" id='entry.1043548436' value="order"/>&nbsp;&nbsp;주문 요청&nbsp;&nbsp;
+                                        <input type="radio" name="entry.1043548436" id='entry.1043548436' value="list"/>&nbsp;&nbsp;주문 내역 확인&nbsp;&nbsp;
+                                        <input type="radio" name="entry.1043548436" id='entry.1043548436' value="cancel"/>&nbsp;&nbsp;주문 취소 요청&nbsp;&nbsp;
+                                        <input type="radio" name="entry.1043548436" id='entry.1043548436' value="confirm"/>&nbsp;&nbsp;주문 상품 확인&nbsp;&nbsp;
+                                        <input type="radio" name="entry.1043548436" id='entry.1043548436' value="orderchange"/>&nbsp;&nbsp;주문 변경 요청&nbsp;&nbsp;
+
+                                        <div class="font-weight-bold text-primary text-uppercase mb-1"></div>                                              
+                                        <div class="font-weight-bold text-primary text-uppercase mb-1">Decision Confidence (이러한 결정에 얼마나 확신을 가지는지 체크해주십시오.)</div>
+                                        <select name="entry.736935363" id="entry.736935363">
+                                            <option name="entry.736935363" id="entry.736935363" value="select">선택
+                                            <option name="entry.736935363" id="entry.736935363" value="level1">1 (전혀 확신하지 않는다)
+                                            <option name="entry.736935363" id="entry.736935363" value="level2">2 (매우 약하게 확신한다)
+                                            <option name="entry.736935363" id="entry.736935363" value="level3">3 (다소 확신한다)
+                                            <option name="entry.736935363" id="entry.736935363" value="level4">4 (상당히 확신한다)
+                                            <option name="entry.736935363" id="entry.736935363" value="level5">5 (완전히 확신한다)
+                                        </select> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12 col-md-12 mb-4">
+                                <a id="037" class="btn btn-primary btn-icon-split" onclick="onDisplay13();" style="display: none;">
+                                    <span class="text-lg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;다음 문제&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                </a>
+                            </div>
+                            
+                        </div>
+
+
+                        <script type="text/javascript"> 
+                            var maxtime12 = 5; // 초단위
+                            var countdownId12 = 0;
+
+                            function start12() {
+                                countdownId12 = setInterval("countdown12()", 1000);
+                            }
+
+                            function countdown12() {
+                                if(maxtime12 > 0) {
+                                    maxtime12 = maxtime12 - 1;
+                                    document.getElementById("cdDiv12").innerHTML = maxtime12;
+                                } 
+                                else {
+                                    document.getElementById("035").style.display="block";
+                                    document.getElementById("036").style.display="block";
+                                    document.getElementById("037").style.display="block";
+                                    clearInterval(countdownId12);
+                                }
+                            }
+
+                        </script>  
+                        <script type="text/javascript">
+                            function onDisplay13() {
+                                $('#utterance13').show();
+                            }
+                        </script>
+
+
+
+
+                        <!-- Utterance 13 -->
+
+                        <div id="utterance13" class="row" style="display: none;">
+                            <div class="col-xl-12 col-md-12 mb-4">
+                                <div class="card border-left-primary shadow h-100 py-2">
+                                    <div class="card-body">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col mr-auto">
+                                                <div class="font-weight-bold text-primary text-uppercase mb-1">
+                                                    Customer Utterance</div>
+
+
+                                                <a id="btn13" class="btn btn-primary btn-icon-split" onclick="start13(); play13();">
+                                                    <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
+                                                </a> 
+                                                <audio id="audio13" src="audio/sample13.wav"></audio>
+                                                <script>
+                                                    function play13(){
+                                                    var audio13 = document.getElementById("audio13");
+                                                    audio13.play();
+                                                    }
+                                                </script>
+
+                                                <div id="text13" class="text"><br></div>
+                                                <script type="text/javascript">    
+                                                    const btn13 = document.getElementById("btn13");
+                                                    const text13 = document.getElementById("text13");
+                                                    const contents13 = '\n 제가 지난 번에 그 혹시 카트 산 거 있나요? 시장 바구니 같은 거요.'
+                                                    let saveInterval13;
+
+                                                    btn13.addEventListener('click', () => {
+                                                      let index = 0; // contents의 초기 인덱스
+                                                      text13.innerHTML = ''; // typingSpan 비우기
+                                                      clearInterval(saveInterval13); // 기존 interval 종료
+
+                                                      saveInterval13 = setInterval(() => {
+                                                        if(index >= contents13.length - 1) { // index가 범위에 도달될 경우 interval 종료
+                                                          clearInterval(saveInterval13);
+                                                        }
+
+                                                        if(contents13[index] === '\n') { // 개행문자 일 경우 <br /> 삽입
+                                                          text13.innerHTML += '<br />';
+                                                          index++;
+                                                        } else {
+                                                          text13.innerHTML += contents13[index++]; // contents문자들을 순서대로 넣기
+                                                        }
+                                                      }, 50) // 0.05초마다 글자 입력
+                                                    })
+                                                </script>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Response 13-->
+                        <div id="response13" class="row">
+                            <div id="038" class="col-xl-12 col-md-12 mb-4" style="display:none;">
+
+                                <!-- XAI (1) -->
+                                <div class="card border-left-primary shadow h-100 py-2">
+                                    <div class="card-body">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col mr-auto">
+                                                <div class="font-weight-bold text-primary text-uppercase mb-1">
+                                                    AI의 예측 결과 : 주문 상품 확인</div>
+                                            </div>
+                                        </div>                                 
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Intent -->
+                            <div id="039" class="col-xl-12 col-md-12 mb-4" style="display:none;">
+                                <div class="card border-left-primary shadow h-100 py-2">
+                                    <div class="card-body">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col mr-auto">
+                                                <div class="font-weight-bold text-primary text-uppercase mb-1">
+                                                    Decision (AI의 예측 결과를 참고하여 고객의 질문 의도를 판단하고 체크해주십시오.)</div>
+                                            </div>
+                                        </div>
+                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"></div>
+                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"></div>
+                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"></div>
+
+                                        <input type="radio" name="entry.2096390257" id='entry.2096390257' value="order"/>&nbsp;&nbsp;주문 요청&nbsp;&nbsp;
+                                        <input type="radio" name="entry.2096390257" id='entry.2096390257' value="list"/>&nbsp;&nbsp;주문 내역 확인&nbsp;&nbsp;
+                                        <input type="radio" name="entry.2096390257" id='entry.2096390257' value="cancel"/>&nbsp;&nbsp;주문 취소 요청&nbsp;&nbsp;
+                                        <input type="radio" name="entry.2096390257" id='entry.2096390257' value="confirm"/>&nbsp;&nbsp;주문 상품 확인&nbsp;&nbsp;
+                                        <input type="radio" name="entry.2096390257" id='entry.2096390257' value="orderchange"/>&nbsp;&nbsp;주문 변경 요청&nbsp;&nbsp;
+
+                                        <div class="font-weight-bold text-primary text-uppercase mb-1"></div>                                              
+                                        <div class="font-weight-bold text-primary text-uppercase mb-1">Decision Confidence (이러한 결정에 얼마나 확신을 가지는지 체크해주십시오.)</div>
+                                        <select name="entry.1310026352" id="entry.1310026352">
+                                            <option name="entry.1310026352" id="entry.1310026352" value="select">선택
+                                            <option name="entry.1310026352" id="entry.1310026352" value="level1">1 (전혀 확신하지 않는다)
+                                            <option name="entry.1310026352" id="entry.1310026352" value="level2">2 (매우 약하게 확신한다)
+                                            <option name="entry.1310026352" id="entry.1310026352" value="level3">3 (다소 확신한다)
+                                            <option name="entry.1310026352" id="entry.1310026352" value="level4">4 (상당히 확신한다)
+                                            <option name="entry.1310026352" id="entry.1310026352" value="level5">5 (완전히 확신한다)
+                                        </select> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12 col-md-12 mb-4">
+                                <a id="040" class="btn btn-primary btn-icon-split" onclick="onDisplay14();" style="display: none;">
+                                    <span class="text-lg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;다음 문제&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                </a>
+                            </div>
+                            
+                        </div>
+
+
+                        <script type="text/javascript"> 
+                            var maxtime13 = 5; // 초단위
+                            var countdownId13 = 0;
+
+                            function start13() {
+                                countdownId13 = setInterval("countdown13()", 1000);
+                            }
+
+                            function countdown13() {
+                                if(maxtime13 > 0) {
+                                    maxtime13 = maxtime13 - 1;
+                                    document.getElementById("cdDiv13").innerHTML = maxtime13;
+                                } 
+                                else {
+                                    document.getElementById("038").style.display="block";
+                                    document.getElementById("039").style.display="block";
+                                    document.getElementById("040").style.display="block";
+                                    clearInterval(countdownId13);
+                                }
+                            }
+
+                        </script>  
+                        <script type="text/javascript">
+                            function onDisplay14() {
+                                $('#utterance14').show();
+                            }
+                        </script>
+
+
+
+
+                        <!-- Utterance 14 -->
+
+                        <div id="utterance14" class="row" style="display: none;">
+                            <div class="col-xl-12 col-md-12 mb-4">
+                                <div class="card border-left-primary shadow h-100 py-2">
+                                    <div class="card-body">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col mr-auto">
+                                                <div class="font-weight-bold text-primary text-uppercase mb-1">
+                                                    Customer Utterance</div>
+
+
+                                                <a id="btn14" class="btn btn-primary btn-icon-split" onclick="start14(); play14();">
+                                                    <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
+                                                </a> 
+                                                <audio id="audio14" src="audio/sample14.wav"></audio>
+                                                <script>
+                                                    function play14(){
+                                                    var audio14 = document.getElementById("audio14");
+                                                    audio14.play();
+                                                    }
+                                                </script>
+
+                                                <div id="text14" class="text"><br></div>
+                                                <script type="text/javascript">    
+                                                    const btn14 = document.getElementById("btn14");
+                                                    const text14 = document.getElementById("text14");
+                                                    const contents14 = '\n  그 마스크로 며칠 전에 통화했는데  주문한 거 혹시 나와 있어요?'
+                                                    let saveInterval14;
+
+                                                    btn14.addEventListener('click', () => {
+                                                      let index = 0; // contents의 초기 인덱스
+                                                      text14.innerHTML = ''; // typingSpan 비우기
+                                                      clearInterval(saveInterval14); // 기존 interval 종료
+
+                                                      saveInterval14 = setInterval(() => {
+                                                        if(index >= contents14.length - 1) { // index가 범위에 도달될 경우 interval 종료
+                                                          clearInterval(saveInterval14);
+                                                        }
+
+                                                        if(contents14[index] === '\n') { // 개행문자 일 경우 <br /> 삽입
+                                                          text14.innerHTML += '<br />';
+                                                          index++;
+                                                        } else {
+                                                          text14.innerHTML += contents14[index++]; // contents문자들을 순서대로 넣기
+                                                        }
+                                                      }, 50) // 0.05초마다 글자 입력
+                                                    })
+                                                </script>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Response 14-->
+                        <div id="response14" class="row">
+                            <div id="041" class="col-xl-12 col-md-12 mb-4" style="display:none;">
+
+                                <!-- XAI (1) -->
+                                <div class="card border-left-primary shadow h-100 py-2">
+                                    <div class="card-body">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col mr-auto">
+                                                <div class="font-weight-bold text-primary text-uppercase mb-1">
+                                                    AI의 예측 결과 : 주문 상품 확인</div>
+                                            </div>
+                                        </div>                                 
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Intent -->
+                            <div id="042" class="col-xl-12 col-md-12 mb-4" style="display:none;">
+                                <div class="card border-left-primary shadow h-100 py-2">
+                                    <div class="card-body">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col mr-auto">
+                                                <div class="font-weight-bold text-primary text-uppercase mb-1">
+                                                    Decision (AI의 예측 결과를 참고하여 고객의 질문 의도를 판단하고 체크해주십시오.)</div>
+                                            </div>
+                                        </div>
+                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"></div>
+                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"></div>
+                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"></div>
+
+                                        <input type="radio" name="entry.1113168933" id='entry.1113168933' value="order"/>&nbsp;&nbsp;주문 요청&nbsp;&nbsp;
+                                        <input type="radio" name="entry.1113168933" id='entry.1113168933' value="list"/>&nbsp;&nbsp;주문 내역 확인&nbsp;&nbsp;
+                                        <input type="radio" name="entry.1113168933" id='entry.1113168933' value="cancel"/>&nbsp;&nbsp;주문 취소 요청&nbsp;&nbsp;
+                                        <input type="radio" name="entry.1113168933" id='entry.1113168933' value="confirm"/>&nbsp;&nbsp;주문 상품 확인&nbsp;&nbsp;
+                                        <input type="radio" name="entry.1113168933" id='entry.1113168933' value="orderchange"/>&nbsp;&nbsp;주문 변경 요청&nbsp;&nbsp;
+
+                                        <div class="font-weight-bold text-primary text-uppercase mb-1"></div>                                              
+                                        <div class="font-weight-bold text-primary text-uppercase mb-1">Decision Confidence (이러한 결정에 얼마나 확신을 가지는지 체크해주십시오.)</div>
+                                        <select name="entry.614237043" id="entry.614237043">
+                                            <option name="entry.614237043" id="entry.614237043" value="select">선택
+                                            <option name="entry.614237043" id="entry.614237043" value="level1">1 (전혀 확신하지 않는다)
+                                            <option name="entry.614237043" id="entry.614237043" value="level2">2 (매우 약하게 확신한다)
+                                            <option name="entry.614237043" id="entry.614237043" value="level3">3 (다소 확신한다)
+                                            <option name="entry.614237043" id="entry.614237043" value="level4">4 (상당히 확신한다)
+                                            <option name="entry.614237043" id="entry.614237043" value="level5">5 (완전히 확신한다)
+                                        </select> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12 col-md-12 mb-4">
+                                <a id="043" class="btn btn-primary btn-icon-split" onclick="onDisplay15();" style="display: none;">
+                                    <span class="text-lg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;다음 문제&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                </a>
+                            </div>
+                            
+                        </div>
+
+
+                        <script type="text/javascript"> 
+                            var maxtime14 = 5; // 초단위
+                            var countdownId14 = 0;
+
+                            function start14() {
+                                countdownId14 = setInterval("countdown14()", 1000);
+                            }
+
+                            function countdown14() {
+                                if(maxtime14 > 0) {
+                                    maxtime14 = maxtime14 - 1;
+                                    document.getElementById("cdDiv14").innerHTML = maxtime14;
+                                } 
+                                else {
+                                    document.getElementById("041").style.display="block";
+                                    document.getElementById("042").style.display="block";
+                                    document.getElementById("043").style.display="block";
+                                    clearInterval(countdownId14);
+                                }
+                            }
+
+                        </script>  
+                        <script type="text/javascript">
+                            function onDisplay15() {
+                                $('#utterance15').show();
+                            }
+                        </script>
+
+
+
+
+                        <!-- Utterance 15 -->
+
+                        <div id="utterance15" class="row" style="display: none;">
+                            <div class="col-xl-12 col-md-12 mb-4">
+                                <div class="card border-left-primary shadow h-100 py-2">
+                                    <div class="card-body">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col mr-auto">
+                                                <div class="font-weight-bold text-primary text-uppercase mb-1">
+                                                    Customer Utterance</div>
+
+
+                                                <a id="btn15" class="btn btn-primary btn-icon-split" onclick="start15(); play15();">
+                                                    <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
+                                                </a> 
+                                                <audio id="audio15" src="audio/sample15.wav"></audio>
+                                                <script>
+                                                    function play15(){
+                                                    var audio15 = document.getElementById("audio15");
+                                                    audio15.play();
+                                                    }
+                                                </script>
+
+                                                <div id="text15" class="text"><br></div>
+                                                <script type="text/javascript">    
+                                                    const btn15 = document.getElementById("btn15");
+                                                    const text15 = document.getElementById("text15");
+                                                    const contents15 = '\n 네. 이 개월로 백오랑 백십오 사이즈 하나씩 주문해 주세요. '
+                                                    let saveInterval15;
+
+                                                    btn15.addEventListener('click', () => {
+                                                      let index = 0; // contents의 초기 인덱스
+                                                      text15.innerHTML = ''; // typingSpan 비우기
+                                                      clearInterval(saveInterval15); // 기존 interval 종료
+
+                                                      saveInterval15 = setInterval(() => {
+                                                        if(index >= contents15.length - 1) { // index가 범위에 도달될 경우 interval 종료
+                                                          clearInterval(saveInterval15);
+                                                        }
+
+                                                        if(contents15[index] === '\n') { // 개행문자 일 경우 <br /> 삽입
+                                                          text15.innerHTML += '<br />';
+                                                          index++;
+                                                        } else {
+                                                          text15.innerHTML += contents15[index++]; // contents문자들을 순서대로 넣기
+                                                        }
+                                                      }, 50) // 0.05초마다 글자 입력
+                                                    })
+                                                </script>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Response 15-->
+                        <div id="response15" class="row">
+                            <div id="044" class="col-xl-12 col-md-12 mb-4" style="display:none;">
+
+                                <!-- XAI (1) -->
+                                <div class="card border-left-primary shadow h-100 py-2">
+                                    <div class="card-body">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col mr-auto">
+                                                <div class="font-weight-bold text-primary text-uppercase mb-1">
+                                                    AI의 예측 결과 : 주문 요청</div>
+                                            </div>
+                                        </div>                                 
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Intent -->
+                            <div id="045" class="col-xl-12 col-md-12 mb-4" style="display:none;">
+                                <div class="card border-left-primary shadow h-100 py-2">
+                                    <div class="card-body">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col mr-auto">
+                                                <div class="font-weight-bold text-primary text-uppercase mb-1">
+                                                    Decision (AI의 예측 결과를 참고하여 고객의 질문 의도를 판단하고 체크해주십시오.)</div>
+                                            </div>
+                                        </div>
+                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"></div>
+                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"></div>
+                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"></div>
+
+                                        <input type="radio" name="entry.774065063" id='entry.774065063' value="order"/>&nbsp;&nbsp;주문 요청&nbsp;&nbsp;
+                                        <input type="radio" name="entry.774065063" id='entry.774065063' value="list"/>&nbsp;&nbsp;주문 내역 확인&nbsp;&nbsp;
+                                        <input type="radio" name="entry.774065063" id='entry.774065063' value="cancel"/>&nbsp;&nbsp;주문 취소 요청&nbsp;&nbsp;
+                                        <input type="radio" name="entry.774065063" id='entry.774065063' value="confirm"/>&nbsp;&nbsp;주문 상품 확인&nbsp;&nbsp;
+                                        <input type="radio" name="entry.774065063" id='entry.774065063' value="orderchange"/>&nbsp;&nbsp;주문 변경 요청&nbsp;&nbsp;
+
+                                        <div class="font-weight-bold text-primary text-uppercase mb-1"></div>                                              
+                                        <div class="font-weight-bold text-primary text-uppercase mb-1">Decision Confidence (이러한 결정에 얼마나 확신을 가지는지 체크해주십시오.)</div>
+                                        <select name="entry.873329471" id="entry.873329471">
+                                            <option name="entry.873329471" id="entry.873329471" value="select">선택
+                                            <option name="entry.873329471" id="entry.873329471" value="level1">1 (전혀 확신하지 않는다)
+                                            <option name="entry.873329471" id="entry.873329471" value="level2">2 (매우 약하게 확신한다)
+                                            <option name="entry.873329471" id="entry.873329471" value="level3">3 (다소 확신한다)
+                                            <option name="entry.873329471" id="entry.873329471" value="level4">4 (상당히 확신한다)
+                                            <option name="entry.873329471" id="entry.873329471" value="level5">5 (완전히 확신한다)
+                                        </select> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12 col-md-12 mb-4">
+                                <a id="046" class="btn btn-primary btn-icon-split" onclick="onDisplay16();" style="display: none;">
+                                    <span class="text-lg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;다음 문제&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                </a>
+                            </div>
+                            
+                        </div>
+
+
+                        <script type="text/javascript"> 
+                            var maxtime15 = 5; // 초단위
+                            var countdownId15 = 0;
+
+                            function start15() {
+                                countdownId15 = setInterval("countdown15()", 1000);
+                            }
+
+                            function countdown15() {
+                                if(maxtime15 > 0) {
+                                    maxtime15 = maxtime15 - 1;
+                                    document.getElementById("cdDiv15").innerHTML = maxtime15;
+                                } 
+                                else {
+                                    document.getElementById("044").style.display="block";
+                                    document.getElementById("045").style.display="block";
+                                    document.getElementById("046").style.display="block";
+                                    clearInterval(countdownId15);
+                                }
+                            }
+
+                        </script>  
+                        <script type="text/javascript">
+                            function onDisplay16() {
+                                $('#utterance16').show();
+                            }
+                        </script>
+
+
+      
                         
                         <!-- Done -->
                         <input type="submit" value="Submit">
@@ -1426,7 +2451,9 @@
                       $('#gform').prepend('Your submission has been processed...');
 
                       });
-                    </script>  
+                    </script> 
+                    
+                    
                     
                 <!-- /.container-fluid -->
 
