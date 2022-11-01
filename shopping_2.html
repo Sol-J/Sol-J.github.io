@@ -378,7 +378,7 @@
                                 </div>
                             </div>
                             <div class="col-xl-12 col-md-12 mb-4">
-                                <a id="004" class="btn btn-primary btn-icon-split" onclick="onDisplay();" style="display: none;">
+                                <a id="004" class="btn btn-primary btn-icon-split" onclick="onDisplay1();" style="display: none;">
                                     <span class="text-lg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;다음 문제&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                                 </a>
                             </div>
@@ -406,7 +406,12 @@
                             }
 
                         </script>  
-
+                        <script type="text/javascript">
+                            function onDisplay1() {
+                                $('#utterance2').show();
+                            }
+                        </script>
+                        
                         <!-- Utterance 2 -->
 
                         <div id="utterance2" class="row" style="display: none;">
@@ -462,11 +467,6 @@
                                 </div>
                             </div>
                         </div>
-                        <script type="text/javascript">
-                            function onDisplay() {
-                                $('#utterance2').show();
-                            }
-                        </script>
 
                         <!-- Response 2-->
                         <div id="response2" class="row">
