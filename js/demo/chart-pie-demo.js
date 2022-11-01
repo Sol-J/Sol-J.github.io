@@ -39,8 +39,8 @@ var myPieChart = new Chart(ctx, {
 });
 
 // Pie Chart Example
-var ctx = document.getElementById("myPieChart2");
-var myPieChart2 = new Chart(ctx, {
+var ctx2 = document.getElementById("myPieChart2");
+var myPieChart2 = new Chart(ctx2, {
   type: 'doughnut',
   data: {
     labels: ["단어 (0.88) ", "오옝 (0.10) ", "아무 (0.01) ", "? (0.01)"],
