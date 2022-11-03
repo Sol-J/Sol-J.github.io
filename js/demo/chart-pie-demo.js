@@ -48,8 +48,8 @@ var myPieChart1 = new Chart(ctx1, {
     labels: ["안될까요 (0.19) ", "있는데 (0.19) ", "바꾸면 (0.17) ", "카드로 (0.17)", "주문한게 (0.12)"],
     datasets: [{
       data: [22.62, 22.62, 20.24, 20.24, 14.29],
-      backgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', #E9F7FA],
-      hoverBackgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', #E9F7FA],
+      backgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', '#E9F7FA'],
+      hoverBackgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', '#E9F7FA'],
       hoverBorderColor: "rgba(234, 236, 244, 1)",      
 
     }],
@@ -127,8 +127,8 @@ var myPieChart3 = new Chart(ctx3, {
     labels: ["칠만 (0.43) ", "자동 (0.2) ", "구천 (0.1) ", "주문 (0.06)", "있잖아요 (0.02)"],
     datasets: [{
       data: [53.09, 24.69, 12.35, 7.41, 2.47],
-      backgroundColor: ['#476BDF', '#6D8AE5', '#97ABEE', '#CDD8F7', #EBEFFC],
-      hoverBackgroundColor: ['#476BDF', '#6D8AE5', '#97ABEE', '#CDD8F7', #EBEFFC],
+      backgroundColor: ['#476BDF', '#6D8AE5', '#97ABEE', '#CDD8F7', '#EBEFFC'],
+      hoverBackgroundColor: ['#476BDF', '#6D8AE5', '#97ABEE', '#CDD8F7', '#EBEFFC'],
       hoverBorderColor: "rgba(234, 236, 244, 1)",      
 
     }],
@@ -167,8 +167,8 @@ var myPieChart4 = new Chart(ctx4, {
     labels: ["무통장입금으로 (0.66) ", "될까요 (0.11) ", "갑자기 (0.09) ", "지금 (0.08)", "해도 (0.01)"],
     datasets: [{
       data: [69.47, 11.58, 9.47, 8.42, 1.05],
-      backgroundColor: ['#12C584', '#4DCF9D', '#80DFBB', '#C2F0DF', #E7FAF1],
-      hoverBackgroundColor: ['#12C584', '#4DCF9D', '#80DFBB', '#C2F0DF', #E7FAF1],
+      backgroundColor: ['#12C584', '#4DCF9D', '#80DFBB', '#C2F0DF', '#E7FAF1'],
+      hoverBackgroundColor: ['#12C584', '#4DCF9D', '#80DFBB', '#C2F0DF', '#E7FAF1'],
       hoverBorderColor: "rgba(234, 236, 244, 1)",      
 
     }],
@@ -247,8 +247,8 @@ var myPieChart6 = new Chart(ctx6, {
     labels: ["사용했는데 (0.06) ", "입금하면 (0.02) ", "금액만 (0.02) ", "적립금 (0.01)", "거죠 (0.0)"],
     datasets: [{
       data: [54.55, 18.18, 18.18, 9.09],
-      backgroundColor: ['#12C584', '#4DCF9D', '#80DFBB', '#C2F0DF', #E7FAF1],
-      hoverBackgroundColor: ['#12C584', '#4DCF9D', '#80DFBB', '#C2F0DF', #E7FAF1],
+      backgroundColor: ['#12C584', '#4DCF9D', '#80DFBB', '#C2F0DF', '#E7FAF1'],
+      hoverBackgroundColor: ['#12C584', '#4DCF9D', '#80DFBB', '#C2F0DF', '#E7FAF1'],
       hoverBorderColor: "rgba(234, 236, 244, 1)",      
 
     }],
@@ -327,8 +327,8 @@ var myPieChart8 = new Chart(ctx8, {
     labels: ["어떤 (0.1) ", "카드는 (0.1) ", "행사 (0.08) ", "방송 (0.03)", "은단 (0.03)"],
     datasets: [{
       data: [29.41, 29.41, 23.53, 8.82, 8.82],
-      backgroundColor: ['#F7BE35', '#FACD66', '#FBDB92', '#FEEDCB', #FFF9EB],
-      hoverBackgroundColor: ['#F7BE35', '#FACD66', '#FBDB92', '#FEEDCB', #FFF9EB],
+      backgroundColor: ['#F7BE35', '#FACD66', '#FBDB92', '#FEEDCB', '#FFF9EB'],
+      hoverBackgroundColor: ['#F7BE35', '#FACD66', '#FBDB92', '#FEEDCB', '#FFF9EB'],
       hoverBorderColor: "rgba(234, 236, 244, 1)",      
 
     }],
@@ -367,8 +367,8 @@ var myPieChart9 = new Chart(ctx9, {
     labels: ["취소를 (0.61) ", "안 (0.15) ", "아직 (0.09) ", "출고가 (0.08)", "배송 (0.07)"],
     datasets: [{
       data: [61.0, 15.0, 9.0, 8.0, 7.0],
-      backgroundColor: ['#E64032', '#ED6961', '#F1938D', '#F9CCC9', #FDEAE9],
-      hoverBackgroundColor: ['#E64032', '#ED6961', '#F1938D', '#F9CCC9', #FDEAE9],
+      backgroundColor: ['#E64032', '#ED6961', '#F1938D', '#F9CCC9', '#FDEAE9'],
+      hoverBackgroundColor: ['#E64032', '#ED6961', '#F1938D', '#F9CCC9', '#FDEAE9'],
       hoverBorderColor: "rgba(234, 236, 244, 1)",      
 
     }],
@@ -407,8 +407,8 @@ var myPieChart10 = new Chart(ctx10, {
     labels: ["한 (0.19) ", "와서 (0.09) ", "오전에 (0.08) ", "패딩 (0.08)", "칠만 (0.07)"],
     datasets: [{
       data: [37.25, 17.65, 15.69, 15.69, 13.73],
-      backgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', #E9F7FA],
-      hoverBackgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', #E9F7FA],
+      backgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', '#E9F7FA'],
+      hoverBackgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', '#E9F7FA'],
       hoverBorderColor: "rgba(234, 236, 244, 1)",      
 
     }],
@@ -447,8 +447,8 @@ var myPieChart11 = new Chart(ctx11, {
     labels: ["할게요 (0.29) ", "주문 (0.23) ", "또 (0.08) ", "그걸로 (0.03)", "아 (0.03)"],
     datasets: [{
       data: [43.94, 34.85, 12.12, 4.55, 4.55],
-      backgroundColor: ['#F7BE35', '#FACD66', '#FBDB92', '#FEEDCB', #FFF9EB],
-      hoverBackgroundColor: ['#F7BE35', '#FACD66', '#FBDB92', '#FEEDCB', #FFF9EB],
+      backgroundColor: ['#F7BE35', '#FACD66', '#FBDB92', '#FEEDCB', '#FFF9EB'],
+      hoverBackgroundColor: ['#F7BE35', '#FACD66', '#FBDB92', '#FEEDCB', '#FFF9EB'],
       hoverBorderColor: "rgba(234, 236, 244, 1)",      
 
     }],
@@ -487,8 +487,8 @@ var myPieChart12 = new Chart(ctx12, {
     labels: ["물건 (0.45) ", "거기 (0.16) ", "ㅇㅇ쇼핑에 (0.12) ", "하는데 (0.06)", "그러는데요 (0.03)"],
     datasets: [{
       data: [54.88, 19.51, 14.63, 7.32, 3.66],
-      backgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', #E9F7FA],
-      hoverBackgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', #E9F7FA],
+      backgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', '#E9F7FA'],
+      hoverBackgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', '#E9F7FA'],
       hoverBorderColor: "rgba(234, 236, 244, 1)",      
 
     }],
@@ -527,8 +527,8 @@ var myPieChart13 = new Chart(ctx13, {
     labels: ["지난 (0.02) ", "혹시 (0.01) ", "같은 (0.01) ", "번에 (0.01)", "그 (0.01)"],
     datasets: [{
       data: [33.33, 16.67, 16.67, 16.67, 16.67],
-      backgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', #E9F7FA],
-      hoverBackgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', #E9F7FA],
+      backgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', '#E9F7FA'],
+      hoverBackgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', '#E9F7FA'],
       hoverBorderColor: "rgba(234, 236, 244, 1)",      
 
     }],
@@ -567,8 +567,8 @@ var myPieChart14 = new Chart(ctx14, {
     labels: ["혹시 (0.09) ", "며칠 (0.05) ", "그 (0.04) ", "전에 (0.02)", "있어요 (0.01)"],
     datasets: [{
       data: [42.86, 23.81, 19.05, 9.52, 4.76],
-      backgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', #E9F7FA],
-      hoverBackgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', #E9F7FA],
+      backgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', '#E9F7FA'],
+      hoverBackgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', '#E9F7FA'],
       hoverBorderColor: "rgba(234, 236, 244, 1)",      
 
     }],
@@ -647,8 +647,8 @@ var myPieChart16 = new Chart(ctx16, {
     labels: ["반품 (0.28) ", "있어서 (0.17) ", "하나는 (0.17) ", "다르게 (0.14)", "거는 (0.11)"],
     datasets: [{
       data: [32.18, 19.54, 19.54, 16.09, 12.64],
-      backgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', #E9F7FA],
-      hoverBackgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', #E9F7FA],
+      backgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', '#E9F7FA'],
+      hoverBackgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', '#E9F7FA'],
       hoverBorderColor: "rgba(234, 236, 244, 1)",      
 
     }],
@@ -687,8 +687,8 @@ var myPieChart17 = new Chart(ctx17, {
     labels: ["주문했는데 (0.23) ", "개를 (0.17) ", "있어서 (0.1) ", "받았는데 (0.08)", "전화가 (0.08)"],
     datasets: [{
       data: [34.85, 25.76, 15.15, 12.12, 12.12],
-      backgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', #E9F7FA],
-      hoverBackgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', #E9F7FA],
+      backgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', '#E9F7FA'],
+      hoverBackgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', '#E9F7FA'],
       hoverBorderColor: "rgba(234, 236, 244, 1)",      
 
     }],
@@ -727,8 +727,8 @@ var myPieChart18 = new Chart(ctx18, {
     labels: ["반품 (0.43) ", "오나요 (0.13) ", "얘기를 (0.1) ", "가지러 (0.09)", "상품 (0.07)"],
     datasets: [{
       data: [52.44, 15.85, 12.2, 10.98, 8.54],
-      backgroundColor: ['#476BDF', '#6D8AE5', '#97ABEE', '#CDD8F7', #EBEFFC],
-      hoverBackgroundColor: ['#476BDF', '#6D8AE5', '#97ABEE', '#CDD8F7', #EBEFFC],
+      backgroundColor: ['#476BDF', '#6D8AE5', '#97ABEE', '#CDD8F7', '#EBEFFC'],
+      hoverBackgroundColor: ['#476BDF', '#6D8AE5', '#97ABEE', '#CDD8F7', '#EBEFFC'],
       hoverBorderColor: "rgba(234, 236, 244, 1)",      
 
     }],
@@ -767,8 +767,8 @@ var myPieChart19 = new Chart(ctx19, {
     labels: ["싶어요 (0.09) ", "안맞고 (11.0) ", "허리가 (0.05) ", "옷이 (0.04)", "좀 (0.04)"],
     datasets: [{
       data: [0.8, 98.04, 0.45, 0.36, 0.36],
-      backgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', #E9F7FA],
-      hoverBackgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', #E9F7FA],
+      backgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', '#E9F7FA'],
+      hoverBackgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', '#E9F7FA'],
       hoverBorderColor: "rgba(234, 236, 244, 1)",      
 
     }],
@@ -807,8 +807,8 @@ var myPieChart20 = new Chart(ctx20, {
     labels: ["반품하려고 (0.11) ", "주문한 (0.09) ", "합니다 (0.08) ", "했는데요 (0.06)", "거 (0.02)"],
     datasets: [{
       data: [30.56, 25.0, 22.22, 16.67, 5.56],
-      backgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', #E9F7FA],
-      hoverBackgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', #E9F7FA],
+      backgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', '#E9F7FA'],
+      hoverBackgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', '#E9F7FA'],
       hoverBorderColor: "rgba(234, 236, 244, 1)",      
 
     }],
@@ -846,8 +846,8 @@ var myPieChart21 = new Chart(ctx21, {
     labels: ["다시 (0.24) ", "받고 (0.16) ", "아직 (0.14) ", "배송 (0.14)", "수거 (0.1)"],
     datasets: [{
       data: [30.77, 20.51, 17.95, 17.95, 12.82],
-      backgroundColor: ['#F7BE35', '#FACD66', '#FBDB92', '#FEEDCB', #FFF9EB],
-      hoverBackgroundColor: ['#F7BE35', '#FACD66', '#FBDB92', '#FEEDCB', #FFF9EB],
+      backgroundColor: ['#F7BE35', '#FACD66', '#FBDB92', '#FEEDCB', '#FFF9EB'],
+      hoverBackgroundColor: ['#F7BE35', '#FACD66', '#FBDB92', '#FEEDCB', '#FFF9EB'],
       hoverBorderColor: "rgba(234, 236, 244, 1)",      
 
     }],
@@ -886,8 +886,8 @@ var myPieChart22 = new Chart(ctx22, {
     labels: ["어떻게 (0.27) ", "되나요 (0.13) ", "그리고 (0.12) ", "제가 (0.1)", "신청하면 (0.05)"],
     datasets: [{
       data: [40.3, 19.4, 17.91, 14.93, 7.46],
-      backgroundColor: ['#F7BE35', '#FACD66', '#FBDB92', '#FEEDCB', #FFF9EB],
-      hoverBackgroundColor: ['#F7BE35', '#FACD66', '#FBDB92', '#FEEDCB', #FFF9EB],
+      backgroundColor: ['#F7BE35', '#FACD66', '#FBDB92', '#FEEDCB', '#FFF9EB'],
+      hoverBackgroundColor: ['#F7BE35', '#FACD66', '#FBDB92', '#FEEDCB', '#FFF9EB'],
       hoverBorderColor: "rgba(234, 236, 244, 1)",      
 
     }],
@@ -926,8 +926,8 @@ var myPieChart23 = new Chart(ctx23, {
     labels: ["좀 (0.4) ", "크게 (0.1) ", "핑크는 (0.09) ", "그대로 (0.07)", "아니 (0.05)"],
     datasets: [{
       data: [56.34, 14.08, 12.68, 9.86, 7.04],
-      backgroundColor: ['#12C584', '#4DCF9D', '#80DFBB', '#C2F0DF', #E7FAF1],
-      hoverBackgroundColor: ['#12C584', '#4DCF9D', '#80DFBB', '#C2F0DF', #E7FAF1],
+      backgroundColor: ['#12C584', '#4DCF9D', '#80DFBB', '#C2F0DF', '#E7FAF1'],
+      hoverBackgroundColor: ['#12C584', '#4DCF9D', '#80DFBB', '#C2F0DF', '#E7FAF1'],
       hoverBorderColor: "rgba(234, 236, 244, 1)",      
 
     }],
@@ -966,8 +966,8 @@ var myPieChart24 = new Chart(ctx24, {
     labels: ["다시 (0.37) ", "보내고 (0.19) ", "된다는 (0.13) ", "그럼 (0.11)", "대로 (0.1)"],
     datasets: [{
       data: [41.11, 21.11, 14.44, 12.22, 11.11],
-      backgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', #E9F7FA],
-      hoverBackgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', #E9F7FA],
+      backgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', '#E9F7FA'],
+      hoverBackgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', '#E9F7FA'],
       hoverBorderColor: "rgba(234, 236, 244, 1)",      
 
     }],
@@ -1006,8 +1006,8 @@ var myPieChart25 = new Chart(ctx25, {
     labels: ["집으로 (0.22) ", "상품을 (0.15) ", "가고 (0.15) ", "아닌가요 (0.12)", "집에 (0.09)"],
     datasets: [{
       data: [30.14, 20.55, 20.55, 16.44, 12.33],
-      backgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', #E9F7FA],
-      hoverBackgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', #E9F7FA],
+      backgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', '#E9F7FA'],
+      hoverBackgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', '#E9F7FA'],
       hoverBorderColor: "rgba(234, 236, 244, 1)",      
 
     }],
@@ -1046,8 +1046,8 @@ var myPieChart26 = new Chart(ctx26, {
     labels: ["할 (0.21) ", "수 (0.18) ", "있나요 (0.16) ", "백으로 (0.11)", "아 (0.11)"],
     datasets: [{
       data: [27.27, 23.38, 20.78, 14.29, 14.29],
-      backgroundColor: ['#476BDF', '#6D8AE5', '#97ABEE', '#CDD8F7', #EBEFFC],
-      hoverBackgroundColor: ['#476BDF', '#6D8AE5', '#97ABEE', '#CDD8F7', #EBEFFC],
+      backgroundColor: ['#476BDF', '#6D8AE5', '#97ABEE', '#CDD8F7', '#EBEFFC'],
+      hoverBackgroundColor: ['#476BDF', '#6D8AE5', '#97ABEE', '#CDD8F7', '#EBEFFC'],
       hoverBorderColor: "rgba(234, 236, 244, 1)",      
 
     }],
@@ -1126,8 +1126,8 @@ var myPieChart28 = new Chart(ctx28, {
     labels: ["교환했으면 (0.4) ", "좋겠는데 (0.33) ", "안되는지 (0.08) ", "처음에 (0.06)", "괜찮은거 (0.05)"],
     datasets: [{
       data: [43.48, 35.87, 8.7, 6.52, 5.43],
-      backgroundColor: ['#12C584', '#4DCF9D', '#80DFBB', '#C2F0DF', #E7FAF1],
-      hoverBackgroundColor: ['#12C584', '#4DCF9D', '#80DFBB', '#C2F0DF', #E7FAF1],
+      backgroundColor: ['#12C584', '#4DCF9D', '#80DFBB', '#C2F0DF', '#E7FAF1'],
+      hoverBackgroundColor: ['#12C584', '#4DCF9D', '#80DFBB', '#C2F0DF', '#E7FAF1'],
       hoverBorderColor: "rgba(234, 236, 244, 1)",      
 
     }],
@@ -1166,8 +1166,8 @@ var myPieChart29 = new Chart(ctx29, {
     labels: ["사이즈 (0.1) ", "좀 (0.06) ", "옷을 (0.06) ", "교환 (0.05)", "조금 (0.04)"],
     datasets: [{
       data: [32.26, 19.35, 19.35, 16.13, 12.9],
-      backgroundColor: ['#12C584', '#4DCF9D', '#80DFBB', '#C2F0DF', #E7FAF1],
-      hoverBackgroundColor: ['#12C584', '#4DCF9D', '#80DFBB', '#C2F0DF', #E7FAF1],
+      backgroundColor: ['#12C584', '#4DCF9D', '#80DFBB', '#C2F0DF', '#E7FAF1'],
+      hoverBackgroundColor: ['#12C584', '#4DCF9D', '#80DFBB', '#C2F0DF', '#E7FAF1'],
       hoverBorderColor: "rgba(234, 236, 244, 1)",      
 
     }],
@@ -1206,8 +1206,8 @@ var myPieChart30 = new Chart(ctx30, {
     labels: ["너무 (0.4) ", "배송이 (0.37) ", "주택인데 (0.06) ", "안오는 (0.05)", "가셨는지 (0.04)"],
     datasets: [{
       data: [43.48, 40.22, 6.52, 5.43, 4.35],
-      backgroundColor: ['#F7BE35', '#FACD66', '#FBDB92', '#FEEDCB', #FFF9EB],
-      hoverBackgroundColor: ['#F7BE35', '#FACD66', '#FBDB92', '#FEEDCB', #FFF9EB],
+      backgroundColor: ['#F7BE35', '#FACD66', '#FBDB92', '#FEEDCB', '#FFF9EB'],
+      hoverBackgroundColor: ['#F7BE35', '#FACD66', '#FBDB92', '#FEEDCB', '#FFF9EB'],
       hoverBorderColor: "rgba(234, 236, 244, 1)",      
 
     }],
@@ -1246,8 +1246,8 @@ var myPieChart31 = new Chart(ctx31, {
     labels: ["언제 (0.09) ", "내일 (0.08) ", "도착하나요 (0.08) ", "이게 (0.03)", "열면 (0.01)"],
     datasets: [{
       data: [31.03, 27.59, 27.59, 10.34, 3.45],
-      backgroundColor: ['#476BDF', '#6D8AE5', '#97ABEE', '#CDD8F7', #EBEFFC],
-      hoverBackgroundColor: ['#476BDF', '#6D8AE5', '#97ABEE', '#CDD8F7', #EBEFFC],
+      backgroundColor: ['#476BDF', '#6D8AE5', '#97ABEE', '#CDD8F7', '#EBEFFC'],
+      hoverBackgroundColor: ['#476BDF', '#6D8AE5', '#97ABEE', '#CDD8F7', '#EBEFFC'],
       hoverBorderColor: "rgba(234, 236, 244, 1)",      
 
     }],
@@ -1286,8 +1286,8 @@ var myPieChart32 = new Chart(ctx32, {
     labels: ["이게 (0.25) ", "도착을 (0.09) ", "만약에 (0.07) ", "있을수 (0.07)", "문제가 (0.06)"],
     datasets: [{
       data: [46.3, 16.67, 12.96, 12.96, 11.11],
-      backgroundColor: ['#476BDF', '#6D8AE5', '#97ABEE', '#CDD8F7', #EBEFFC],
-      hoverBackgroundColor: ['#476BDF', '#6D8AE5', '#97ABEE', '#CDD8F7', #EBEFFC],
+      backgroundColor: ['#476BDF', '#6D8AE5', '#97ABEE', '#CDD8F7', '#EBEFFC'],
+      hoverBackgroundColor: ['#476BDF', '#6D8AE5', '#97ABEE', '#CDD8F7', '#EBEFFC'],
       hoverBorderColor: "rgba(234, 236, 244, 1)",      
 
     }],
@@ -1326,8 +1326,8 @@ var myPieChart33 = new Chart(ctx33, {
     labels: ["주소는 (0.24) ", "추가로 (0.2) ", "보내려고요 (0.14) ", "부산으로 (0.12)", "서울인데 (0.04)"],
     datasets: [{
       data: [32.43, 27.03, 18.92, 16.22, 5.41],
-      backgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', #E9F7FA],
-      hoverBackgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', #E9F7FA],
+      backgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', '#E9F7FA'],
+      hoverBackgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', '#E9F7FA'],
       hoverBorderColor: "rgba(234, 236, 244, 1)",      
 
     }],
@@ -1406,8 +1406,8 @@ var myPieChart35 = new Chart(ctx35, {
     labels: ["없는 (0.35) ", "이런 (0.26) ", "거죠 (0.05) ", "거에 (0.01)", "드는건 (0.01)"],
     datasets: [{
       data: [51.47, 38.24, 7.35, 1.47, 1.47],
-      backgroundColor: ['#12C584', '#4DCF9D', '#80DFBB', '#C2F0DF', #E7FAF1],
-      hoverBackgroundColor: ['#12C584', '#4DCF9D', '#80DFBB', '#C2F0DF', #E7FAF1],
+      backgroundColor: ['#12C584', '#4DCF9D', '#80DFBB', '#C2F0DF', '#E7FAF1'],
+      hoverBackgroundColor: ['#12C584', '#4DCF9D', '#80DFBB', '#C2F0DF', '#E7FAF1'],
       hoverBorderColor: "rgba(234, 236, 244, 1)",      
 
     }],
@@ -1446,8 +1446,8 @@ var myPieChart36 = new Chart(ctx36, {
     labels: ["배송지를 (0.08) ", "집으로 (0.07) ", "저희 (0.06) ", "엄마한테 (0.02)", "보내드리고 (0.02)"],
     datasets: [{
       data: [32.0, 28.0, 24.0, 8.0, 8.0],
-      backgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', #E9F7FA],
-      hoverBackgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', #E9F7FA],
+      backgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', '#E9F7FA'],
+      hoverBackgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', '#E9F7FA'],
       hoverBorderColor: "rgba(234, 236, 244, 1)",      
 
     }],
@@ -1526,8 +1526,8 @@ var myPieChart38 = new Chart(ctx38, {
     labels: ["상품을 (0.26) ", "삼월달이고 (0.07) ", "비용이 (0.06) ", "이게 (0.04)", "칠월인데 (0.03)"],
     datasets: [{
       data: [56.52, 15.22, 13.04, 8.7, 6.52],
-      backgroundColor: ['#476BDF', '#6D8AE5', '#97ABEE', '#CDD8F7', #EBEFFC],
-      hoverBackgroundColor: ['#476BDF', '#6D8AE5', '#97ABEE', '#CDD8F7', #EBEFFC],
+      backgroundColor: ['#476BDF', '#6D8AE5', '#97ABEE', '#CDD8F7', '#EBEFFC'],
+      hoverBackgroundColor: ['#476BDF', '#6D8AE5', '#97ABEE', '#CDD8F7', '#EBEFFC'],
       hoverBorderColor: "rgba(234, 236, 244, 1)",      
 
     }],
@@ -1566,8 +1566,8 @@ var myPieChart39 = new Chart(ctx39, {
     labels: ["되나요 (0.1) ", "한쪽만 (0.08) ", "박스에 (0.05) ", "경우에 (0.05)", "에이에스 (0.04)"],
     datasets: [{
       data: [31.25, 25.0, 15.63, 15.63, 12.5],
-      backgroundColor: ['#476BDF', '#6D8AE5', '#97ABEE', '#CDD8F7', #EBEFFC],
-      hoverBackgroundColor: ['#476BDF', '#6D8AE5', '#97ABEE', '#CDD8F7', #EBEFFC],
+      backgroundColor: ['#476BDF', '#6D8AE5', '#97ABEE', '#CDD8F7', '#EBEFFC'],
+      hoverBackgroundColor: ['#476BDF', '#6D8AE5', '#97ABEE', '#CDD8F7', '#EBEFFC'],
       hoverBorderColor: "rgba(234, 236, 244, 1)",      
 
     }],
@@ -1606,8 +1606,8 @@ var myPieChart40 = new Chart(ctx40, {
     labels: ["본사에서 (0.08) ", "촬영하라니 (0.06) ", "불량이 (0.06) ", "아니 (0.05)", "해달라는데 (0.05)"],
     datasets: [{
       data: [26.67, 20.0, 20.0, 16.67, 16.67],
-      backgroundColor: ['#F7BE35', '#FACD66', '#FBDB92', '#FEEDCB', #FFF9EB],
-      hoverBackgroundColor: ['#F7BE35', '#FACD66', '#FBDB92', '#FEEDCB', #FFF9EB],
+      backgroundColor: ['#F7BE35', '#FACD66', '#FBDB92', '#FEEDCB', '#FFF9EB'],
+      hoverBackgroundColor: ['#F7BE35', '#FACD66', '#FBDB92', '#FEEDCB', '#FFF9EB'],
       hoverBorderColor: "rgba(234, 236, 244, 1)",      
 
     }],
@@ -1726,8 +1726,8 @@ var myPieChart43 = new Chart(ctx43, {
     labels: ["안 (0.19) ", "일 (0.05) ", "됐는데 (0.04) ", "년도 (0.02)", "나는 (0.01)"],
     datasets: [{
       data: [61.29, 16.13, 12.9, 6.45, 3.23],
-      backgroundColor: ['#E64032', '#ED6961', '#F1938D', '#F9CCC9', #FDEAE9],
-      hoverBackgroundColor: ['#E64032', '#ED6961', '#F1938D', '#F9CCC9', #FDEAE9],
+      backgroundColor: ['#E64032', '#ED6961', '#F1938D', '#F9CCC9', '#FDEAE9'],
+      hoverBackgroundColor: ['#E64032', '#ED6961', '#F1938D', '#F9CCC9', '#FDEAE9'],
       hoverBorderColor: "rgba(234, 236, 244, 1)",      
 
     }],
@@ -1766,8 +1766,8 @@ var myPieChart44 = new Chart(ctx44, {
     labels: ["가입이 (0.11) ", "전화로 (0.1) ", "아이디 (0.08) ", "주문하려고 (0.07)", "하는데요 (0.07)"],
     datasets: [{
       data: [25.58, 23.26, 18.6, 16.28, 16.28],
-      backgroundColor: ['#E64032', '#ED6961', '#F1938D', '#F9CCC9', #FDEAE9],
-      hoverBackgroundColor: ['#E64032', '#ED6961', '#F1938D', '#F9CCC9', #FDEAE9],
+      backgroundColor: ['#E64032', '#ED6961', '#F1938D', '#F9CCC9', '#FDEAE9'],
+      hoverBackgroundColor: ['#E64032', '#ED6961', '#F1938D', '#F9CCC9', '#FDEAE9'],
       hoverBorderColor: "rgba(234, 236, 244, 1)",      
 
     }],
@@ -1806,8 +1806,8 @@ var myPieChart45 = new Chart(ctx45, {
     labels: ["너무 (0.13) ", "그렇게 (0.07) ", "안되죠 (0.06) ", "방송에서 (0.06)", "없고 (0.04)"],
     datasets: [{
       data: [36.11, 19.44, 16.67, 16.67, 11.11],
-      backgroundColor: ['#476BDF', '#6D8AE5', '#6D8AE5', '#CDD8F7', #EBEFFC],
-      hoverBackgroundColor: ['#476BDF', '#6D8AE5', '#6D8AE5', '#CDD8F7', #EBEFFC],
+      backgroundColor: ['#476BDF', '#6D8AE5', '#6D8AE5', '#CDD8F7', '#EBEFFC'],
+      hoverBackgroundColor: ['#476BDF', '#6D8AE5', '#6D8AE5', '#CDD8F7', '#EBEFFC'],
       hoverBorderColor: "rgba(234, 236, 244, 1)",      
 
     }],
@@ -1886,8 +1886,8 @@ var myPieChart47 = new Chart(ctx47, {
     labels: ["문자로 (0.29) ", "보내주세요 (0.21) ", "네 (0.11) ", "말고 (0.08)", "문자가 (0.04)"],
     datasets: [{
       data: [39.73, 28.77, 15.07, 10.96, 5.48],
-      backgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', #E9F7FA],
-      hoverBackgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', #E9F7FA],
+      backgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', '#E9F7FA'],
+      hoverBackgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', '#E9F7FA'],
       hoverBorderColor: "rgba(234, 236, 244, 1)",      
 
     }],
@@ -1966,8 +1966,8 @@ var myPieChart49 = new Chart(ctx49, {
     labels: ["안 (0.21) ", "그런 (0.15) ", "거는 (0.1) ", "왔으면 (0.05)", "이벤트 (0.01)"],
     datasets: [{
       data: [40.38, 28.85, 19.23, 9.62, 1.92],
-      backgroundColor: ['#476BDF', '#6D8AE5', '#6D8AE5', '#CDD8F7', #EBEFFC],
-      hoverBackgroundColor: ['#476BDF', '#6D8AE5', '#6D8AE5', '#CDD8F7', #EBEFFC],
+      backgroundColor: ['#476BDF', '#6D8AE5', '#6D8AE5', '#CDD8F7', '#EBEFFC'],
+      hoverBackgroundColor: ['#476BDF', '#6D8AE5', '#6D8AE5', '#CDD8F7', '#EBEFFC'],
       hoverBorderColor: "rgba(234, 236, 244, 1)",      
 
     }],
@@ -2006,8 +2006,8 @@ var myPieChart50 = new Chart(ctx50, {
     labels: ["아침에 (0.2) ", "그거를 (0.15) ", "네 (0.14) ", "전화했어요 (0.13)", "또 (0.09)"],
     datasets: [{
       data: [28.17, 21.13, 19.72, 18.31, 12.68],
-      backgroundColor: ['#F7BE35', '#FACD66', '#FBDB92', '#FEEDCB', #FFF9EB],
-      hoverBackgroundColor: ['#F7BE35', '#FACD66', '#FBDB92', '#FEEDCB', #FFF9EB],
+      backgroundColor: ['#F7BE35', '#FACD66', '#FBDB92', '#FEEDCB', '#FFF9EB'],
+      hoverBackgroundColor: ['#F7BE35', '#FACD66', '#FBDB92', '#FEEDCB', '#FFF9EB'],
       hoverBorderColor: "rgba(234, 236, 244, 1)",      
 
     }],
