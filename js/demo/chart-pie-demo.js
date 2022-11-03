@@ -47,7 +47,7 @@ var myPieChart1 = new Chart(ctx1, {
   data: {
     labels: ["안될까요 (0.19) ", "있는데 (0.19) ", "바꾸면 (0.17) ", "카드로 (0.17)", "주문한게 (0.12)"],
     datasets: [{
-      data: [22.62, 22.62, 20.24, 20.24, 14.28],
+      data: [22, 22, 20, 20, 16],
       backgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', '#E9F7FA'],
       hoverBackgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', '#E9F7FA'],
       hoverBorderColor: "rgba(234, 236, 244, 1)",      
