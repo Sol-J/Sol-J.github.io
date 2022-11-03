@@ -10,11 +10,11 @@ var ctx = document.getElementById("myPieChart");
 var myPieChart = new Chart(ctx, {
   type: 'doughnut',
   data: {
-    labels: ["안될까요 (0.19) ", "있는데 (0.19) ", "바꾸면 (0.17) ", "카드로 (0.17)"],
+    labels: ["안될까요 (0.19) ", "있는데 (0.19) ", "바꾸면 (0.17) ", "카드로 (0.17)", "주문한게 (0.12)"],
     datasets: [{
-      data: [26, 26, 24, 24],
-      backgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2'],
-      hoverBackgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2'],
+      data: [22.62, 22.62, 20.24, 20.24, 14.29],
+      backgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', '#E9F7FA'],
+      hoverBackgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', '#E9F7FA'],
       hoverBorderColor: "rgba(234, 236, 244, 1)",      
 
     }],
@@ -47,11 +47,11 @@ var ctx2 = document.getElementById("myPieChart2");
 var myPieChart2 = new Chart(ctx2, {
   type: 'doughnut',
   data: {
-    labels: ["국민 (0.63) ", "결제하면 (0.2) ", "저도 (0.01) ", "있는거죠 (0.0)"],
+    labels: ["국민 (0.63) ", "결제하면 (0.2) ", "저도 (0.01) "],
     datasets: [{
       data: [75.0, 23.81, 1.19],
-      backgroundColor: ['#F7BE35', '#FACD66', '#FBDB92', '#FEEDCB'],
-      hoverBackgroundColor: ['#F7BE35', '#FACD66', '#FBDB92', '#FEEDCB'],
+      backgroundColor: ['#F7BE35', '#FACD66', '#FBDB92'],
+      hoverBackgroundColor: ['#F7BE35', '#FACD66', '#FBDB92'],
       hoverBorderColor: "rgba(234, 236, 244, 1)",      
 
     }],
