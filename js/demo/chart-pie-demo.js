@@ -38,9 +38,6 @@ var myPieChart = new Chart(ctx, {
   },
 });
 
-
-
-// Pie Chart Example (1)
 var ctx1 = document.getElementById("myPieChart1");
 var myPieChart1 = new Chart(ctx1, {
   type: 'doughnut',
