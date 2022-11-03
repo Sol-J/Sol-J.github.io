@@ -45,11 +45,11 @@ var ctx1 = document.getElementById("myPieChart1");
 var myPieChart1 = new Chart(ctx1, {
   type: 'doughnut',
   data: {
-    labels: ["안될까요 (0.19) ", "있는데 (0.19) ", "바꾸면 (0.17) ", "카드로 (0.17)", "주문한게 (0.12)"],
+    labels: ["안될까요 (0.19) ", "있는데 (0.19) ", "바꾸면 (0.17) ", "카드로 (0.17)"],
     datasets: [{
-      data: [22, 22, 20, 20, 16],
-      backgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', '#E9F7FA'],
-      hoverBackgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2', '#E9F7FA'],
+      data: [26, 26, 24, 24],
+      backgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2'],
+      hoverBackgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2'],
       hoverBorderColor: "rgba(234, 236, 244, 1)",      
 
     }],
