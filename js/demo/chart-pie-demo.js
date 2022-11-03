@@ -40,11 +40,11 @@ var myPieChart = new Chart(ctx, {
 
 
 // Pie Chart Example (1)
-Chart.defaults.global.defaultFontFamily = 'Nunito', '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
+Chart1.defaults.global.defaultFontFamily = 'Nunito', '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
 Chart.defaults.global.defaultFontColor = '#858796';
 
 var ctx1 = document.getElementById("myPieChart1");
-var myPieChart1 = new Chart(ctx1, {
+var myPieChart1 = new Chart1(ctx1, {
   type: 'doughnut',
   data: {
     labels: ["안될까요 (0.19) ", "있는데 (0.19) ", "바꾸면 (0.17) ", "카드로 (0.17)"],
