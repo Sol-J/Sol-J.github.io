@@ -2,49 +2,12 @@
 Chart.defaults.global.defaultFontFamily = 'Nunito', '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
 Chart.defaults.global.defaultFontColor = '#858796';
 
-// Pie Chart Example
-var ctx = document.getElementById("myPieChart");
-var myPieChart = new Chart(ctx, {
-  type: 'doughnut',
-  data: {
-    labels: ["주소 (0.49) ", "서울 (0.18) ", "집 (0.09) ", "이사 (0.02)"],
-    datasets: [{
-      data: [60, 22, 11, 7],
-      backgroundColor: ['#F8CF69', '#FADB91', '#FBE4AC', '#FDF3DB'],
-      hoverBackgroundColor: ['#F8CF69', '#FADB91', '#FBE4AC', '#FDF3DB'],
-      hoverBorderColor: "rgba(234, 236, 244, 1)",      
-
-    }],
-  },
-  options: {
-    legend: {
-      position: 'right',
-      align: 'middle'
-    },
-    
-    maintainAspectRatio: false,
-    tooltips: {
-      backgroundColor: "rgb(255,255,255)",
-      bodyFontColor: "#858796",
-      borderColor: '#dddfeb',
-      borderWidth: 1,
-      xPadding: 10,
-      yPadding: 10,
-      displayColors: false,
-      caretPadding: 7,
-    },
-    cutoutPercentage: 80,
-
-  },
-});
 
 
 // Pie Chart Example (1)
-Chart1.defaults.global.defaultFontFamily = 'Nunito', '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
-Chart.defaults.global.defaultFontColor = '#858796';
 
-var ctx1 = document.getElementById("myPieChart1");
-var myPieChart = new Chart(ctx1, {
+var ctx = document.getElementById("myPieChart1");
+var myPieChart1 = new Chart(ctx, {
   type: 'doughnut',
   data: {
     labels: ["안될까요 (0.19) ", "있는데 (0.19) ", "바꾸면 (0.17) ", "카드로 (0.17)"],
@@ -77,9 +40,7 @@ var myPieChart = new Chart(ctx1, {
 
   },
 });
-
-
-        
+ 
 
 // Pie Chart Example (2)
 var ctx2 = document.getElementById("myPieChart2");
