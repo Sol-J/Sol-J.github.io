@@ -188,7 +188,7 @@
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h3 mb-0 text-gray-800">Group1: Without AI</h1>
                     </div>
-                    
+                    <div id="times"></div>
 
                     <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSekdUACL79B6BDN4l8y81UIc0zC0CfG1yjU1J4Vs3o3ThtBpw/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
                     <!-- Personal Information -->
@@ -279,7 +279,7 @@
                                                     Customer Utterance</div>
 
 
-                                                <a id="btn1" class="btn btn-primary btn-icon-split" onclick="start(); play();">
+                                                <a id="btn1" class="btn btn-primary btn-icon-split" onclick="start(); play(); time()">
                                                     <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
                                                 </a> 
                                                 <audio id="audio1" src="audio/sample1.wav"></audio>
@@ -387,6 +387,12 @@
                                     document.getElementById("004").style.display="block";
                                     clearInterval(countdownId);
                                 }
+                            }
+                            
+                            today = new Date();
+                            
+                            function time() {
+                                document.getElementById("times").innerHTML=document.getElementById("times").innerHTML+"|"+today.getHours()+"시"+today.getMinutes()+"분"+today.getSeconds()+"초";
                             }
 
                         </script>  
