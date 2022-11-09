@@ -288,6 +288,11 @@
                                                     var audio = document.getElementById("audio1");
                                                     audio.play();
                                                     }
+                                                    var today1 = new Date();
+
+                                                    function time1() {
+                                                        document.getElementById("times").innerHTML=document.getElementById("times").innerHTML+"|"+today1.getHours()+"시"+today1.getMinutes()+"분"+today1.getSeconds()+"초";
+                                                    }
                                                 </script>
 
                                                 <div id="text1" class="text"><br></div>
@@ -388,12 +393,6 @@
                                     clearInterval(countdownId);
                                 }
                             }
-                            
-                            var today1 = new Date();
-                            
-                            function time1() {
-                                document.getElementById("times").innerHTML=document.getElementById("times").innerHTML+"|"+today1.getHours()+"시"+today1.getMinutes()+"분"+today1.getSeconds()+"초";
-                            }
 
                         </script>  
                         <script type="text/javascript">
@@ -422,6 +421,11 @@
                                                     function play2(){
                                                     var audio2 = document.getElementById("audio2");
                                                     audio2.play();
+                                                    }
+                                                    var today2 = new Date();
+
+                                                    function time2() {
+                                                        document.getElementById("times").innerHTML=document.getElementById("times").innerHTML+"|"+today2.getHours()+"시"+today2.getMinutes()+"분"+today2.getSeconds()+"초";
                                                     }
                                                 </script>
 
@@ -522,11 +526,7 @@
                                     clearInterval(countdownId2);
                                 }
                             }
-                            var today2 = new Date();
-                            
-                            function time2() {
-                                document.getElementById("times").innerHTML=document.getElementById("times").innerHTML+"|"+today2.getHours()+"시"+today2.getMinutes()+"분"+today2.getSeconds()+"초";
-                            }
+
 
                         </script>  
                         <script type="text/javascript">
@@ -555,6 +555,11 @@
                                                     function play3(){
                                                     var audio3 = document.getElementById("audio3");
                                                     audio3.play();
+                                                    }
+                                                    var today3 = new Date();
+
+                                                    function time3() {
+                                                        document.getElementById("times").innerHTML=document.getElementById("times").innerHTML+"|"+today3.getHours()+"시"+today3.getMinutes()+"분"+today3.getSeconds()+"초";
                                                     }
                                                 </script>
 
@@ -655,11 +660,7 @@
                                     clearInterval(countdownId3);
                                 }
                             }
-                            var today3 = new Date();
-                            
-                            function time3() {
-                                document.getElementById("times").innerHTML=document.getElementById("times").innerHTML+"|"+today3.getHours()+"시"+today3.getMinutes()+"분"+today3.getSeconds()+"초";
-                            }
+
 
                         </script>  
                         <script type="text/javascript">
