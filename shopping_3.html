@@ -281,7 +281,7 @@
                                                     Customer Utterance</div>
 
 
-                                                <a id="btn1" class="btn btn-primary btn-icon-split" onclick="start(); play();">
+                                                <a id="btn1" class="btn btn-primary btn-icon-split" onclick="start(); play(); time1()">
                                                     <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
                                                 </a> 
                                                 <audio id="audio1" src="audio/sample1.wav"></audio>
@@ -475,7 +475,7 @@
                                                     Customer Utterance</div>
 
 
-                                                <a id="btn2" class="btn btn-primary btn-icon-split" onclick="start2(); play2();">
+                                                <a id="btn2" class="btn btn-primary btn-icon-split" onclick="start2(); play2(); time2()">
                                                     <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
                                                 </a> 
                                                 <audio id="audio2" src="audio/sample2.wav"></audio>
@@ -9892,8 +9892,8 @@
                             }
                         </script>    
                         
-                        <div id="summitbtn" class="row" style="display: none;">
-                            <input type="submit" value="제출하기 (클릭)">
+                        <div id="summitbtn" class="row" style="display: block;">
+                            <a href="completion.html"><input type="submit" value="제출하기 (클릭)" onclick="location.href='https://sol-j.github.io/completion.html';"></a>
                         </div>
                         <!-- Done -->
                     </form>
@@ -9909,7 +9909,23 @@
 
                       });
                     </script> 
-                    
+                    <script type="text/javascript">
+                        function time1(){
+                        var today1 = new Date();
+                        var hour1 = today1.getHours();
+                        var minutes1 = today1.getMinutes();
+                        var seconds1 = today1.getSeconds();
+                        document.getElementById("times").innerHTML=document.getElementById("times").innerHTML+"|"+"btn1: "+hour1+"시"+minutes1+"분"+seconds1+"초";
+                        }
+                        
+                        function time2(){
+                        var today2 = new Date();
+                        var hour2 = today2.getHours();
+                        var minutes2 = today2.getMinutes();
+                        var seconds2 = today2.getSeconds();
+                        document.getElementById("times").innerHTML=document.getElementById("times").innerHTML+"|"+"btn2: "+hour2+"시"+minutes2+"분"+seconds2+"초";
+                        }
+                    </script>
                     
                     
                 <!-- /.container-fluid -->
