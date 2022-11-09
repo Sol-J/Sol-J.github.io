@@ -189,6 +189,7 @@
                         <h1 class="h3 mb-0 text-gray-800">Group1: Without AI</h1>
                     </div>
                     <div id="times" style="display: none"></div>
+                    <input id="times-input" type="text">
 
                     <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSekdUACL79B6BDN4l8y81UIc0zC0CfG1yjU1J4Vs3o3ThtBpw/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
                     <!-- Personal Information -->
@@ -568,6 +569,7 @@
                                                     var minutes3 = today3.getMinutes();
                                                     var seconds3 = today3.getSeconds();
                                                     document.getElementById("times").innerHTML=document.getElementById("times").innerHTML+"|"+"btn3: "+hour3+"시"+minutes3+"분"+seconds3+"초";
+                                                    document.getElementById("times-input").innerHTML=document.getElementById("times").innerHTML;
                                                     }
                                                 </script>
 
