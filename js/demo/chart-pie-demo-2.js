@@ -408,7 +408,7 @@ var ctx61 = document.getElementById("myPieChart61");
 var myPieChart61 = new Chart(ctx61, {
   type: 'doughnut',
   data: {
-    labels: ["하나요 (0.14) ", "None (0.0) ", "None (0.0) "],
+    labels: ["하나요 (0.14) "],
     datasets: [{
       data: [100.0],
       backgroundColor: ['#476BDF'],
@@ -808,7 +808,7 @@ var ctx71 = document.getElementById("myPieChart71");
 var myPieChart71 = new Chart(ctx71, {
   type: 'doughnut',
   data: {
-    labels: ["맞나요 (0.27) ", "None (0.0) ", "None (0.0) "],
+    labels: ["맞나요 (0.27) "],
     datasets: [{
       data: [100.0],
       backgroundColor: ['#E64032'],
@@ -968,7 +968,7 @@ var ctx75 = document.getElementById("myPieChart75");
 var myPieChart75 = new Chart(ctx75, {
   type: 'doughnut',
   data: {
-    labels: ["한다는 (0.27) ", "역학조사를 (0.03) ", "None (0.0) "],
+    labels: ["한다는 (0.27) ", "역학조사를 (0.03) "],
     datasets: [{
       data: [90.0, 10.0],
       backgroundColor: ['#2DB7CA', '#2DB7CA'],
@@ -1168,7 +1168,7 @@ var ctx80 = document.getElementById("myPieChart80");
 var myPieChart80 = new Chart(ctx80, {
   type: 'doughnut',
   data: {
-    labels: ["집단 (0.18) ", "발병됐다던데요 (0.07) ", "None (0.0) "],
+    labels: ["집단 (0.18) ", "발병됐다던데요 (0.07) "],
     datasets: [{
       data: [72.0, 28.0],
       backgroundColor: ['#E64032', '#E64032'],
@@ -1488,7 +1488,7 @@ var ctx88 = document.getElementById("myPieChart88");
 var myPieChart88 = new Chart(ctx88, {
   type: 'doughnut',
   data: {
-    labels: ["들었는데 (0.22) ", "접촉했다고 (0.03) ", "None (0.0) "],
+    labels: ["들었는데 (0.22) ", "접촉했다고 (0.03) "],
     datasets: [{
       data: [88.0, 12.0],
       backgroundColor: ['#F7BE35', '#F7BE35'],
@@ -1648,7 +1648,7 @@ var ctx92 = document.getElementById("myPieChart92");
 var myPieChart92 = new Chart(ctx92, {
   type: 'doughnut',
   data: {
-    labels: ["보호자식대는 (0.07) ", "None (0.0) ", "None (0.0) "],
+    labels: ["보호자식대는 (0.07) "],
     datasets: [{
       data: [100.0],
       backgroundColor: ['#2DB7CA'],
@@ -1928,7 +1928,7 @@ var ctx99 = document.getElementById("myPieChart99");
 var myPieChart99 = new Chart(ctx99, {
   type: 'doughnut',
   data: {
-    labels: ["안된다구요 (0.01) ", "None (0.0) ", "None (0.0) "],
+    labels: ["안된다구요 (0.01) "],
     datasets: [{
       data: [100.0],
       backgroundColor: ['#F7BE35'],
