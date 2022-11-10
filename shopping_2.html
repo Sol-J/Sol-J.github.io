@@ -598,7 +598,8 @@
                                                     var minutes3 = today3.getMinutes();
                                                     var seconds3 = today3.getSeconds();
                                                     document.getElementById("times").innerHTML=document.getElementById("times").innerHTML+"|"+"btn3: "+hour3+"시"+minutes3+"분"+seconds3+"초";
-                                                    }
+                                                    document.getElementById("entry.921278823").value=document.getElementById("times").innerHTML;
+						    }
 
                                                 </script>
 
@@ -7913,7 +7914,7 @@
                             }
                         </script>    
                         
-                        <div id="summitbtn" class="row" style="display: none;">
+                        <div id="summitbtn" class="row" style="display: block;">
                             <input type="submit" value="제출하기 (클릭)" onclick="location.href='https://sol-j.github.io/completion.html';">
                         </div>
                         <!-- Done -->
