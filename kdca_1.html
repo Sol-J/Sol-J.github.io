@@ -185,12 +185,15 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
+                    
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h3 mb-0 text-gray-800">Group1: Without AI</h1>
                     </div>
-                    
+                    <div id="times" style="display: none"></div>
+                    <input id="times-input" type="text" name="entry.1930665732" id="entry.1930665732" style="display: none">
 
                     <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSfFwxU5Z49RfK05joXYf5puninYKbBsow6p9RMxBCNs8uah3w/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+                        <input type="text" name="entry.1930665732" id="entry.1930665732" style="display: none"/>
                     <!-- Personal Information -->
                         <div class="row">
                             <div class="col-xl-12 col-md-12 mb-4">
@@ -279,7 +282,7 @@
                                                     Customer Utterance</div>
 
 
-                                                <a id="btn1" class="btn btn-primary btn-icon-split" onclick="start(); play();">
+                                                <a id="btn1" class="btn btn-primary btn-icon-split" onclick="start(); play(); time1()">
                                                     <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
                                                 </a> 
                                                 <audio id="audio1" src="audio/kdca1.wav"></audio>
@@ -314,7 +317,7 @@
                                                         } else {
                                                           text.innerHTML += contents[index++]; // contents문자들을 순서대로 넣기
                                                         }
-                                                      }, 80) // 0.05초마다 글자 입력
+                                                      }, 50) // 0.05초마다 글자 입력
                                                     })
                                                 </script>
                                             </div>
@@ -408,7 +411,7 @@
                                                     Customer Utterance</div>
 
 
-                                                <a id="btn2" class="btn btn-primary btn-icon-split" onclick="start2(); play2();">
+                                                <a id="btn2" class="btn btn-primary btn-icon-split" onclick="start2(); play2(); time2()">
                                                     <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
                                                 </a> 
                                                 <audio id="audio2" src="audio/kdca2.wav"></audio>
@@ -442,7 +445,7 @@
                                                         } else {
                                                           text2.innerHTML += contents2[index++]; // contents문자들을 순서대로 넣기
                                                         }
-                                                      }, 120) // 0.05초마다 글자 입력
+                                                      }, 50) // 0.05초마다 글자 입력
                                                     })
                                                 </script>
                                             </div>
@@ -498,7 +501,7 @@
 
 
                         <script type="text/javascript"> 
-                            var maxtime2 = 5; // 초단위
+                            var maxtime2 = 3; // 초단위
                             var countdownId2 = 0;
 
                             function start2() {
@@ -536,7 +539,7 @@
                                                     Customer Utterance</div>
 
 
-                                                <a id="btn3" class="btn btn-primary btn-icon-split" onclick="start3(); play3();">
+                                                <a id="btn3" class="btn btn-primary btn-icon-split" onclick="start3(); play3(); time3()">
                                                     <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
                                                 </a> 
                                                 <audio id="audio3" src="audio/kdca3.wav"></audio>
@@ -626,7 +629,7 @@
 
 
                         <script type="text/javascript"> 
-                            var maxtime3 = 5; // 초단위
+                            var maxtime3 = 3; // 초단위
                             var countdownId3 = 0;
 
                             function start3() {
@@ -664,7 +667,7 @@
                                                     Customer Utterance</div>
 
 
-                                                <a id="btn4" class="btn btn-primary btn-icon-split" onclick="start4(); play4();">
+                                                <a id="btn4" class="btn btn-primary btn-icon-split" onclick="start4(); play4(); time4()">
                                                     <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
                                                 </a> 
                                                 <audio id="audio4" src="audio/kdca4.wav"></audio>
@@ -754,7 +757,7 @@
 
 
                         <script type="text/javascript"> 
-                            var maxtime4 = 5; // 초단위
+                            var maxtime4 = 3; // 초단위
                             var countdownId4 = 0;
 
                             function start4() {
@@ -792,7 +795,7 @@
                                                     Customer Utterance</div>
 
 
-                                                <a id="btn5" class="btn btn-primary btn-icon-split" onclick="start5(); play5();">
+                                                <a id="btn5" class="btn btn-primary btn-icon-split" onclick="start5(); play5(); time5()">
                                                     <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
                                                 </a> 
                                                 <audio id="audio5" src="audio/kdca5.wav"></audio>
@@ -881,7 +884,7 @@
 
 
                         <script type="text/javascript"> 
-                            var maxtime5 = 5; // 초단위
+                            var maxtime5 = 3; // 초단위
                             var countdownId5 = 0;
 
                             function start5() {
@@ -919,7 +922,7 @@
                                                     Customer Utterance</div>
 
 
-                                                <a id="btn6" class="btn btn-primary btn-icon-split" onclick="start6(); play6();">
+                                                <a id="btn6" class="btn btn-primary btn-icon-split" onclick="start6(); play6(); time6()">
                                                     <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
                                                 </a> 
                                                 <audio id="audio6" src="audio/kdca6.wav"></audio>
@@ -1009,7 +1012,7 @@
 
 
                         <script type="text/javascript"> 
-                            var maxtime6 = 5; // 초단위
+                            var maxtime6 = 3; // 초단위
                             var countdownId6 = 0;
 
                             function start6() {
@@ -1047,7 +1050,7 @@
                                                     Customer Utterance</div>
 
 
-                                                <a id="btn7" class="btn btn-primary btn-icon-split" onclick="start7(); play7();">
+                                                <a id="btn7" class="btn btn-primary btn-icon-split" onclick="start7(); play7(); time7()">
                                                     <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
                                                 </a> 
                                                 <audio id="audio7" src="audio/kdca7.wav"></audio>
@@ -1137,7 +1140,7 @@
 
 
                         <script type="text/javascript"> 
-                            var maxtime7 = 5; // 초단위
+                            var maxtime7 = 3; // 초단위
                             var countdownId7 = 0;
 
                             function start7() {
@@ -1175,7 +1178,7 @@
                                                     Customer Utterance</div>
 
 
-                                                <a id="btn8" class="btn btn-primary btn-icon-split" onclick="start8(); play8();">
+                                                <a id="btn8" class="btn btn-primary btn-icon-split" onclick="start8(); play8(); time8()">
                                                     <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
                                                 </a> 
                                                 <audio id="audio8" src="audio/kdca8.wav"></audio>
@@ -1264,7 +1267,7 @@
                         </div>
 
                         <script type="text/javascript"> 
-                            var maxtime8 = 5; // 초단위
+                            var maxtime8 = 3; // 초단위
                             var countdownId8 = 0;
 
                             function start8() {
@@ -1305,7 +1308,7 @@
                                                     Customer Utterance</div>
 
 
-                                                <a id="btn9" class="btn btn-primary btn-icon-split" onclick="start9(); play9();">
+                                                <a id="btn9" class="btn btn-primary btn-icon-split" onclick="start9(); play9(); time9()">
                                                     <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
                                                 </a> 
                                                 <audio id="audio9" src="audio/kdca9.wav"></audio>
@@ -1395,7 +1398,7 @@
 
 
                         <script type="text/javascript"> 
-                            var maxtime9 = 5; // 초단위
+                            var maxtime9 = 3; // 초단위
                             var countdownId9 = 0;
 
                             function start9() {
@@ -1436,7 +1439,7 @@
                                                     Customer Utterance</div>
 
 
-                                                <a id="btn10" class="btn btn-primary btn-icon-split" onclick="start10(); play10();">
+                                                <a id="btn10" class="btn btn-primary btn-icon-split" onclick="start10(); play10(); time10()">
                                                     <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
                                                 </a> 
                                                 <audio id="audio10" src="audio/kdca10.wav"></audio>
@@ -1526,7 +1529,7 @@
 
 
                         <script type="text/javascript"> 
-                            var maxtime10 = 5; // 초단위
+                            var maxtime10 = 3; // 초단위
                             var countdownId10 = 0;
 
                             function start10() {
@@ -1567,7 +1570,7 @@
                                                     Customer Utterance</div>
 
 
-                                                <a id="btn11" class="btn btn-primary btn-icon-split" onclick="start11(); play11();">
+                                                <a id="btn11" class="btn btn-primary btn-icon-split" onclick="start11(); play11(); time11()">
                                                     <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
                                                 </a> 
                                                 <audio id="audio11" src="audio/kdca11.wav"></audio>
@@ -1657,7 +1660,7 @@
 
 
                         <script type="text/javascript"> 
-                            var maxtime11 = 5; // 초단위
+                            var maxtime11 = 3; // 초단위
                             var countdownId11 = 0;
 
                             function start11() {
@@ -1698,7 +1701,7 @@
                                                     Customer Utterance</div>
 
 
-                                                <a id="btn12" class="btn btn-primary btn-icon-split" onclick="start12(); play12();">
+                                                <a id="btn12" class="btn btn-primary btn-icon-split" onclick="start12(); play12(); time12()">
                                                     <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
                                                 </a> 
                                                 <audio id="audio12" src="audio/kdca12.wav"></audio>
@@ -1788,7 +1791,7 @@
 
 
                         <script type="text/javascript"> 
-                            var maxtime12 = 5; // 초단위
+                            var maxtime12 = 3; // 초단위
                             var countdownId12 = 0;
 
                             function start12() {
@@ -1829,7 +1832,7 @@
                                                     Customer Utterance</div>
 
 
-                                                <a id="btn13" class="btn btn-primary btn-icon-split" onclick="start13(); play13();">
+                                                <a id="btn13" class="btn btn-primary btn-icon-split" onclick="start13(); play13(); time13()">
                                                     <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
                                                 </a> 
                                                 <audio id="audio13" src="audio/kdca13.wav"></audio>
@@ -1919,7 +1922,7 @@
 
 
                         <script type="text/javascript"> 
-                            var maxtime13 = 5; // 초단위
+                            var maxtime13 = 3; // 초단위
                             var countdownId13 = 0;
 
                             function start13() {
@@ -1960,7 +1963,7 @@
                                                     Customer Utterance</div>
 
 
-                                                <a id="btn14" class="btn btn-primary btn-icon-split" onclick="start14(); play14();">
+                                                <a id="btn14" class="btn btn-primary btn-icon-split" onclick="start14(); play14(); time14()">
                                                     <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
                                                 </a> 
                                                 <audio id="audio14" src="audio/kdca14.wav"></audio>
@@ -2050,7 +2053,7 @@
 
 
                         <script type="text/javascript"> 
-                            var maxtime14 = 5; // 초단위
+                            var maxtime14 = 3; // 초단위
                             var countdownId14 = 0;
 
                             function start14() {
@@ -2091,7 +2094,7 @@
                                                     Customer Utterance</div>
 
 
-                                                <a id="btn15" class="btn btn-primary btn-icon-split" onclick="start15(); play15();">
+                                                <a id="btn15" class="btn btn-primary btn-icon-split" onclick="start15(); play15(); time15()">
                                                     <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
                                                 </a> 
                                                 <audio id="audio15" src="audio/kdca15.wav"></audio>
@@ -2180,7 +2183,7 @@
 
 
                         <script type="text/javascript"> 
-                            var maxtime15 = 5; // 초단위
+                            var maxtime15 = 3; // 초단위
                             var countdownId15 = 0;
 
                             function start15() {
@@ -2220,7 +2223,7 @@
                                                     Customer Utterance</div>
 
 
-                                                <a id="btn16" class="btn btn-primary btn-icon-split" onclick="start16(); play16();">
+                                                <a id="btn16" class="btn btn-primary btn-icon-split" onclick="start16(); play16(); time16()">
                                                     <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
                                                 </a> 
                                                 <audio id="audio16" src="audio/kdca16.wav"></audio>
@@ -2310,7 +2313,7 @@
 
 
                         <script type="text/javascript"> 
-                            var maxtime16 = 5; // 초단위
+                            var maxtime16 = 3; // 초단위
                             var countdownId16 = 0;
 
                             function start16() {
@@ -2351,7 +2354,7 @@
                                                     Customer Utterance</div>
 
 
-                                                <a id="btn17" class="btn btn-primary btn-icon-split" onclick="start17(); play17();">
+                                                <a id="btn17" class="btn btn-primary btn-icon-split" onclick="start17(); play17(); time17()">
                                                     <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
                                                 </a> 
                                                 <audio id="audio17" src="audio/kdca17.wav"></audio>
@@ -2441,7 +2444,7 @@
 
 
                         <script type="text/javascript"> 
-                            var maxtime17 = 5; // 초단위
+                            var maxtime17 = 3; // 초단위
                             var countdownId17 = 0;
 
                             function start17() {
@@ -2482,7 +2485,7 @@
                                                     Customer Utterance</div>
 
 
-                                                <a id="btn18" class="btn btn-primary btn-icon-split" onclick="start18(); play18();">
+                                                <a id="btn18" class="btn btn-primary btn-icon-split" onclick="start18(); play18(); time18()">
                                                     <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
                                                 </a> 
                                                 <audio id="audio18" src="audio/kdca18.wav"></audio>
@@ -2572,7 +2575,7 @@
 
 
                         <script type="text/javascript"> 
-                            var maxtime18 = 5; // 초단위
+                            var maxtime18 = 3; // 초단위
                             var countdownId18 = 0;
 
                             function start18() {
@@ -2613,7 +2616,7 @@
                                                     Customer Utterance</div>
 
 
-                                                <a id="btn19" class="btn btn-primary btn-icon-split" onclick="start19(); play19();">
+                                                <a id="btn19" class="btn btn-primary btn-icon-split" onclick="start19(); play19(); time19()">
                                                     <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
                                                 </a> 
                                                 <audio id="audio19" src="audio/kdca19.wav"></audio>
@@ -2703,7 +2706,7 @@
 
 
                         <script type="text/javascript"> 
-                            var maxtime19 = 5; // 초단위
+                            var maxtime19 = 3; // 초단위
                             var countdownId19 = 0;
 
                             function start19() {
@@ -2743,7 +2746,7 @@
                                                     Customer Utterance</div>
 
 
-                                                <a id="btn20" class="btn btn-primary btn-icon-split" onclick="start20(); play20();">
+                                                <a id="btn20" class="btn btn-primary btn-icon-split" onclick="start20(); play20(); time20()">
                                                     <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
                                                 </a> 
                                                 <audio id="audio20" src="audio/kdca20.wav"></audio>
@@ -2833,7 +2836,7 @@
 
 
                         <script type="text/javascript"> 
-                            var maxtime20 = 5; // 초단위
+                            var maxtime20 = 3; // 초단위
                             var countdownId20 = 0;
 
                             function start20() {
@@ -2874,7 +2877,7 @@
                                                     Customer Utterance</div>
 
 
-                                                <a id="btn21" class="btn btn-primary btn-icon-split" onclick="start21(); play21();">
+                                                <a id="btn21" class="btn btn-primary btn-icon-split" onclick="start21(); play21(); time21()">
                                                     <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
                                                 </a> 
                                                 <audio id="audio21" src="audio/kdca21.wav"></audio>
@@ -2964,7 +2967,7 @@
 
 
                         <script type="text/javascript"> 
-                            var maxtime21 = 5; // 초단위
+                            var maxtime21 = 3; // 초단위
                             var countdownId21 = 0;
 
                             function start21() {
@@ -3005,7 +3008,7 @@
                                                     Customer Utterance</div>
 
 
-                                                <a id="btn22" class="btn btn-primary btn-icon-split" onclick="start22(); play22();">
+                                                <a id="btn22" class="btn btn-primary btn-icon-split" onclick="start22(); play22(); time22()">
                                                     <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
                                                 </a> 
                                                 <audio id="audio22" src="audio/kdca22.wav"></audio>
@@ -3095,7 +3098,7 @@
 
 
                         <script type="text/javascript"> 
-                            var maxtime22 = 5; // 초단위
+                            var maxtime22 = 3; // 초단위
                             var countdownId22 = 0;
 
                             function start22() {
@@ -3136,7 +3139,7 @@
                                                     Customer Utterance</div>
 
 
-                                                <a id="btn23" class="btn btn-primary btn-icon-split" onclick="start23(); play23();">
+                                                <a id="btn23" class="btn btn-primary btn-icon-split" onclick="start23(); play23(); time23()">
                                                     <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
                                                 </a> 
                                                 <audio id="audio23" src="audio/kdca23.wav"></audio>
@@ -3226,7 +3229,7 @@
 
 
                         <script type="text/javascript"> 
-                            var maxtime23 = 5; // 초단위
+                            var maxtime23 = 3; // 초단위
                             var countdownId23 = 0;
 
                             function start23() {
@@ -3267,7 +3270,7 @@
                                                     Customer Utterance</div>
 
 
-                                                <a id="btn24" class="btn btn-primary btn-icon-split" onclick="start24(); play24();">
+                                                <a id="btn24" class="btn btn-primary btn-icon-split" onclick="start24(); play24(); time24()">
                                                     <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
                                                 </a> 
                                                 <audio id="audio24" src="audio/kdca24.wav"></audio>
@@ -3357,7 +3360,7 @@
 
 
                         <script type="text/javascript"> 
-                            var maxtime24 = 5; // 초단위
+                            var maxtime24 = 3; // 초단위
                             var countdownId24 = 0;
 
                             function start24() {
@@ -3398,7 +3401,7 @@
                                                     Customer Utterance</div>
 
 
-                                                <a id="btn25" class="btn btn-primary btn-icon-split" onclick="start25(); play25();">
+                                                <a id="btn25" class="btn btn-primary btn-icon-split" onclick="start25(); play25(); time25()">
                                                     <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
                                                 </a> 
                                                 <audio id="audio25" src="audio/kdca25.wav"></audio>
@@ -3488,7 +3491,7 @@
 
 
                         <script type="text/javascript"> 
-                            var maxtime25 = 5; // 초단위
+                            var maxtime25 = 3; // 초단위
                             var countdownId25 = 0;
 
                             function start25() {
@@ -3529,7 +3532,7 @@
                                                     Customer Utterance</div>
 
 
-                                                <a id="btn26" class="btn btn-primary btn-icon-split" onclick="start26(); play26();">
+                                                <a id="btn26" class="btn btn-primary btn-icon-split" onclick="start26(); play26(); time26()">
                                                     <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
                                                 </a> 
                                                 <audio id="audio26" src="audio/kdca26.wav"></audio>
@@ -3619,7 +3622,7 @@
 
 
                         <script type="text/javascript"> 
-                            var maxtime26 = 5; // 초단위
+                            var maxtime26 = 3; // 초단위
                             var countdownId26 = 0;
 
                             function start26() {
@@ -3660,7 +3663,7 @@
                                                     Customer Utterance</div>
 
 
-                                                <a id="btn27" class="btn btn-primary btn-icon-split" onclick="start27(); play27();">
+                                                <a id="btn27" class="btn btn-primary btn-icon-split" onclick="start27(); play27(); time27()">
                                                     <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
                                                 </a> 
                                                 <audio id="audio27" src="audio/kdca27.wav"></audio>
@@ -3750,7 +3753,7 @@
 
 
                         <script type="text/javascript"> 
-                            var maxtime27 = 5; // 초단위
+                            var maxtime27 = 3; // 초단위
                             var countdownId27 = 0;
 
                             function start27() {
@@ -3791,7 +3794,7 @@
                                                     Customer Utterance</div>
 
 
-                                                <a id="btn28" class="btn btn-primary btn-icon-split" onclick="start28(); play28();">
+                                                <a id="btn28" class="btn btn-primary btn-icon-split" onclick="start28(); play28(); time28()">
                                                     <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
                                                 </a> 
                                                 <audio id="audio28" src="audio/kdca28.wav"></audio>
@@ -3881,7 +3884,7 @@
 
 
                         <script type="text/javascript"> 
-                            var maxtime28 = 5; // 초단위
+                            var maxtime28 = 3; // 초단위
                             var countdownId28 = 0;
 
                             function start28() {
@@ -3922,7 +3925,7 @@
                                                     Customer Utterance</div>
 
 
-                                                <a id="btn29" class="btn btn-primary btn-icon-split" onclick="start29(); play29();">
+                                                <a id="btn29" class="btn btn-primary btn-icon-split" onclick="start29(); play29(); time29()">
                                                     <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
                                                 </a> 
                                                 <audio id="audio29" src="audio/kdca29.wav"></audio>
@@ -4012,7 +4015,7 @@
 
 
                         <script type="text/javascript"> 
-                            var maxtime29 = 5; // 초단위
+                            var maxtime29 = 3; // 초단위
                             var countdownId29 = 0;
 
                             function start29() {
@@ -4052,7 +4055,7 @@
                                                     Customer Utterance</div>
 
 
-                                                <a id="btn30" class="btn btn-primary btn-icon-split" onclick="start30(); play30();">
+                                                <a id="btn30" class="btn btn-primary btn-icon-split" onclick="start30(); play30(); time30()">
                                                     <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
                                                 </a> 
                                                 <audio id="audio30" src="audio/kdca30.wav"></audio>
@@ -4142,7 +4145,7 @@
 
 
                         <script type="text/javascript"> 
-                            var maxtime30 = 5; // 초단위
+                            var maxtime30 = 3; // 초단위
                             var countdownId30 = 0;
 
                             function start30() {
@@ -4183,7 +4186,7 @@
                                                     Customer Utterance</div>
 
 
-                                                <a id="btn31" class="btn btn-primary btn-icon-split" onclick="start31(); play31();">
+                                                <a id="btn31" class="btn btn-primary btn-icon-split" onclick="start31(); play31(); time31()">
                                                     <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
                                                 </a> 
                                                 <audio id="audio31" src="audio/kdca31.wav"></audio>
@@ -4272,7 +4275,7 @@
 
 
                         <script type="text/javascript"> 
-                            var maxtime31 = 5; // 초단위
+                            var maxtime31 = 3; // 초단위
                             var countdownId31 = 0;
 
                             function start31() {
@@ -4313,7 +4316,7 @@
                                                     Customer Utterance</div>
 
 
-                                                <a id="btn32" class="btn btn-primary btn-icon-split" onclick="start32(); play32();">
+                                                <a id="btn32" class="btn btn-primary btn-icon-split" onclick="start32(); play32(); time32()">
                                                     <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
                                                 </a> 
                                                 <audio id="audio32" src="audio/kdca32.wav"></audio>
@@ -4403,7 +4406,7 @@
 
 
                         <script type="text/javascript"> 
-                            var maxtime32 = 5; // 초단위
+                            var maxtime32 = 3; // 초단위
                             var countdownId32 = 0;
 
                             function start32() {
@@ -4444,7 +4447,7 @@
                                                     Customer Utterance</div>
 
 
-                                                <a id="btn33" class="btn btn-primary btn-icon-split" onclick="start33(); play33();">
+                                                <a id="btn33" class="btn btn-primary btn-icon-split" onclick="start33(); play33(); time33()">
                                                     <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
                                                 </a> 
                                                 <audio id="audio33" src="audio/kdca33.wav"></audio>
@@ -4534,7 +4537,7 @@
 
 
                         <script type="text/javascript"> 
-                            var maxtime33 = 5; // 초단위
+                            var maxtime33 = 3; // 초단위
                             var countdownId33 = 0;
 
                             function start33() {
@@ -4575,7 +4578,7 @@
                                                     Customer Utterance</div>
 
 
-                                                <a id="btn34" class="btn btn-primary btn-icon-split" onclick="start34(); play34();">
+                                                <a id="btn34" class="btn btn-primary btn-icon-split" onclick="start34(); play34(); time34()">
                                                     <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
                                                 </a> 
                                                 <audio id="audio34" src="audio/kdca34.wav"></audio>
@@ -4664,7 +4667,7 @@
 
 
                         <script type="text/javascript"> 
-                            var maxtime34 = 5; // 초단위
+                            var maxtime34 = 3; // 초단위
                             var countdownId34 = 0;
 
                             function start34() {
@@ -4705,7 +4708,7 @@
                                                     Customer Utterance</div>
 
 
-                                                <a id="btn35" class="btn btn-primary btn-icon-split" onclick="start35(); play35();">
+                                                <a id="btn35" class="btn btn-primary btn-icon-split" onclick="start35(); play35(); time35()">
                                                     <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
                                                 </a> 
                                                 <audio id="audio35" src="audio/kdca35.wav"></audio>
@@ -4794,7 +4797,7 @@
 
 
                         <script type="text/javascript"> 
-                            var maxtime35 = 5; // 초단위
+                            var maxtime35 = 3; // 초단위
                             var countdownId35 = 0;
 
                             function start35() {
@@ -4835,7 +4838,7 @@
                                                     Customer Utterance</div>
 
 
-                                                <a id="btn36" class="btn btn-primary btn-icon-split" onclick="start36(); play36();">
+                                                <a id="btn36" class="btn btn-primary btn-icon-split" onclick="start36(); play36(); time36()">
                                                     <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
                                                 </a> 
                                                 <audio id="audio36" src="audio/kdca36.wav"></audio>
@@ -4925,7 +4928,7 @@
 
 
                         <script type="text/javascript"> 
-                            var maxtime36 = 5; // 초단위
+                            var maxtime36 = 3; // 초단위
                             var countdownId36 = 0;
 
                             function start36() {
@@ -4964,7 +4967,7 @@
                                                     Customer Utterance</div>
 
 
-                                                <a id="btn37" class="btn btn-primary btn-icon-split" onclick="start37(); play37();">
+                                                <a id="btn37" class="btn btn-primary btn-icon-split" onclick="start37(); play37(); time37()">
                                                     <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
                                                 </a> 
                                                 <audio id="audio37" src="audio/kdca37.wav"></audio>
@@ -5053,7 +5056,7 @@
 
 
                         <script type="text/javascript"> 
-                            var maxtime37 = 5; // 초단위
+                            var maxtime37 = 3; // 초단위
                             var countdownId37 = 0;
 
                             function start37() {
@@ -5092,7 +5095,7 @@
                                                     Customer Utterance</div>
 
 
-                                                <a id="btn38" class="btn btn-primary btn-icon-split" onclick="start38(); play38();">
+                                                <a id="btn38" class="btn btn-primary btn-icon-split" onclick="start38(); play38(); time38()">
                                                     <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
                                                 </a> 
                                                 <audio id="audio38" src="audio/kdca38.wav"></audio>
@@ -5182,7 +5185,7 @@
 
 
                         <script type="text/javascript"> 
-                            var maxtime38 = 5; // 초단위
+                            var maxtime38 = 3; // 초단위
                             var countdownId38 = 0;
 
                             function start38() {
@@ -5223,7 +5226,7 @@
                                                     Customer Utterance</div>
 
 
-                                                <a id="btn39" class="btn btn-primary btn-icon-split" onclick="start39(); play39();">
+                                                <a id="btn39" class="btn btn-primary btn-icon-split" onclick="start39(); play39(); time39()">
                                                     <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
                                                 </a> 
                                                 <audio id="audio39" src="audio/kdca39.wav"></audio>
@@ -5312,7 +5315,7 @@
 
 
                         <script type="text/javascript"> 
-                            var maxtime39 = 5; // 초단위
+                            var maxtime39 = 3; // 초단위
                             var countdownId39 = 0;
 
                             function start39() {
@@ -5353,7 +5356,7 @@
                                                     Customer Utterance</div>
 
 
-                                                <a id="btn40" class="btn btn-primary btn-icon-split" onclick="start40(); play40();">
+                                                <a id="btn40" class="btn btn-primary btn-icon-split" onclick="start40(); play40(); time40()">
                                                     <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
                                                 </a> 
                                                 <audio id="audio40" src="audio/kdca40.wav"></audio>
@@ -5443,7 +5446,7 @@
 
 
                         <script type="text/javascript"> 
-                            var maxtime40 = 5; // 초단위
+                            var maxtime40 = 3; // 초단위
                             var countdownId40 = 0;
 
                             function start40() {
@@ -5484,7 +5487,7 @@
                                                     Customer Utterance</div>
 
 
-                                                <a id="btn41" class="btn btn-primary btn-icon-split" onclick="start41(); play41();">
+                                                <a id="btn41" class="btn btn-primary btn-icon-split" onclick="start41(); play41(); time41()">
                                                     <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
                                                 </a> 
                                                 <audio id="audio41" src="audio/kdca41.wav"></audio>
@@ -5574,7 +5577,7 @@
 
 
                         <script type="text/javascript"> 
-                            var maxtime41 = 5; // 초단위
+                            var maxtime41 = 3; // 초단위
                             var countdownId41 = 0;
 
                             function start41() {
@@ -5615,7 +5618,7 @@
                                                     Customer Utterance</div>
 
 
-                                                <a id="btn42" class="btn btn-primary btn-icon-split" onclick="start42(); play42();">
+                                                <a id="btn42" class="btn btn-primary btn-icon-split" onclick="start42(); play42(); time42()">
                                                     <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
                                                 </a> 
                                                 <audio id="audio42" src="audio/kdca42.wav"></audio>
@@ -5705,7 +5708,7 @@
 
 
                         <script type="text/javascript"> 
-                            var maxtime42 = 5; // 초단위
+                            var maxtime42 = 3; // 초단위
                             var countdownId42 = 0;
 
                             function start42() {
@@ -5745,7 +5748,7 @@
                                                     Customer Utterance</div>
 
 
-                                                <a id="btn43" class="btn btn-primary btn-icon-split" onclick="start43(); play43();">
+                                                <a id="btn43" class="btn btn-primary btn-icon-split" onclick="start43(); play43(); time43()">
                                                     <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
                                                 </a> 
                                                 <audio id="audio43" src="audio/kdca43.wav"></audio>
@@ -5835,7 +5838,7 @@
 
 
                         <script type="text/javascript"> 
-                            var maxtime43 = 5; // 초단위
+                            var maxtime43 = 3; // 초단위
                             var countdownId43 = 0;
 
                             function start43() {
@@ -5874,7 +5877,7 @@
                                                     Customer Utterance</div>
 
 
-                                                <a id="btn44" class="btn btn-primary btn-icon-split" onclick="start44(); play44();">
+                                                <a id="btn44" class="btn btn-primary btn-icon-split" onclick="start44(); play44(); time44()">
                                                     <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
                                                 </a> 
                                                 <audio id="audio44" src="audio/kdca44.wav"></audio>
@@ -5964,7 +5967,7 @@
 
 
                         <script type="text/javascript"> 
-                            var maxtime44 = 5; // 초단위
+                            var maxtime44 = 3; // 초단위
                             var countdownId44 = 0;
 
                             function start44() {
@@ -6003,7 +6006,7 @@
                                                     Customer Utterance</div>
 
 
-                                                <a id="btn45" class="btn btn-primary btn-icon-split" onclick="start45(); play45();">
+                                                <a id="btn45" class="btn btn-primary btn-icon-split" onclick="start45(); play45(); time45()">
                                                     <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
                                                 </a> 
                                                 <audio id="audio45" src="audio/kdca45.wav"></audio>
@@ -6092,7 +6095,7 @@
 
 
                         <script type="text/javascript"> 
-                            var maxtime45 = 5; // 초단위
+                            var maxtime45 = 3; // 초단위
                             var countdownId45 = 0;
 
                             function start45() {
@@ -6131,7 +6134,7 @@
                                                     Customer Utterance</div>
 
 
-                                                <a id="btn46" class="btn btn-primary btn-icon-split" onclick="start46(); play46();">
+                                                <a id="btn46" class="btn btn-primary btn-icon-split" onclick="start46(); play46(); time46()">
                                                     <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
                                                 </a> 
                                                 <audio id="audio46" src="audio/kdca46.wav"></audio>
@@ -6221,7 +6224,7 @@
 
 
                         <script type="text/javascript"> 
-                            var maxtime46 = 5; // 초단위
+                            var maxtime46 = 3; // 초단위
                             var countdownId46 = 0;
 
                             function start46() {
@@ -6261,7 +6264,7 @@
                                                     Customer Utterance</div>
 
 
-                                                <a id="btn47" class="btn btn-primary btn-icon-split" onclick="start47(); play47();">
+                                                <a id="btn47" class="btn btn-primary btn-icon-split" onclick="start47(); play47(); time47()">
                                                     <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
                                                 </a> 
                                                 <audio id="audio47" src="audio/kdca47.wav"></audio>
@@ -6350,7 +6353,7 @@
 
 
                         <script type="text/javascript"> 
-                            var maxtime47 = 5; // 초단위
+                            var maxtime47 = 3; // 초단위
                             var countdownId47 = 0;
 
                             function start47() {
@@ -6391,7 +6394,7 @@
                                                     Customer Utterance</div>
 
 
-                                                <a id="btn48" class="btn btn-primary btn-icon-split" onclick="start48(); play48();">
+                                                <a id="btn48" class="btn btn-primary btn-icon-split" onclick="start48(); play48(); time48()">
                                                     <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
                                                 </a> 
                                                 <audio id="audio48" src="audio/kdca48.wav"></audio>
@@ -6481,7 +6484,7 @@
 
 
                         <script type="text/javascript"> 
-                            var maxtime48 = 5; // 초단위
+                            var maxtime48 = 3; // 초단위
                             var countdownId48 = 0;
 
                             function start48() {
@@ -6522,7 +6525,7 @@
                                                     Customer Utterance</div>
 
 
-                                                <a id="btn49" class="btn btn-primary btn-icon-split" onclick="start49(); play49();">
+                                                <a id="btn49" class="btn btn-primary btn-icon-split" onclick="start49(); play49(); time49()">
                                                     <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
                                                 </a> 
                                                 <audio id="audio49" src="audio/kdca49.wav"></audio>
@@ -6612,7 +6615,7 @@
 
 
                         <script type="text/javascript"> 
-                            var maxtime49 = 5; // 초단위
+                            var maxtime49 = 3; // 초단위
                             var countdownId49 = 0;
 
                             function start49() {
@@ -6653,7 +6656,7 @@
                                                     Customer Utterance</div>
 
 
-                                                <a id="btn50" class="btn btn-primary btn-icon-split" onclick="start50(); play50();">
+                                                <a id="btn50" class="btn btn-primary btn-icon-split" onclick="start50(); play50(); time50()">
                                                     <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
                                                 </a> 
                                                 <audio id="audio50" src="audio/kdca50.wav"></audio>
@@ -6743,7 +6746,7 @@
 
 
                         <script type="text/javascript"> 
-                            var maxtime50 = 5; // 초단위
+                            var maxtime50 = 3; // 초단위
                             var countdownId50 = 0;
 
                             function start50() {
@@ -6770,7 +6773,7 @@
                         </script>    
                         
                         <div id="summitbtn" class="row" style="display: none;">
-                            <input type="submit" value="제출하기 (클릭)">
+                             <input type="submit" name="submit" value="제출하기 (클릭)" onclick="javascript:document.gform.submit.value='제출완료!'">
                         </div>
                         <!-- Done -->
                     </form>
