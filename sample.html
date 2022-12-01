@@ -460,7 +460,157 @@
                             }
                         </script>
                         
+                        <!-- Utterance 2 -->
 
+                        <div id="utterance2" class="row" style="display: none;">
+                            <div class="col-xl-12 col-md-12 mb-4">
+                                <div class="card border-left-primary shadow h-100 py-2">
+                                    <div class="card-body">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col mr-auto">
+                                                <div class="font-weight-bold text-primary text-uppercase mb-1">
+                                                    Customer Utterance</div>
+
+
+                                                <a id="btn2" class="btn btn-primary btn-icon-split" onclick="start2(); play2(); time2()">
+                                                    <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
+                                                </a> 
+                                                <audio id="audio2" src="audio/sample2.wav"></audio>
+                                                <script>
+                                                    function play2(){
+                                                    var audio2 = document.getElementById("audio2");
+                                                    audio2.play();
+                                                    }
+                                                    function time2(){
+                                                    var today2 = new Date();
+                                                    var hour2 = today2.getHours();
+                                                    var minutes2 = today2.getMinutes();
+                                                    var seconds2 = today2.getSeconds();
+                                                    document.getElementById("times").innerHTML=document.getElementById("times").innerHTML+"|"+"btn2: "+hour2+"시"+minutes2+"분"+seconds2+"초";
+                                                    }
+
+                                                </script>
+
+                                                <div id="text2" class="text"><br></div>
+                                                <script type="text/javascript">    
+                                                    const btn2 = document.getElementById("btn2");
+                                                    const text2 = document.getElementById("text2");
+                                                    const contents2 = '\n 제가 요새는 전자담배를 태우는데 그럼 코로나에 걸릴 리스크가 덜해질까요?'
+                                                    let saveInterval2;
+
+                                                    btn2.addEventListener('click', () => {
+                                                      let index = 0; // contents의 초기 인덱스
+                                                      text2.innerHTML = ''; // typingSpan 비우기
+                                                      clearInterval(saveInterval2); // 기존 interval 종료
+
+                                                      saveInterval2 = setInterval(() => {
+                                                        if(index >= contents2.length - 1) { // index가 범위에 도달될 경우 interval 종료
+                                                          clearInterval(saveInterval2);
+                                                        }
+
+                                                        if(contents2[index] === '\n') { // 개행문자 일 경우 <br /> 삽입
+                                                          text2.innerHTML += '<br />';
+                                                          index++;
+                                                        } else {
+                                                          text2.innerHTML += contents2[index++]; // contents문자들을 순서대로 넣기
+                                                        }
+                                                      }, 50) // 0.05초마다 글자 입력
+                                                    })
+                                                </script>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Response 2-->
+                        <div id="response2" class="row">
+                            <div id="005" class="col-xl-12 col-md-12 mb-4" style="display:none;">
+
+                                <!-- XAI (1) -->
+                                <div class="card border-left-primary shadow h-100 py-2">
+                                    <div class="card-body">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col mr-auto">
+                                                <div class="font-weight-bold text-primary text-uppercase mb-1">
+                                                    AI의 예측 결과 : 코로나 담배 관련 문의</div>
+                                            </div>
+                                        </div>                                 
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Intent -->
+                            <div id="006" class="col-xl-12 col-md-12 mb-4" style="display:none;">
+                                <div class="card border-left-primary shadow h-100 py-2">
+                                    <div class="card-body">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col mr-auto">
+                                                <div class="font-weight-bold text-primary text-uppercase mb-1">
+                                                    Decision (AI의 예측 결과를 참고하여 고객의 질문 의도를 판단하고 체크해주십시오.)</div>
+                                            </div>
+                                        </div>
+                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"></div>
+                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"></div>
+                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"></div>
+
+                                        <input type="radio" name="entry.23509137" id='entry.23509137' value="price"/>&nbsp;&nbsp;마스크&nbsp;&nbsp;
+                                        <input type="radio" name="entry.23509137" id='entry.23509137' value="method"/>&nbsp;&nbsp;코로나 담배 관련 문의&nbsp;&nbsp;
+                                        <input type="radio" name="entry.23509137" id='entry.23509137' value="change"/>&nbsp;&nbsp;코로나 예방&nbsp;&nbsp;
+                                        <input type="radio" name="entry.23509137" id='entry.23509137' value="discount"/>&nbsp;&nbsp;코로나 자가격리 식사 문의&nbsp;&nbsp;
+                                        <input type="radio" name="entry.23509137" id='entry.23509137' value="installment"/>&nbsp;&nbsp;코로나 하위 제품 판매 문의&nbsp;&nbsp;
+
+
+                                        <div class="font-weight-bold text-primary text-uppercase mb-1"></div>                                              
+                                        <div class="font-weight-bold text-primary text-uppercase mb-1">Decision Confidence (이러한 결정에 얼마나 확신을 가지는지 체크해주십시오.)</div>
+                                        <select name="entry.125949930" id="entry.125949930">
+                                            <option name="entry.125949930" id="entry.125949930" value="select">선택
+                                            <option name="entry.125949930" id="entry.125949930" value="level1">1 (전혀 확신하지 않는다)
+                                            <option name="entry.125949930" id="entry.125949930" value="level2">2 (매우 약하게 확신한다)
+                                            <option name="entry.125949930" id="entry.125949930" value="level3">3 (다소 확신한다)
+                                            <option name="entry.125949930" id="entry.125949930" value="level4">4 (상당히 확신한다)
+                                            <option name="entry.125949930" id="entry.125949930" value="level5">5 (완전히 확신한다)
+                                        </select> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12 col-md-12 mb-4">
+                                <a id="007" class="btn btn-primary btn-icon-split" onclick="onDisplay3();" style="display: none;">
+                                    <span class="text-lg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;다음 문제&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                </a>
+                            </div>
+                            
+                        </div>
+
+
+                        <script type="text/javascript"> 
+                            var maxtime2 = 3; // 초단위
+                            var countdownId2 = 0;
+
+                            function start2() {
+                                countdownId2 = setInterval("countdown2()", 1000);
+                            }
+
+                            function countdown2() {
+                                if(maxtime2 > 0) {
+                                    maxtime2 = maxtime2 - 1;
+                                    document.getElementById("cdDiv2").innerHTML = maxtime2;
+                                } 
+                                else {
+                                    document.getElementById("005").style.display="block";
+                                    document.getElementById("006").style.display="block";
+                                    document.getElementById("007").style.display="block";
+                                    clearInterval(countdownId2);
+                                }
+                            }
+
+                        </script>  
+                        <script type="text/javascript">
+                            function onDisplay3() {
+                                $('#utterance3').show();
+                            }
+                        </script>
 
                         <!-- Utterance 50 -->
 
