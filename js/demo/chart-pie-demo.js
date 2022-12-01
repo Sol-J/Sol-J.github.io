@@ -3961,16 +3961,16 @@ var myPieChart99 = new Chart(ctx99, {
 
         
 
-// Pie Chart Example (100)
-var ctx100 = document.getElementById("myPieChart100");
-var myPieChart100 = new Chart(ctx100, {
+// Pie Chart Example (1000)
+var ctx1000 = document.getElementById("myPieChart1000");
+var myPieChart1000 = new Chart(ctx1000, {
   type: 'doughnut',
   data: {
-    labels: ["특고 (0.08) ", "안정지원금이 (0.01) ", "프리랜서 (0.01) "],
+    labels: ["걸릴 (0.13) ", "코로나에 (0.11) ", "리스크가 (0.09) ", "전자담배를 (0.07) "],
     datasets: [{
-      data: [80.0, 10.0, 10.0],
-      backgroundColor: ['#2DB7CA', '#2DB7CA', '#5CC8D6'],
-      hoverBackgroundColor: ['#2DB7CA', '#2DB7CA', '#5CC8D6'],
+      data: [32.5, 27.5, 22.5, 17.5],
+      backgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2'],
+      hoverBackgroundColor: ['#2DB7CA', '#5CC8D6', '#8AD6E2', '#C8ECF2'],
       hoverBorderColor: "rgba(234, 236, 244, 1)",      
 
     }],
@@ -3996,7 +3996,3 @@ var myPieChart100 = new Chart(ctx100, {
 
   },
 });
-
-
-
-        
