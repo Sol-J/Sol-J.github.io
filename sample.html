@@ -612,9 +612,9 @@
                             }
                         </script>
 
-                        <!-- Utterance 50 -->
+                        <!-- Utterance 3 -->
 
-                        <div id="utterance50" class="row" style="display: none;">
+                        <div id="utterance3" class="row" style="display: none;">
                             <div class="col-xl-12 col-md-12 mb-4">
                                 <div class="card border-left-primary shadow h-100 py-2">
                                     <div class="card-body">
@@ -624,39 +624,47 @@
                                                     Customer Utterance</div>
 
 
-                                                <a id="btn50" class="btn btn-primary btn-icon-split" onclick="start50(); play50(); time50()">
+                                                <a id="btn3" class="btn btn-primary btn-icon-split" onclick="start3(); play3(); time3()">
                                                     <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;이 버튼을 클릭해주세요&nbsp;&nbsp;&nbsp;</span>
                                                 </a> 
-                                                <audio id="audio50" src="audio/kdca50.wav"></audio>
+                                                <audio id="audio3" src="audio/sample3.wav"></audio>
                                                 <script>
-                                                    function play50(){
-                                                    var audio50 = document.getElementById("audio50");
-                                                    audio50.play();
+                                                    function play3(){
+                                                    var audio3 = document.getElementById("audio3");
+                                                    audio3.play();
                                                     }
+                                                    function time3(){
+                                                    var today3 = new Date();
+                                                    var hour3 = today2.getHours();
+                                                    var minutes3 = today2.getMinutes();
+                                                    var seconds3 = today2.getSeconds();
+                                                    document.getElementById("times").innerHTML=document.getElementById("times").innerHTML+"|"+"btn3: "+hour2+"시"+minutes2+"분"+seconds2+"초";
+                                                    }
+
                                                 </script>
 
-                                                <div id="text50" class="text"><br></div>
+                                                <div id="text3" class="text"><br></div>
                                                 <script type="text/javascript">    
-                                                    const btn50 = document.getElementById("btn50");
-                                                    const text50 = document.getElementById("text50");
-                                                    const contents50 = '\n 특고, 프리랜서 고용 안정지원금이 뭔가요?'
-                                                    let saveInterval50;
+                                                    const btn3 = document.getElementById("btn3");
+                                                    const text3 = document.getElementById("text3");
+                                                    const contents3 = '\n 제가 요새는 전자담배를 태우는데 그럼 코로나에 걸릴 리스크가 덜해질까요?'
+                                                    let saveInterval3;
 
-                                                    btn50.addEventListener('click', () => {
+                                                    btn3.addEventListener('click', () => {
                                                       let index = 0; // contents의 초기 인덱스
-                                                      text50.innerHTML = ''; // typingSpan 비우기
-                                                      clearInterval(saveInterval50); // 기존 interval 종료
+                                                      text3.innerHTML = ''; // typingSpan 비우기
+                                                      clearInterval(saveInterval3); // 기존 interval 종료
 
-                                                      saveInterval50 = setInterval(() => {
-                                                        if(index >= contents50.length - 1) { // index가 범위에 도달될 경우 interval 종료
-                                                          clearInterval(saveInterval50);
+                                                      saveInterval3 = setInterval(() => {
+                                                        if(index >= contents3.length - 1) { // index가 범위에 도달될 경우 interval 종료
+                                                          clearInterval(saveInterval3);
                                                         }
 
-                                                        if(contents50[index] === '\n') { // 개행문자 일 경우 <br /> 삽입
-                                                          text50.innerHTML += '<br />';
+                                                        if(contents3[index] === '\n') { // 개행문자 일 경우 <br /> 삽입
+                                                          text3.innerHTML += '<br />';
                                                           index++;
                                                         } else {
-                                                          text50.innerHTML += contents50[index++]; // contents문자들을 순서대로 넣기
+                                                          text3.innerHTML += contents3[index++]; // contents문자들을 순서대로 넣기
                                                         }
                                                       }, 50) // 0.05초마다 글자 입력
                                                     })
@@ -668,104 +676,48 @@
                             </div>
                         </div>
 
-                        <!-- Response 50-->
-                        <div id="response50" class="row">
-                            <div id="149" class="col-xl-12 col-md-12 mb-4" style="display: none;">
-
-                                <div class="row">
-                                    <!-- Bar chart -->
-                                    <div class="col-lg-6 mb-1" >
-                                        <div class="card shadow mb-1">
-                                            <div class="card-header py-3">
-                                                <h6 class="m-0 font-weight-bold text-primary">Prediction Probabilities</h6>
-                                            </div>
-                                            <div class="card-body">
-                                                <h4 class="small font-weight-bold">백신 문의 <span
-                                                        class="float-right">34%</span></h4>
-                                                <div class="progress mb-4">
-                                                    <div class="progress-bar bg-info" role="progressbar" style="width: 34%"
-                                                        aria-valuenow="34" aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div>                                     
-                                                <h4 class="small font-weight-bold">코로나 지원금 <span
-                                                        class="float-right">28%</span></h4>
-                                                <div class="progress mb-4">
-                                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 28%"
-                                                        aria-valuenow="28" aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div>
-                                                <h4 class="small font-weight-bold">격리 입원 치료비 <span
-                                                        class="float-right">19%</span></h4>
-                                                <div class="progress mb-4">
-                                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 19%"
-                                                        aria-valuenow="19" aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div>
-                                                <hr>
-                                                인공지능(AI)이 예측한 상위 3개의 질문 의도와 확률을 보여주는 차트이다. 
-                                                <br>
-                                                <br>
-                                                질문 의도 중 <code>백신 문의</code>이(가) 34%의 가장 높은 확률을 보이기 때문에, 인공지능은 고객의 의도를 <code>백신 문의</code>(으)로 판단한다.   
-                                                <br>
-                                                <br>
-                                                인공지능(AI)이 이러한 결과를 예측하는 데 기여한 단어들은 그 다음 표에 중요도에 따른 색깔로 제공되어 있다. 
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Donut Chart -->
-                                    <div class="col-lg-6 mb-1">
-                                        <div class="card shadow mb-1">
-                                            <div class="card-header py-3">
-                                                <h6 class="m-0 font-weight-bold text-primary">Important Words</h6>
-                                            </div>
-                                            <!-- Card Body -->
-                                            <div class="card-body">
-                                                <div class="chart-pie pt-4">
-                                                    <canvas id="myPieChart100"></canvas>
-                                                </div>
-                                                <hr>
-                                                <div class="m-0 text-dark"><span style="background-color: #2DB7CA">특고</span>, <span style="background-color: #8AD6E2">프리랜서</span> 고용 <span style="background-color: #5CC8D6">안정지원금이</span> <span style="background-color: #FACD66">뭔가요</span>?
-                                                </div>  
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>  
+                        <!-- Response 3-->
+                        <div id="response3" class="row">
+                            <div id="008" class="col-xl-12 col-md-12 mb-4" style="display:none;">
                             </div>
 
                             <!-- Intent -->
-                            <div id="150" class="col-xl-12 col-md-12 mb-4" style="display:none;">
+                            <div id="009" class="col-xl-12 col-md-12 mb-4" style="display:none;">
                                 <div class="card border-left-primary shadow h-100 py-2">
                                     <div class="card-body">
                                         <div class="row no-gutters align-items-center">
                                             <div class="col mr-auto">
                                                 <div class="font-weight-bold text-primary text-uppercase mb-1">
-                                                    Decision (고객의 질문 의도를 판단하고 체크해주십시오.)</div>
+                                                    Decision (AI의 예측 결과를 참고하여 고객의 질문 의도를 판단하고 체크해주십시오.)</div>
                                             </div>
                                         </div>
                                         <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"></div>
                                         <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"></div>
                                         <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"></div>
 
-                                        <input type="radio" name="entry.13430286" id='entry.13430286' value="signup"/>&nbsp;&nbsp;백신 문의&nbsp;&nbsp;
-                                        <input type="radio" name="entry.13430286" id='entry.13430286' value="complaint"/>&nbsp;&nbsp;격리 입원 치료비&nbsp;&nbsp;
-                                        <input type="radio" name="entry.13430286" id='entry.13430286' value="recall"/>&nbsp;&nbsp;코로나 지원금&nbsp;&nbsp;
-                                        <input type="radio" name="entry.13430286" id='entry.13430286' value="message"/>&nbsp;&nbsp;마스크 과태료&nbsp;&nbsp;
-                                        <input type="radio" name="entry.13430286" id='entry.13430286' value="marketing"/>&nbsp;&nbsp;휴업 수당&nbsp;&nbsp;
+                                        <input type="radio" name="entry.23509137" id='entry.23509137' value="price"/>&nbsp;&nbsp;마스크&nbsp;&nbsp;
+                                        <input type="radio" name="entry.23509137" id='entry.23509137' value="method"/>&nbsp;&nbsp;코로나 담배 관련 문의&nbsp;&nbsp;
+                                        <input type="radio" name="entry.23509137" id='entry.23509137' value="change"/>&nbsp;&nbsp;코로나 예방&nbsp;&nbsp;
+                                        <input type="radio" name="entry.23509137" id='entry.23509137' value="discount"/>&nbsp;&nbsp;코로나 자가격리 식사 문의&nbsp;&nbsp;
+                                        <input type="radio" name="entry.23509137" id='entry.23509137' value="installment"/>&nbsp;&nbsp;코로나 하위 제품 판매 문의&nbsp;&nbsp;
+
 
                                         <div class="font-weight-bold text-primary text-uppercase mb-1"></div>                                              
                                         <div class="font-weight-bold text-primary text-uppercase mb-1">Decision Confidence (이러한 결정에 얼마나 확신을 가지는지 체크해주십시오.)</div>
-                                        <select name="entry.1396368815" id="entry.1396368815">
-                                            <option name="entry.1396368815" id="entry.1396368815" value="select">선택
-                                            <option name="entry.1396368815" id="entry.1396368815" value="level1">1 (전혀 확신하지 않는다)
-                                            <option name="entry.1396368815" id="entry.1396368815" value="level2">2 (매우 약하게 확신한다)
-                                            <option name="entry.1396368815" id="entry.1396368815" value="level3">3 (다소 확신한다)
-                                            <option name="entry.1396368815" id="entry.1396368815" value="level4">4 (상당히 확신한다)
-                                            <option name="entry.1396368815" id="entry.1396368815" value="level5">5 (완전히 확신한다)
+                                        <select name="entry.125949930" id="entry.125949930">
+                                            <option name="entry.125949930" id="entry.125949930" value="select">선택
+                                            <option name="entry.125949930" id="entry.125949930" value="level1">1 (전혀 확신하지 않는다)
+                                            <option name="entry.125949930" id="entry.125949930" value="level2">2 (매우 약하게 확신한다)
+                                            <option name="entry.125949930" id="entry.125949930" value="level3">3 (다소 확신한다)
+                                            <option name="entry.125949930" id="entry.125949930" value="level4">4 (상당히 확신한다)
+                                            <option name="entry.125949930" id="entry.125949930" value="level5">5 (완전히 확신한다)
                                         </select> 
                                     </div>
                                 </div>
                             </div>
                             <div class="col-xl-12 col-md-12 mb-4">
-                                <a id="151" class="btn btn-primary btn-icon-split" onclick="onDisplay51();" style="display: none;">
-                                    <span class="text-lg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;모든 문항이 종료되었습니다. 여기를 클릭하면 제출 버튼이 나타납니다.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <a id="010" class="btn btn-primary btn-icon-split" onclick="onDisplay4();" style="display: none;">
+                                    <span class="text-lg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;다음 문제&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                                 </a>
                             </div>
                             
@@ -773,32 +725,33 @@
 
 
                         <script type="text/javascript"> 
-                            var maxtime50 = 3; // 초단위
-                            var countdownId50 = 0;
+                            var maxtime3 = 3; // 초단위
+                            var countdownId3 = 0;
 
-                            function start50() {
-                                countdownId50 = setInterval("countdown50()", 1000);
+                            function start3() {
+                                countdownId3 = setInterval("countdown3()", 1000);
                             }
 
-                            function countdown50() {
-                                if(maxtime50 > 0) {
-                                    maxtime50 = maxtime50 - 1;
-                                    document.getElementById("cdDiv50").innerHTML = maxtime50;
+                            function countdown3() {
+                                if(maxtime3 > 0) {
+                                    maxtime3 = maxtime3 - 1;
+                                    document.getElementById("cdDiv3").innerHTML = maxtime3;
                                 } 
                                 else {
-                                    document.getElementById("149").style.display="block";
-                                    document.getElementById("150").style.display="block";
-                                    document.getElementById("151").style.display="block";
-                                    clearInterval(countdownId50);
+                                    document.getElementById("008").style.display="block";
+                                    document.getElementById("009").style.display="block";
+                                    document.getElementById("010").style.display="block";
+                                    clearInterval(countdownId3);
                                 }
                             }
 
                         </script>  
                         <script type="text/javascript">
-                            function onDisplay51() {
-                                $('#summitbtn').show();
+                            function onDisplay4() {
+                                $('#utterance4').show();
                             }
-                        </script>    
+                        </script>
+
                         
                         <div id="summitbtn" class="row" style="display: none;">
                              <input type="submit" name="submit" value="제출하기 (클릭)" onclick="javascript:document.gform.submit.value='제출완료되었습니다. 감사합니다!'">
