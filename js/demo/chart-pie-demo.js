@@ -3958,9 +3958,10 @@ var myPieChart99 = new Chart(ctx99, {
 });
 
 
-
+// Set new default font family and font color to mimic Bootstrap's default styling
+Chart.defaults.global.defaultFontFamily = 'Nunito', '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
+Chart.defaults.global.defaultFontColor = '#858796';
         
-
 // Pie Chart Example (1000)
 var ctx1000 = document.getElementById("myPieChart1000");
 var myPieChart1000 = new Chart(ctx1000, {
