@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Dashboard</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    <i class="fas fa-laugh-wink"></i>
+                </div>
+                <div class="sidebar-brand-text mx-3">Experiments<sup>XAI</sup></div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item active">
+                <a class="nav-link" href="main.html">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Main</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Interface
+            </div>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span>Online Shopping</span>
+                </a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Groups</h6>
+                        <a class="collapse-item" href="shopping_1.html">Without AI</a>
+                        <a class="collapse-item" href="shopping_2.html">With AI</a>
+                        <a class="collapse-item" href="shopping_3.html">With XAI</a>                        
+                    </div>
+                </div>
+            </li>
+
+            <!-- Nav Item - Utilities Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+                    aria-expanded="true" aria-controls="collapseUtilities">
+                    <i class="fa fa-h-square"></i>
+                    <span>KDCA</span>
+                </a>
+                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Groups</h6>
+                        <a class="collapse-item" href="kdca_1.html">Without AI</a>
+                        <a class="collapse-item" href="kdca_2.html">With AI</a>
+                        <a class="collapse-item" href="kdca_3.html">With XAI</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    
+                    <!-- Topbar Search -->                    
+                    <form
+                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                    </form>
+                    
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">                    
+                    
+                        <!-- Nav Item - Alerts -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-bell fa-fw"></i>
+                                <!-- Counter - Alerts -->
+                                <span class="badge badge-danger badge-counter">3+</span>
+                            </a>
+                            <!-- Dropdown - Alerts -->
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="alertsDropdown">
+                                <h6 class="dropdown-header">
+                                    Alerts Center
+                                </h6>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-primary">
+                                            <i class="fas fa-file-alt text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">November 1, 2022</div>
+                                        <span class="font-weight-bold">문항 종료 후 제출하기를 클릭하시면 제출이 완료됩니다.</span>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-success">
+                                            <i class="fas fa-donate text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">November 1, 2022</div>
+                                        보상은 추후에 일괄적으로 지급될 예정입니다.
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-warning">
+                                            <i class="fas fa-exclamation-triangle text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">October 15, 2022</div>
+                                        집중해서 진행해주시면 감사하겠습니다.
+                                    </div>
+                                </a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800">Group3: With AI (explanations provided)</h1>
+                    </div>
+
+                    <div id="times" style="display: none"></div>
+                    <input id="times-input" type="text" name="entry.766741648" id="entry.766741648" style="display: none">
+
+
+                    <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSdK8veJEF0o_KHcF0wGWJJ3YvW-3qJVlpEZRZcNhR7Bm7PQ3g/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+                        <input type="text" name="entry.766741648" id="entry.766741648" style="display: none"/>
+                    <!-- Personal Information -->
+                        <div class="row">
+                            <div class="col-xl-12 col-md-12 mb-4">
+                                <div class="card bg-secondary text-white shadow h-100 py-2">
+                                    <div class="card-body">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col mr-auto">
+                                                <div class="font-weight-bold text-uppercase mb-1">
+                                                    Basic Information: 본인의 신원을 확인할 수 있는 정보는 절대 기록되지 않습니다.</div>
+                                            </div>
+                                        </div>                                 
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-12 col-md-12 mb-4">
+                                <div class="card border-left-secondary shadow h-100 py-2">
+                                    <div class="card-body">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col mr-auto">
+                                                <label class="question" for="gender">1. 귀하의 성별은 무엇입니까?</label><br>
+                                                <input type="radio" name="entry.1144908244" id='entry.1144908244' value="man"/>&nbsp;&nbsp;남성&nbsp;&nbsp;
+                                                <input type="radio" name="entry.1144908244" id='entry.1144908244' value="woman"/>&nbsp;&nbsp;여성&nbsp;&nbsp;<br><br>
+
+                                                <label class="question" for="age">2. 귀하가 속한 연령대에 체크해주세요.</label><br>
+                                                <input type="radio" name="entry.1300125475" id='entry.1300125475' value="age20"/>&nbsp;&nbsp;20 ~ 29세&nbsp;&nbsp;
+                                                <input type="radio" name="entry.1300125475" id='entry.1300125475' value="age30"/>&nbsp;&nbsp;30 ~ 39세&nbsp;&nbsp;
+                                                <input type="radio" name="entry.1300125475" id='entry.1300125475' value="age40"/>&nbsp;&nbsp;40 ~ 49세&nbsp;&nbsp;
+                                                <input type="radio" name="entry.1300125475" id='entry.1300125475' value="age50"/>&nbsp;&nbsp;50 ~ 59세&nbsp;&nbsp;
+                                                <input type="radio" name="entry.1300125475" id='entry.1300125475' value="age60"/>&nbsp;&nbsp;60세 이상&nbsp;&nbsp;<br><br>
+
+                                                <label class="question" for="career">3. 귀하가 고객 상담센터 분야에 종사한 경력이 총 얼마나 되십니까? (개월 수는 반올림)</label><br>
+                                                <input type="radio" name="entry.1820336758" id='entry.1820336758' value="career0"/>&nbsp;&nbsp;5년 이하&nbsp;&nbsp;
+                                                <input type="radio" name="entry.1820336758" id='entry.1820336758' value="career5"/>&nbsp;&nbsp;5년 이상 10년 미만&nbsp;&nbsp;
+                                                <input type="radio" name="entry.1820336758" id='entry.1820336758' value="career10"/>&nbsp;&nbsp;10년 이상 15년 미만&nbsp;&nbsp;
+                                                <input type="radio" name="entry.1820336758" id='entry.1820336758' value="career15"/>&nbsp;&nbsp;15년 이상 20년 미만&nbsp;&nbsp;
+                                                <input type="radio" name="entry.1820336758" id='entry.1820336758' value="career20"/>&nbsp;&nbsp;20년 이상&nbsp;&nbsp;<br><br>
+
+                                                <label class="question" for="sector">4. 귀하는 다음 중 어느 부문에 속하는 상담센터에서 근무한 경험이 있으십니까?</label><br>
+                                                <input type="radio" name="entry.715168362" id='entry.715168362' value="private"/>&nbsp;&nbsp;민간기업&nbsp;&nbsp;
+                                                <input type="radio" name="entry.715168362" id='entry.715168362' value="public"/>&nbsp;&nbsp;공공기관&nbsp;&nbsp;
+                                                <input type="radio" name="entry.715168362" id='entry.715168362' value="both"/>&nbsp;&nbsp;둘 다&nbsp;&nbsp;<br><br>
+
+                                                <label class="question" for="aiexp">5. 귀하는 업무 과정에서 인공지능(AI) 시스템의 도움을 받은 경험이 있으십니까?</label><br>
+                                                <input type="radio" name="entry.236012772" id='entry.236012772' value="aiyes"/>&nbsp;&nbsp;있다&nbsp;&nbsp;
+                                                <input type="radio" name="entry.236012772" id='entry.236012772' value="aino"/>&nbsp;&nbsp;없다&nbsp;&nbsp;<br><br>
+
+                                                <label class="question" for="aiknw">6. 귀하는 인공지능(AI) 시스템에 얼마나 익숙하십니까?</label><br>
+                                                <input type="radio" name="entry.1306850680" id='entry.1306850680' value="ai1"/>&nbsp;&nbsp;1 (전혀 익숙하지 않다)&nbsp;&nbsp;
+                                                <input type="radio" name="entry.1306850680" id='entry.1306850680' value="ai2"/>&nbsp;&nbsp;2 (익숙하지 않다)&nbsp;&nbsp;
+                                                <input type="radio" name="entry.1306850680" id='entry.1306850680' value="ai3"/>&nbsp;&nbsp;3 (보통이다)&nbsp;&nbsp;
+                                                <input type="radio" name="entry.1306850680" id='entry.1306850680' value="ai4"/>&nbsp;&nbsp;4 (익숙하다)&nbsp;&nbsp;
+                                                <input type="radio" name="entry.1306850680" id='entry.1306850680' value="ai5"/>&nbsp;&nbsp;5 (매우 익숙하다)&nbsp;&nbsp;<br><br>
+
+                                                <label class="question" for="contact">7. 보상 지급을 위한 연락처를 기입해주세요. (선택 사항)</label><br>
+                                                <input type="text" name="entry.650146938" id='entry.650146938'/><br>
+                                            </div>
+                                        </div>                                 
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-12 col-md-12 mb-4">
+                                <div class="card bg-primary text-white shadow h-100 py-2">
+                                    <div class="card-body">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col mr-auto">
+                                                <div class="font-weight-bold text-uppercase mb-1">
+                                                    Experiments (총 50문항) : 약 10분 이내로 소요됩니다. </div>
+                                            </div>
+                                        </div>                                 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        
+                        <!-- Utterance 1 -->
+                        <div id="utterance1" class="row">
+                            <div class="col-xl-12 col-md-12 mb-4">
+                                <div class="card border-left-primary shadow h-100 py-2">
+                                    <div class="card-body">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col mr-auto">
+                                                <div class="font-weight-bold text-primary text-uppercase mb-1">
+                                                    Customer Utterance</div>
+
+
+                                                <a id="btn1" class="btn btn-primary btn-icon-split" onclick="start(); play(); time1()">
+                                                    <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;Click&nbsp;&nbsp;&nbsp;</span>
+                                                </a> 
+                                                <audio id="audio1" src="audio/kdca1.wav"></audio>
+                                                <script>
+                                                    function play(){
+                                                    var audio = document.getElementById("audio1");
+                                                    audio.play();
+                                                    }
+                                                </script>
+
+                                                <div id="text1" class="text"><br></div>
+                                                <script type="text/javascript">    
+                                                    const btn = document.getElementById('btn1');
+                                                    // const btn = document.querySelector('.btn-primary');
+                                                    const text = document.getElementById('text1');
+                                                    const contents = '\n I smoke e-cigarettes these days; will that reduce the risk of getting COVID-19?'
+                                                    let saveInterval;
+
+                                                    btn.addEventListener('click', () => {
+                                                      let index = 0; // contents의 초기 인덱스
+                                                      text.innerHTML = ''; // typingSpan 비우기
+                                                      clearInterval(saveInterval); // 기존 interval 종료
+
+                                                      saveInterval = setInterval(() => {
+                                                        if(index >= contents.length - 1) { // index가 범위에 도달될 경우 interval 종료
+                                                          clearInterval(saveInterval);
+                                                        }
+
+                                                        if(contents[index] === '\n') { // 개행문자 일 경우 <br /> 삽입
+                                                          text.innerHTML += '<br />';
+                                                          index++;
+                                                        } else {
+                                                          text.innerHTML += contents[index++]; // contents문자들을 순서대로 넣기
+                                                        }
+                                                      }, 50) // 0.05초마다 글자 입력
+                                                    })
+                                                </script>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Response 1-->
+                        <div id="response1" class="row">
+                            <div id="002" class="col-xl-12 col-md-12 mb-4" style="display: none;">
+
+                                <div class="row">
+                                    <!-- Bar chart -->
+                                    <div class="col-lg-6 mb-1" >
+                                        <div class="card shadow mb-1">
+                                            <div class="card-header py-3">
+                                                <h6 class="m-0 font-weight-bold text-primary">Prediction Probabilities</h6>
+                                            </div>
+                                            <div class="card-body">
+                                                <h4 class="small font-weight-bold">smoking <span
+                                                        class="float-right">37%</span></h4>
+                                                <div class="progress mb-4">
+                                                    <div class="progress-bar bg-info" role="progressbar" style="width: 37%"
+                                                        aria-valuenow="37" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>                                     
+                                                <h4 class="small font-weight-bold">prevention <span
+                                                        class="float-right">36%</span></h4>
+                                                <div class="progress mb-4">
+                                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 36%"
+                                                        aria-valuenow="36" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                                <h4 class="small font-weight-bold">mask <span
+                                                        class="float-right">20%</span></h4>
+                                                <div class="progress mb-4">
+                                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 20%"
+                                                        aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                                <hr>
+                                                A chart showing the intent and probability of the top three questions predicted by AI
+                                                <br>
+                                                <br>
+                                                Among the question intents, since the inquiry related to <code>smoking</code> has the highest probability of 37%, AI determines the customer's intention as an inquiry related to <code>smoking</code>.
+                                                <br>
+                                                <br>
+                                                The words that AI contributed to predicting these results are colored in order of importance in the following chart.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Donut Chart -->
+                                    <div class="col-lg-6 mb-1">
+                                        <div class="card shadow mb-1">
+                                            <div class="card-header py-3">
+                                                <h6 class="m-0 font-weight-bold text-primary">Important Words</h6>
+                                            </div>
+                                            <!-- Card Body -->
+                                            <div class="card-body">
+                                                <div class="chart-pie pt-4">
+                                                    <canvas id="myPieChart1000"></canvas>
+                                                </div>
+                                                <hr>
+                                                <div class="m-0 text-dark">I <span style="background-color: #FBDB92">smoke </span> <span style="background-color: #5CC8D6">e-cigarettes </span>these <span style="background-color: #FBDB92">days </span>; will that <span style="background-color: #FEEDCB">reduce</span> the <span style="background-color: #8AD6E2">risk </span>of <span style="background-color: #2DB7CA">getting </span><span style="background-color: #2DB7CA">COVID-19</span>?
+                                                </div>  
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                            
+                            <!-- Intent -->
+                            <div id="003" class="col-xl-12 col-md-12 mb-4" style="display: none;">
+                                <div class="card border-left-primary shadow h-100 py-2">
+                                    <div class="card-body">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col mr-auto">
+                                                <div class="font-weight-bold text-primary text-uppercase mb-1">
+                                                    Decision (Please decide the intention of the customer's question.)</div>
+                                            </div>
+                                        </div>
+                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"></div>
+                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"></div>
+                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"></div>
+                                        <input type="radio" name="entry.23509137" id='entry.23509137' value="price"/>&nbsp;&nbsp;mask&nbsp;&nbsp;
+                                        <input type="radio" name="entry.23509137" id='entry.23509137' value="method"/>&nbsp;&nbsp;smoking&nbsp;&nbsp;
+                                        <input type="radio" name="entry.23509137" id='entry.23509137' value="change"/>&nbsp;&nbsp;prevention&nbsp;&nbsp;
+                                        <input type="radio" name="entry.23509137" id='entry.23509137' value="discount"/>&nbsp;&nbsp;self-quarantine&nbsp;&nbsp;
+                                        <input type="radio" name="entry.23509137" id='entry.23509137' value="installment"/>&nbsp;&nbsp;sub-products&nbsp;&nbsp;
+
+                                        <div class="font-weight-bold text-primary text-uppercase mb-1"></div>                                              
+                                        <div class="font-weight-bold text-primary text-uppercase mb-1">Decision Confidence (I’m confident in this decision.)</div>
+
+                                        <select name="entry.1805302009" id="entry.1805302009">
+                                            <option name="entry.1805302009" id="entry.1805302009" value="select">Select
+                                            <option name="entry.1805302009" id="entry.1805302009" value="level1">1 (no confidence)
+                                            <option name="entry.1805302009" id="entry.1805302009" value="level2">2 
+                                            <option name="entry.1805302009" id="entry.1805302009" value="level3">3 
+                                            <option name="entry.1805302009" id="entry.1805302009" value="level4">4 
+                                            <option name="entry.1805302009" id="entry.1805302009" value="level5">5 (full confidence)
+                                        </select>  
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12 col-md-12 mb-4">
+                                <a id="004" class="btn btn-primary btn-icon-split" onclick="onDisplay2();" style="display: none;">
+                                    <span class="text-lg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Next&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <script type="text/javascript"> 
+                            var maxtime = 3; // 초단위
+                            var countdownId = 0;
+
+                            function start() {
+                                countdownId = setInterval("countdown()", 1000);
+                            }
+
+                            function countdown() {
+                                if(maxtime > 0) {
+                                    maxtime = maxtime - 1;
+                                    document.getElementById("cdDiv1").innerHTML = maxtime;
+                                } 
+                                else {
+                                    document.getElementById("002").style.display="block";
+                                    document.getElementById("003").style.display="block";
+                                    document.getElementById("004").style.display="block";
+                                    clearInterval(countdownId);
+                                }
+                            }
+
+                        </script>  
+                        <script type="text/javascript">
+                            function onDisplay2() {
+                                $('#utterance2').show();
+                            }
+                        </script>
+                        
+                        <!-- Utterance 2 -->
+
+                        <div id="utterance2" class="row" style="display: none;">
+                            <div class="col-xl-12 col-md-12 mb-4">
+                                <div class="card border-left-primary shadow h-100 py-2">
+                                    <div class="card-body">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col mr-auto">
+                                                <div class="font-weight-bold text-primary text-uppercase mb-1">
+                                                    Customer Utterance</div>
+
+
+                                                <a id="btn2" class="btn btn-primary btn-icon-split" onclick="start2(); play2(); time2()">
+                                                    <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;Next&nbsp;&nbsp;&nbsp;</span>
+                                                </a> 
+                                                <audio id="audio2" src="audio/sample2.wav"></audio>
+                                                <script>
+                                                    function play2(){
+                                                    var audio2 = document.getElementById("audio2");
+                                                    audio2.play();
+                                                    }
+                                                    function time2(){
+                                                    var today2 = new Date();
+                                                    var hour2 = today2.getHours();
+                                                    var minutes2 = today2.getMinutes();
+                                                    var seconds2 = today2.getSeconds();
+                                                    document.getElementById("times").innerHTML=document.getElementById("times").innerHTML+"|"+"btn2: "+hour2+"시"+minutes2+"분"+seconds2+"초";
+                                                    }
+
+                                                </script>
+
+                                                <div id="text2" class="text"><br></div>
+                                                <script type="text/javascript">    
+                                                    const btn2 = document.getElementById("btn2");
+                                                    const text2 = document.getElementById("text2");
+                                                    const contents2 = '\n I smoke e-cigarettes these days; will that reduce the risk of getting COVID-19?'
+                                                    let saveInterval2;
+
+                                                    btn2.addEventListener('click', () => {
+                                                      let index = 0; // contents의 초기 인덱스
+                                                      text2.innerHTML = ''; // typingSpan 비우기
+                                                      clearInterval(saveInterval2); // 기존 interval 종료
+
+                                                      saveInterval2 = setInterval(() => {
+                                                        if(index >= contents2.length - 1) { // index가 범위에 도달될 경우 interval 종료
+                                                          clearInterval(saveInterval2);
+                                                        }
+
+                                                        if(contents2[index] === '\n') { // 개행문자 일 경우 <br /> 삽입
+                                                          text2.innerHTML += '<br />';
+                                                          index++;
+                                                        } else {
+                                                          text2.innerHTML += contents2[index++]; // contents문자들을 순서대로 넣기
+                                                        }
+                                                      }, 50) // 0.05초마다 글자 입력
+                                                    })
+                                                </script>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Response 2-->
+                        <div id="response2" class="row">
+                            <div id="005" class="col-xl-12 col-md-12 mb-4" style="display:none;">
+
+                                <!-- XAI (1) -->
+                                <div class="card border-left-primary shadow h-100 py-2">
+                                    <div class="card-body">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col mr-auto">
+                                                <div class="font-weight-bold text-primary text-uppercase mb-1">
+                                                    AI's prediction: smoking</div>
+                                            </div>
+                                        </div>                                 
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Intent -->
+                            <div id="006" class="col-xl-12 col-md-12 mb-4" style="display:none;">
+                                <div class="card border-left-primary shadow h-100 py-2">
+                                <div class="card border-left-primary shadow h-100 py-2">
+                                    <div class="card-body">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col mr-auto">
+                                                <div class="font-weight-bold text-primary text-uppercase mb-1">
+                                                    Decision (Please decide the intention of the customer's question.)</div>
+                                            </div>
+                                        </div>
+                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"></div>
+                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"></div>
+                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"></div>
+                                        <input type="radio" name="entry.23509137" id='entry.23509137' value="price"/>&nbsp;&nbsp;mask&nbsp;&nbsp;
+                                        <input type="radio" name="entry.23509137" id='entry.23509137' value="method"/>&nbsp;&nbsp;smoking&nbsp;&nbsp;
+                                        <input type="radio" name="entry.23509137" id='entry.23509137' value="change"/>&nbsp;&nbsp;prevention&nbsp;&nbsp;
+                                        <input type="radio" name="entry.23509137" id='entry.23509137' value="discount"/>&nbsp;&nbsp;self-quarantine&nbsp;&nbsp;
+                                        <input type="radio" name="entry.23509137" id='entry.23509137' value="installment"/>&nbsp;&nbsp;sub-products&nbsp;&nbsp;
+
+                                        <div class="font-weight-bold text-primary text-uppercase mb-1"></div>                                              
+                                        <div class="font-weight-bold text-primary text-uppercase mb-1">Decision Confidence (I’m confident in this decision.)</div>
+
+                                        <select name="entry.1805302009" id="entry.1805302009">
+                                            <option name="entry.1805302009" id="entry.1805302009" value="select">Select
+                                            <option name="entry.1805302009" id="entry.1805302009" value="level1">1 (no confidence)
+                                            <option name="entry.1805302009" id="entry.1805302009" value="level2">2 
+                                            <option name="entry.1805302009" id="entry.1805302009" value="level3">3 
+                                            <option name="entry.1805302009" id="entry.1805302009" value="level4">4 
+                                            <option name="entry.1805302009" id="entry.1805302009" value="level5">5 (full confidence)
+                                        </select>  
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12 col-md-12 mb-4">
+                                <a id="007" class="btn btn-primary btn-icon-split" onclick="onDisplay3();" style="display: none;">
+                                    <span class="text-lg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Next&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                </a>
+                            </div>
+                            
+                        </div>
+
+
+                        <script type="text/javascript"> 
+                            var maxtime2 = 3; // 초단위
+                            var countdownId2 = 0;
+
+                            function start2() {
+                                countdownId2 = setInterval("countdown2()", 1000);
+                            }
+
+                            function countdown2() {
+                                if(maxtime2 > 0) {
+                                    maxtime2 = maxtime2 - 1;
+                                    document.getElementById("cdDiv2").innerHTML = maxtime2;
+                                } 
+                                else {
+                                    document.getElementById("005").style.display="block";
+                                    document.getElementById("006").style.display="block";
+                                    document.getElementById("007").style.display="block";
+                                    clearInterval(countdownId2);
+                                }
+                            }
+
+                        </script>  
+                        <script type="text/javascript">
+                            function onDisplay3() {
+                                $('#utterance3').show();
+                            }
+                        </script>
+
+                        <!-- Utterance 3 -->
+
+                        <div id="utterance3" class="row" style="display: none;">
+                            <div class="col-xl-12 col-md-12 mb-4">
+                                <div class="card border-left-primary shadow h-100 py-2">
+                                    <div class="card-body">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col mr-auto">
+                                                <div class="font-weight-bold text-primary text-uppercase mb-1">
+                                                    Customer Utterance</div>
+
+
+                                                <a id="btn3" class="btn btn-primary btn-icon-split" onclick="start3(); play3(); time3()">
+                                                    <span class="text-xs">&nbsp;▶︎&nbsp;&nbsp;Click&nbsp;&nbsp;&nbsp;</span>
+                                                </a> 
+                                                <audio id="audio3" src="audio/sample3.wav"></audio>
+                                                <script>
+                                                    function play3(){
+                                                    var audio3 = document.getElementById("audio3");
+                                                    audio3.play();
+                                                    }
+                                                    function time3(){
+                                                    var today3 = new Date();
+                                                    var hour3 = today2.getHours();
+                                                    var minutes3 = today2.getMinutes();
+                                                    var seconds3 = today2.getSeconds();
+                                                    document.getElementById("times").innerHTML=document.getElementById("times").innerHTML+"|"+"btn3: "+hour2+"시"+minutes2+"분"+seconds2+"초";
+                                                    }
+
+                                                </script>
+
+                                                <div id="text3" class="text"><br></div>
+                                                <script type="text/javascript">    
+                                                    const btn3 = document.getElementById("btn3");
+                                                    const text3 = document.getElementById("text3");
+                                                    const contents3 = '\n I smoke e-cigarettes these days; will that reduce the risk of getting COVID-19?'
+                                                    let saveInterval3;
+
+                                                    btn3.addEventListener('click', () => {
+                                                      let index = 0; // contents의 초기 인덱스
+                                                      text3.innerHTML = ''; // typingSpan 비우기
+                                                      clearInterval(saveInterval3); // 기존 interval 종료
+
+                                                      saveInterval3 = setInterval(() => {
+                                                        if(index >= contents3.length - 1) { // index가 범위에 도달될 경우 interval 종료
+                                                          clearInterval(saveInterval3);
+                                                        }
+
+                                                        if(contents3[index] === '\n') { // 개행문자 일 경우 <br /> 삽입
+                                                          text3.innerHTML += '<br />';
+                                                          index++;
+                                                        } else {
+                                                          text3.innerHTML += contents3[index++]; // contents문자들을 순서대로 넣기
+                                                        }
+                                                      }, 50) // 0.05초마다 글자 입력
+                                                    })
+                                                </script>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Response 3-->
+                        <div id="response3" class="row">
+                            <div id="008" class="col-xl-12 col-md-12 mb-4" style="display:none;">
+                            </div>
+
+                            <!-- Intent -->
+                            <div id="009" class="col-xl-12 col-md-12 mb-4" style="display:none;">
+                                <div class="card border-left-primary shadow h-100 py-2">
+                                    <div class="card-body">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col mr-auto">
+                                                <div class="font-weight-bold text-primary text-uppercase mb-1">
+                                                    Decision (Please decide the intention of the customer's question.)</div>
+                                            </div>
+                                        </div>
+                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"></div>
+                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"></div>
+                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"></div>
+                                        <input type="radio" name="entry.23509137" id='entry.23509137' value="price"/>&nbsp;&nbsp;mask&nbsp;&nbsp;
+                                        <input type="radio" name="entry.23509137" id='entry.23509137' value="method"/>&nbsp;&nbsp;smoking&nbsp;&nbsp;
+                                        <input type="radio" name="entry.23509137" id='entry.23509137' value="change"/>&nbsp;&nbsp;prevention&nbsp;&nbsp;
+                                        <input type="radio" name="entry.23509137" id='entry.23509137' value="discount"/>&nbsp;&nbsp;self-quarantine&nbsp;&nbsp;
+                                        <input type="radio" name="entry.23509137" id='entry.23509137' value="installment"/>&nbsp;&nbsp;sub-products&nbsp;&nbsp;
+
+                                        <div class="font-weight-bold text-primary text-uppercase mb-1"></div>                                              
+                                        <div class="font-weight-bold text-primary text-uppercase mb-1">Decision Confidence (I’m confident in this decision.)</div>
+
+                                        <select name="entry.1805302009" id="entry.1805302009">
+                                            <option name="entry.1805302009" id="entry.1805302009" value="select">Select
+                                            <option name="entry.1805302009" id="entry.1805302009" value="level1">1 (no confidence)
+                                            <option name="entry.1805302009" id="entry.1805302009" value="level2">2 
+                                            <option name="entry.1805302009" id="entry.1805302009" value="level3">3 
+                                            <option name="entry.1805302009" id="entry.1805302009" value="level4">4 
+                                            <option name="entry.1805302009" id="entry.1805302009" value="level5">5 (full confidence)
+                                        </select>  
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12 col-md-12 mb-4">
+                                <a id="010" class="btn btn-primary btn-icon-split" onclick="onDisplay4();" style="display: none;">
+                                    <span class="text-lg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Next&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                </a>
+                            </div>
+                            
+                        </div>
+
+
+                        <script type="text/javascript"> 
+                            var maxtime3 = 3; // 초단위
+                            var countdownId3 = 0;
+
+                            function start3() {
+                                countdownId3 = setInterval("countdown3()", 1000);
+                            }
+
+                            function countdown3() {
+                                if(maxtime3 > 0) {
+                                    maxtime3 = maxtime3 - 1;
+                                    document.getElementById("cdDiv3").innerHTML = maxtime3;
+                                } 
+                                else {
+                                    document.getElementById("008").style.display="block";
+                                    document.getElementById("009").style.display="block";
+                                    document.getElementById("010").style.display="block";
+                                    clearInterval(countdownId3);
+                                }
+                            }
+
+                        </script>  
+                        <script type="text/javascript">
+                            function onDisplay4() {
+                                $('#utterance4').show();
+                            }
+                        </script>
+
+                        
+                        <div id="summitbtn" class="row" style="display: none;">
+                             <input type="submit" name="submit" value="제출하기 (클릭)" onclick="javascript:document.gform.submit.value='제출완료되었습니다. 감사합니다!'">
+                        </div>
+                        <!-- Done -->
+                    </form>
+
+                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+
+                    <script src="assets/js/jquery.min.js"></script>
+                    <script type="text/javascript">var submitted=false;</script>
+                    <script type="text/javascript">
+                    $('#gform').on('submit', function(e) {
+                      $('#gform *').fadeOut(2000);
+                      $('#gform').prepend('Your submission has been processed...');
+
+                      });
+                    </script> 
+                    
+                    
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+            
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; sol-j.github.io</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="login.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-pie-demo-3.js"></script>
+
+</body>
+
+</html>
